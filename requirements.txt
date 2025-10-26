@@ -1,9 +1,0 @@
-os
-json
-pandas
-collections
-pathlib
-tqdm
-pypdf
-nltk
-langchain
