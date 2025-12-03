@@ -1,0 +1,1348 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "MemGraph API",
+    "description": "Memory layer for AI agents with persistent context graphs",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/agents": {
+      "post": {
+        "tags": [
+          "Agents"
+        ],
+        "summary": "Register Agent",
+        "description": "Register a new agent or get existing one.\n\n**Example:**\n```\nPOST /agents?agent_id=research_001&name=Research Assistant&agent_type=research\n```",
+        "operationId": "register_agent_agents_post",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Unique agent identifier",
+              "title": "Agent Id"
+            },
+            "description": "Unique agent identifier"
+          },
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Human-readable agent name",
+              "title": "Name"
+            },
+            "description": "Human-readable agent name"
+          },
+          {
+            "name": "agent_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Type of agent (research, writing, coding, etc.)",
+              "default": "general",
+              "title": "Agent Type"
+            },
+            "description": "Type of agent (research, writing, coding, etc.)"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Agent"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agents/{agent_id}": {
+      "get": {
+        "tags": [
+          "Agents"
+        ],
+        "summary": "Get Agent",
+        "description": "Retrieve an agent by ID.\n\n**Example:**\n```\nGET /agents/research_001\n```",
+        "operationId": "get_agent_agents__agent_id__get",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Agent Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Agent"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/agents/{agent_id}/stats": {
+      "get": {
+        "tags": [
+          "Agents"
+        ],
+        "summary": "Get Agent Stats",
+        "description": "Get statistics about an agent's memory usage.\n\n**Example:**\n```\nGET /agents/research_001/stats\n```\n\nReturns:\n    - total_memories: Total number of memories\n    - average_importance: Average importance score\n    - memory_types: Count by memory type\n    - oldest_memory: Oldest memory timestamp\n    - newest_memory: Newest memory timestamp",
+        "operationId": "get_agent_stats_agents__agent_id__stats_get",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Agent Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true,
+                  "title": "Response Get Agent Stats Agents  Agent Id  Stats Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/memories": {
+      "post": {
+        "tags": [
+          "Memories"
+        ],
+        "summary": "Add Memory",
+        "description": "Add a new memory to the graph.\n\n**Example:**\n```\nPOST /memories?agent_id=research_001&content=User prefers technical explanations&memory_type=preference&importance=0.8\n```",
+        "operationId": "add_memory_memories_post",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Agent ID",
+              "title": "Agent Id"
+            },
+            "description": "Agent ID"
+          },
+          {
+            "name": "content",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 10000,
+              "description": "Memory content",
+              "title": "Content"
+            },
+            "description": "Memory content"
+          },
+          {
+            "name": "memory_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Type: preference, fact, action, conversation, decision, observation",
+              "default": "fact",
+              "title": "Memory Type"
+            },
+            "description": "Type: preference, fact, action, conversation, decision, observation"
+          },
+          {
+            "name": "importance",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "maximum": 1,
+              "minimum": 0,
+              "description": "Importance score 0.0-1.0",
+              "default": 0.5,
+              "title": "Importance"
+            },
+            "description": "Importance score 0.0-1.0"
+          },
+          {
+            "name": "context_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Optional context/session ID",
+              "title": "Context Id"
+            },
+            "description": "Optional context/session ID"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Memory"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/memories/{memory_id}": {
+      "get": {
+        "tags": [
+          "Memories"
+        ],
+        "summary": "Get Memory",
+        "description": "Retrieve a specific memory by ID.\n\n**Example:**\n```\nGET /memories/mem_abc123def456\n```",
+        "operationId": "get_memory_memories__memory_id__get",
+        "parameters": [
+          {
+            "name": "memory_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Memory Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Memory"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/memories/agent/{agent_id}": {
+      "get": {
+        "tags": [
+          "Memories"
+        ],
+        "summary": "Get Agent Memories",
+        "description": "Get all memories for an agent.\n\n**Example:**\n```\nGET /memories/agent/research_001?limit=20&memory_types=fact,preference&time_range_days=30\n```",
+        "operationId": "get_agent_memories_memories_agent__agent_id__get",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Agent Id"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "description": "Max memories to return",
+              "default": 10,
+              "title": "Limit"
+            },
+            "description": "Max memories to return"
+          },
+          {
+            "name": "memory_types",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Comma-separated memory types to filter",
+              "title": "Memory Types"
+            },
+            "description": "Comma-separated memory types to filter"
+          },
+          {
+            "name": "time_range_days",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Only return memories from last N days",
+              "title": "Time Range Days"
+            },
+            "description": "Only return memories from last N days"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MemoryResponse"
+                  },
+                  "title": "Response Get Agent Memories Memories Agent  Agent Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/memories/retrieve": {
+      "post": {
+        "tags": [
+          "Memories"
+        ],
+        "summary": "Retrieve Context",
+        "description": "Retrieve relevant context for a query.\n\nThis is the core retrieval method agents use to get relevant past memories.\n\n**Example:**\n```\nPOST /memories/retrieve?agent_id=research_001&query=What do I know about the user&limit=10&min_importance=0.5\n```\n\nReturns:\n    - memories: List of relevant MemoryResponse objects\n    - total_found: Total memories matching criteria\n    - query: Echo of the query\n    - retrieved_at: Timestamp",
+        "operationId": "retrieve_context_memories_retrieve_post",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Agent ID",
+              "title": "Agent Id"
+            },
+            "description": "Agent ID"
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000,
+              "description": "Natural language query",
+              "title": "Query"
+            },
+            "description": "Natural language query"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 50,
+              "minimum": 1,
+              "description": "Max memories to return",
+              "default": 5,
+              "title": "Limit"
+            },
+            "description": "Max memories to return"
+          },
+          {
+            "name": "time_range_days",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Only recent memories (N days)",
+              "title": "Time Range Days"
+            },
+            "description": "Only recent memories (N days)"
+          },
+          {
+            "name": "memory_types",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Comma-separated memory types",
+              "title": "Memory Types"
+            },
+            "description": "Comma-separated memory types"
+          },
+          {
+            "name": "min_importance",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "maximum": 1,
+              "minimum": 0,
+              "description": "Minimum importance threshold",
+              "default": 0,
+              "title": "Min Importance"
+            },
+            "description": "Minimum importance threshold"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ContextResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/contexts": {
+      "post": {
+        "tags": [
+          "Contexts"
+        ],
+        "summary": "Create Context",
+        "description": "Create a new context/session.\n\nContexts group related memories together (e.g., a conversation, research session).\n\n**Example:**\n```\nPOST /contexts?name=Literature Review - Neural Networks&summary=Reviewing recent papers\n```",
+        "operationId": "create_context_contexts_post",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 300,
+              "description": "Context name",
+              "title": "Name"
+            },
+            "description": "Context name"
+          },
+          {
+            "name": "summary",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 5000
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Optional summary",
+              "title": "Summary"
+            },
+            "description": "Optional summary"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Context"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/relationships": {
+      "post": {
+        "tags": [
+          "Relationships"
+        ],
+        "summary": "Create Relationship",
+        "description": "Create a relationship between two memories.\n\n**Example:**\n```\nPOST /relationships?from_memory_id=mem_abc&to_memory_id=mem_def&relation_type=supports&strength=0.8\n```",
+        "operationId": "create_relationship_relationships_post",
+        "parameters": [
+          {
+            "name": "from_memory_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Source memory ID",
+              "title": "From Memory Id"
+            },
+            "description": "Source memory ID"
+          },
+          {
+            "name": "to_memory_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Target memory ID",
+              "title": "To Memory Id"
+            },
+            "description": "Target memory ID"
+          },
+          {
+            "name": "relation_type",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "description": "Type: supports, contradicts, elaborates, follows, relates_to, supersedes",
+              "default": "relates_to",
+              "title": "Relation Type"
+            },
+            "description": "Type: supports, contradicts, elaborates, follows, relates_to, supersedes"
+          },
+          {
+            "name": "strength",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "maximum": 1,
+              "minimum": 0,
+              "description": "Relationship strength 0.0-1.0",
+              "default": 0.5,
+              "title": "Strength"
+            },
+            "description": "Relationship strength 0.0-1.0"
+          },
+          {
+            "name": "reason",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "maxLength": 500
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "Optional explanation",
+              "title": "Reason"
+            },
+            "description": "Optional explanation"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MemoryRelationship"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/relationships/{memory_id}": {
+      "get": {
+        "tags": [
+          "Relationships"
+        ],
+        "summary": "Get Related Memories",
+        "description": "Get memories related to a given memory.\n\nTraverses relationship graph to find connected memories.\n\n**Example:**\n```\nGET /relationships/mem_abc123?max_depth=2&min_strength=0.5\n```",
+        "operationId": "get_related_memories_relationships__memory_id__get",
+        "parameters": [
+          {
+            "name": "memory_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Memory Id"
+            }
+          },
+          {
+            "name": "max_depth",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 3,
+              "minimum": 1,
+              "description": "Max traversal depth",
+              "default": 2,
+              "title": "Max Depth"
+            },
+            "description": "Max traversal depth"
+          },
+          {
+            "name": "min_strength",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "number",
+              "maximum": 1,
+              "minimum": 0,
+              "description": "Minimum relationship strength",
+              "default": 0,
+              "title": "Min Strength"
+            },
+            "description": "Minimum relationship strength"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MemoryResponse"
+                  },
+                  "title": "Response Get Related Memories Relationships  Memory Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sharing/grant": {
+      "post": {
+        "tags": [
+          "Cross-Agent Sharing"
+        ],
+        "summary": "Share Memories",
+        "description": "Share memories from one agent to another.\n\n**Example:**\n```\nPOST /sharing/grant?from_agent_id=research_001&to_agent_id=writing_001&memory_ids=mem_abc,mem_def&permission=read\n```\n\nReturns:\n    - shared_count: Number of memories successfully shared",
+        "operationId": "share_memories_sharing_grant_post",
+        "parameters": [
+          {
+            "name": "from_agent_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Source agent ID",
+              "title": "From Agent Id"
+            },
+            "description": "Source agent ID"
+          },
+          {
+            "name": "to_agent_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Target agent ID",
+              "title": "To Agent Id"
+            },
+            "description": "Target agent ID"
+          },
+          {
+            "name": "memory_ids",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Comma-separated memory IDs to share",
+              "title": "Memory Ids"
+            },
+            "description": "Comma-separated memory IDs to share"
+          },
+          {
+            "name": "permission",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(read|write)$",
+              "description": "Access permission: read or write",
+              "default": "read",
+              "title": "Permission"
+            },
+            "description": "Access permission: read or write"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sharing/{agent_id}": {
+      "get": {
+        "tags": [
+          "Cross-Agent Sharing"
+        ],
+        "summary": "Get Shared Memories",
+        "description": "Get memories shared with an agent.\n\n**Example:**\n```\nGET /sharing/writing_001?limit=20\n```",
+        "operationId": "get_shared_memories_sharing__agent_id__get",
+        "parameters": [
+          {
+            "name": "agent_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Agent Id"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "description": "Max memories to return",
+              "default": 10,
+              "title": "Limit"
+            },
+            "description": "Max memories to return"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MemoryResponse"
+                  },
+                  "title": "Response Get Shared Memories Sharing  Agent Id  Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/health": {
+      "get": {
+        "tags": [
+          "Health"
+        ],
+        "summary": "Health Check",
+        "description": "Check if MemGraph API is operational.\n\nReturns:\n    Health status and service info",
+        "operationId": "health_check_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "tags": [
+          "Info"
+        ],
+        "summary": "Root",
+        "description": "Root endpoint with API information.\n\nReturns:\n    API metadata and available endpoints",
+        "operationId": "root__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Agent": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 200,
+            "minLength": 1,
+            "title": "Name"
+          },
+          "type": {
+            "type": "string",
+            "maxLength": 100,
+            "title": "Type",
+            "default": "general"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "metadata": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metadata"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "title": "Agent",
+        "description": "Represents an AI agent that creates/uses memories.",
+        "example": {
+          "id": "agent_abc123def456",
+          "metadata": {
+            "capabilities": [
+              "search",
+              "summarize"
+            ],
+            "version": "1.0"
+          },
+          "name": "Research Assistant",
+          "type": "research"
+        }
+      },
+      "Context": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "maxLength": 300,
+            "minLength": 1,
+            "title": "Name"
+          },
+          "started_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Started At"
+          },
+          "ended_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Ended At"
+          },
+          "summary": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 5000
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Summary"
+          },
+          "metadata": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metadata"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name"
+        ],
+        "title": "Context",
+        "description": "Represents a conversation or task session.",
+        "example": {
+          "id": "ctx_abc123def456",
+          "metadata": {
+            "duration_minutes": 45,
+            "papers_reviewed": 5
+          },
+          "name": "Literature Review Session - Neural Networks",
+          "summary": "Discussed recent advances in transformer architectures"
+        }
+      },
+      "ContextResponse": {
+        "properties": {
+          "memories": {
+            "items": {
+              "$ref": "#/components/schemas/MemoryResponse"
+            },
+            "type": "array",
+            "title": "Memories"
+          },
+          "total_found": {
+            "type": "integer",
+            "title": "Total Found"
+          },
+          "query": {
+            "type": "string",
+            "title": "Query"
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Retrieved At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "memories",
+          "total_found",
+          "query"
+        ],
+        "title": "ContextResponse",
+        "description": "Response containing retrieved context."
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Memory": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "content": {
+            "type": "string",
+            "maxLength": 10000,
+            "minLength": 1,
+            "title": "Content"
+          },
+          "memory_type": {
+            "$ref": "#/components/schemas/MemoryType",
+            "default": "fact"
+          },
+          "importance": {
+            "type": "number",
+            "maximum": 1,
+            "minimum": 0,
+            "title": "Importance",
+            "default": 0.5
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Updated At"
+          },
+          "embedding_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Embedding Id"
+          },
+          "metadata": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Metadata"
+          }
+        },
+        "type": "object",
+        "required": [
+          "content"
+        ],
+        "title": "Memory",
+        "description": "Represents a single memory unit in the graph.",
+        "example": {
+          "content": "User prefers concise explanations with code examples",
+          "id": "mem_abc123def456789",
+          "importance": 0.8,
+          "memory_type": "preference",
+          "metadata": {
+            "topic": "communication_style",
+            "verified": true
+          }
+        }
+      },
+      "MemoryRelationship": {
+        "properties": {
+          "from_memory_id": {
+            "type": "string",
+            "title": "From Memory Id"
+          },
+          "to_memory_id": {
+            "type": "string",
+            "title": "To Memory Id"
+          },
+          "type": {
+            "$ref": "#/components/schemas/RelationType"
+          },
+          "strength": {
+            "type": "number",
+            "maximum": 1,
+            "minimum": 0,
+            "title": "Strength",
+            "default": 0.5
+          },
+          "reason": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 500
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reason"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "title": "Created At"
+          }
+        },
+        "type": "object",
+        "required": [
+          "from_memory_id",
+          "to_memory_id",
+          "type"
+        ],
+        "title": "MemoryRelationship",
+        "description": "Represents a relationship between two memories."
+      },
+      "MemoryResponse": {
+        "properties": {
+          "memory": {
+            "$ref": "#/components/schemas/Memory"
+          },
+          "agent_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Agent Name"
+          },
+          "context_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Context Name"
+          },
+          "relevance_score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Relevance Score"
+          },
+          "related_memories": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Related Memories"
+          }
+        },
+        "type": "object",
+        "required": [
+          "memory"
+        ],
+        "title": "MemoryResponse",
+        "description": "Response containing memory data."
+      },
+      "MemoryType": {
+        "type": "string",
+        "enum": [
+          "preference",
+          "fact",
+          "action",
+          "conversation",
+          "decision",
+          "observation"
+        ],
+        "title": "MemoryType",
+        "description": "Types of memories that can be stored."
+      },
+      "RelationType": {
+        "type": "string",
+        "enum": [
+          "supports",
+          "contradicts",
+          "elaborates",
+          "follows",
+          "relates_to",
+          "supersedes"
+        ],
+        "title": "RelationType",
+        "description": "Types of relationships between memories."
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

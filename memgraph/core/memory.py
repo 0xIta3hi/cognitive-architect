@@ -527,7 +527,7 @@ class MemoryGraph:
 
 
 def create_memory_graph(
-    uri: str = "neo4j://localhost:7687",
+    uri: str = "neo4j://127.0.0.1:7687",
     user: str = "neo4j",
     password: str = "1234578"
 ) -> MemoryGraph:
