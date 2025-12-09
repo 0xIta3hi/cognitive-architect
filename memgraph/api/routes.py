@@ -15,6 +15,7 @@ from memgraph.core.models import (
     MemoryResponse, ContextResponse, MemoryRelationship
 )
 from memgraph.api.main import get_memory_graph
+from memgraph.api.llm import generate_chat_response
 
 logger = logging.getLogger(__name__)
 
@@ -172,6 +173,83 @@ async def add_memory(
         )
     except Exception as e:
         logger.error(f"✗ Failed to add memory: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=str(e)
+        )
+
+
+@router_memories.get("/graph", response_model=Dict[str, Any])
+async def get_memory_graph_data(
+    agent_id: str = Query(..., description="Agent ID to get memory graph for"),
+    memory_graph: MemoryGraph = Depends(get_memory_graph)
+):
+    """
+    Get memory graph data (nodes and edges) for visualization.
+    
+    Returns nodes and edges suitable for ReactFlow visualization.
+    
+    **Example:**
+    ```
+    GET /memories/graph?agent_id=research-agent
+    ```
+    """
+    try:
+        logger.info(f"📊 Fetching graph for agent: {agent_id}")
+        
+        # Get all memories for the agent using get_agent_memories instead of retrieve
+        memories = memory_graph.get_agent_memories(
+            agent_id=agent_id,
+            limit=100
+        )
+        
+        logger.info(f"📝 Retrieved {len(memories)} memories for graph")
+        
+        # Create nodes from memories
+        nodes = [
+            {
+                "id": m.memory.memory_id,
+                "label": m.memory.content[:50] + "..." if len(m.memory.content) > 50 else m.memory.content,
+                "type": m.memory.memory_type,
+                "importance": m.memory.importance
+            }
+            for m in memories
+        ]
+        
+        logger.info(f"🔲 Created {len(nodes)} nodes")
+        
+        # Get relationships between memories
+        edges = []
+        for memory_resp in memories:
+            try:
+                related = memory_graph.get_related(
+                    memory_id=memory_resp.memory.memory_id,
+                    max_depth=1
+                )
+                for rel_memory in related:
+                    edges.append({
+                        "source": memory_resp.memory.memory_id,
+                        "target": rel_memory.memory_id,
+                        "type": "relates",
+                        "strength": 0.7
+                    })
+            except Exception as e:
+                logger.debug(f"Could not get relations for memory {memory_resp.memory.memory_id}: {e}")
+                pass  # No relationships for this memory
+        
+        logger.info(f"✓ Generated graph with {len(nodes)} nodes and {len(edges)} edges")
+        
+        return {
+            "nodes": nodes,
+            "edges": edges,
+            "agent_id": agent_id,
+            "stats": {
+                "total_nodes": len(nodes),
+                "total_edges": len(edges)
+            }
+        }
+    except Exception as e:
+        logger.error(f"✗ Failed to get memory graph: {e}", exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=str(e)
@@ -495,6 +573,98 @@ async def get_shared_memories(
         return memories
     except Exception as e:
         logger.error(f"✗ Failed to get shared memories: {e}")
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=str(e)
+        )
+
+
+# ══════════════════════════════════════════════════════════════
+# CHAT ENDPOINT (For Frontend Integration)
+# ══════════════════════════════════════════════════════════════
+
+# Chat endpoint - simple implementation
+chat_router = APIRouter(prefix="", tags=["Chat"])
+
+@chat_router.post("/chat", response_model=Dict[str, str])
+async def chat(
+    agent_id: str = Body(..., embed=True),
+    message: str = Body(..., embed=True),
+    memory_graph: MemoryGraph = Depends(get_memory_graph)
+):
+    """
+    Chat with an agent - processes message and returns response.
+    
+    This endpoint:
+    1. Retrieves relevant memories using semantic search
+    2. Creates a context-aware response
+    3. Stores the interaction as a memory
+    
+    **Example:**
+    ```
+    POST /chat
+    {
+        "agent_id": "research-agent",
+        "message": "What do you know about Neo4j?"
+    }
+    ```
+    """
+    try:
+        logger.info(f"💬 Chat from agent {agent_id}: {message[:50]}...")
+        
+        # Step 1: Get agent details
+        agent = memory_graph.get_agent(agent_id)
+        agent_name = agent.name if agent else agent_id
+        
+        # Step 2: Retrieve relevant context from agent's memories
+        context_response = memory_graph.retrieve(
+            agent_id=agent_id,
+            query=message,
+            limit=5,
+            min_importance=0.3
+        )
+        
+        # Extract memories from ContextResponse
+        relevant_memories = context_response.memories if context_response else []
+        
+        logger.info(f"📝 Retrieved {len(relevant_memories)} relevant memories")
+        
+        # Step 3: Build context from relevant memories
+        memory_context = "\n- ".join([m.memory.content for m in relevant_memories]) if relevant_memories else ""
+        if memory_context:
+            memory_context = "- " + memory_context
+        
+        # Step 4: Generate response using LLM (Gemini)
+        response = generate_chat_response(
+            message=message,
+            agent_name=agent_name,
+            memory_context=memory_context
+        )
+        
+        logger.info(f"✅ LLM response generated")
+        
+        # Step 5: Store this interaction as a memory
+        try:
+            memory_graph.add(
+                agent_id=agent_id,
+                content=f"User asked: {message[:100]}",
+                memory_type="interaction",
+                importance=0.6
+            )
+            logger.info(f"✓ Stored interaction memory")
+        except Exception as store_err:
+            logger.debug(f"Could not store interaction: {store_err}")
+            pass  # Non-critical if we can't store
+        
+        logger.info(f"✓ Chat response generated for agent: {agent_id}")
+        
+        return {
+            "response": response,
+            "agent_id": agent_id,
+            "context_memories": str(len(relevant_memories))
+        }
+    except Exception as e:
+        logger.error(f"✗ Chat failed: {e}", exc_info=True)
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=str(e)

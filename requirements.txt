@@ -13,6 +13,9 @@ langchain==0.1.0
 langchain-community==0.0.10
 langchain-core==0.1.10
 
+# LLM Providers
+google-generativeai>=0.8.0
+
 # Utilities
 python-dateutil==2.8.2
 httpx==0.25.2
@@ -24,3 +27,4 @@ pytest-asyncio==0.21.1
 pytest-cov==4.1.0
 black==23.12.0
 ruff==0.1.8
+

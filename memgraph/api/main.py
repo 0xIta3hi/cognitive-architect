@@ -118,7 +118,8 @@ from memgraph.api.routes import (
     router_memories,
     router_contexts,
     router_relationships,
-    router_sharing
+    router_sharing,
+    chat_router
 )
 
 # Include all routers in the app
@@ -127,6 +128,7 @@ app.include_router(router_memories)
 app.include_router(router_contexts)
 app.include_router(router_relationships)
 app.include_router(router_sharing)
+app.include_router(chat_router)
 
 
 # ══════════════════════════════════════════════════════════════

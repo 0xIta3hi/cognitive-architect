@@ -82,7 +82,25 @@ export async function fetchAgent(agentId: string) {
  */
 export async function fetchAgentMemories(agentId: string, limit = 10) {
   try {
-    const memories = await api.memories.byAgent(agentId, limit);
+    const params = new URLSearchParams({
+      limit: String(limit),
+    });
+
+    const response = await fetch(
+      `http://localhost:8000/memories/agent/${encodeURIComponent(agentId)}?${params.toString()}`,
+      { method: 'GET' }
+    );
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ detail: 'Unknown error' }));
+      throw new Error(
+        typeof errorData.detail === 'string'
+          ? errorData.detail
+          : JSON.stringify(errorData.detail)
+      );
+    }
+
+    const memories = await response.json();
     return { data: memories, error: null };
   } catch (error) {
     return {
@@ -102,12 +120,30 @@ export async function retrieveContext(
   minImportance = 0.5
 ) {
   try {
-    const context = await api.memories.retrieve({
+    const params = new URLSearchParams({
       agent_id: agentId,
-      query,
-      limit,
-      min_importance: minImportance,
+      query: query,
+      limit: String(limit),
+      min_importance: String(minImportance),
     });
+
+    const response = await fetch(`http://localhost:8000/memories/retrieve?${params.toString()}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ detail: 'Unknown error' }));
+      throw new Error(
+        typeof errorData.detail === 'string'
+          ? errorData.detail
+          : JSON.stringify(errorData.detail)
+      );
+    }
+
+    const context = await response.json();
     return { data: context, error: null };
   } catch (error) {
     return {
@@ -127,12 +163,31 @@ export async function addMemory(
   importance = 0.7
 ) {
   try {
-    const memory = await api.memories.add({
+    // Use query parameters instead of JSON body
+    const params = new URLSearchParams({
       agent_id: agentId,
-      content,
+      content: content,
       memory_type: memoryType,
-      importance,
+      importance: String(importance),
     });
+
+    const response = await fetch(`http://localhost:8000/memories?${params.toString()}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({ detail: 'Unknown error' }));
+      throw new Error(
+        typeof errorData.detail === 'string'
+          ? errorData.detail
+          : JSON.stringify(errorData.detail)
+      );
+    }
+
+    const memory = await response.json();
     return { data: memory, error: null };
   } catch (error) {
     return {
