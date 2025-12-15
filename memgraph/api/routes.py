@@ -208,7 +208,7 @@ async def get_memory_graph_data(
         # Create nodes from memories
         nodes = [
             {
-                "id": m.memory.memory_id,
+                "id": m.memory.id,
                 "label": m.memory.content[:50] + "..." if len(m.memory.content) > 50 else m.memory.content,
                 "type": m.memory.memory_type,
                 "importance": m.memory.importance
@@ -223,18 +223,18 @@ async def get_memory_graph_data(
         for memory_resp in memories:
             try:
                 related = memory_graph.get_related(
-                    memory_id=memory_resp.memory.memory_id,
+                    memory_id=memory_resp.memory.id,
                     max_depth=1
                 )
                 for rel_memory in related:
                     edges.append({
-                        "source": memory_resp.memory.memory_id,
-                        "target": rel_memory.memory_id,
+                        "source": memory_resp.memory.id,
+                        "target": rel_memory.id,
                         "type": "relates",
                         "strength": 0.7
                     })
             except Exception as e:
-                logger.debug(f"Could not get relations for memory {memory_resp.memory.memory_id}: {e}")
+                logger.debug(f"Could not get relations for memory {memory_resp.memory.id}: {e}")
                 pass  # No relationships for this memory
         
         logger.info(f"✓ Generated graph with {len(nodes)} nodes and {len(edges)} edges")

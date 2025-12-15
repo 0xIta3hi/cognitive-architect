@@ -38,3 +38,8 @@ MIT
 
 ---
 Built by a college student who believes AI agents deserve better memory 🚀
+
+Starting Command : 
+```bash
+    python -m uvicorn memgraph.api.main:app --reload
+```

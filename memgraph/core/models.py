@@ -303,3 +303,4 @@ class TemporalQuery(BaseModel):
         if v and 'start_time' in info.data and info.data['start_time'] and v < info.data['start_time']:
             raise ValueError('end_time must be after start_time')
         return v
+    
