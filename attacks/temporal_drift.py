@@ -202,7 +202,7 @@ def verify_drift(driver, agent_id, memory_id, expected_timestamp):
         match = current_ts_normalized == expected_ts_normalized if (current_ts_normalized and expected_ts_normalized) else False
         
         # Log verification result
-        status = "✓ VERIFIED" if match else "✗ MISMATCH"
+        status = "VERIFIED" if match else "MISMATCH"
         print(f"[VERIFY] agent={agent_id}, memory={memory_id}: expected={expected_ts_normalized}, actual={current_ts_normalized} {status}")
         
         return match

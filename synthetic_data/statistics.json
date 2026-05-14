@@ -1,0 +1,33 @@
+{
+  "total_agents": 5,
+  "total_memories": 500,
+  "total_relationships": 221,
+  "avg_memories_per_agent": 100,
+  "avg_relationships_per_agent": 44,
+  "memory_types_distribution": {
+    "observation": 100,
+    "decision": 97,
+    "interaction": 12,
+    "fact": 92,
+    "preference": 64,
+    "conversation": 135
+  },
+  "agent_types_distribution": {
+    "knowledge_agent": 1,
+    "writing_agent": 2,
+    "coding_agent": 2
+  },
+  "relationship_types_distribution": {
+    "follows": 30,
+    "supports": 42,
+    "elaborates": 39,
+    "supersedes": 34,
+    "contradicts": 38,
+    "relates_to": 38
+  },
+  "importance_stats": {
+    "min": 0.3,
+    "max": 1.0,
+    "avg": 0.6555600000000006
+  }
+}

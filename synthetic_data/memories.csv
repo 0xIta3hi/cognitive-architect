@@ -1,0 +1,501 @@
+id,agent_id,content,memory_type,importance,created_at
+mem_agent_000_0000,agent_000,Memory relationships show clustering patterns,observation,0.88,2026-05-16T22:08:31.695262
+mem_agent_000_0001,agent_000,Memory relationships show clustering patterns (variant 3),observation,0.92,2026-05-26T22:08:31.695262
+mem_agent_000_0002,agent_000,Chose to implement incremental updates strategy (variant 3),decision,0.32,2025-12-19T22:08:31.695262
+mem_agent_000_0003,agent_000,Explained graph theory concepts and applications (variant 2),interaction,0.92,2026-03-12T22:08:31.695262
+mem_agent_000_0004,agent_000,APIs enable communication between different software systems,fact,0.84,2026-02-09T22:08:31.695262
+mem_agent_000_0005,agent_000,System performance degrades with poorly indexed queries (variant 2),observation,0.83,2026-01-05T22:08:31.695262
+mem_agent_000_0006,agent_000,Recent queries indicate shift in research direction (variant 2),observation,0.71,2025-12-01T22:08:31.695262
+mem_agent_000_0007,agent_000,Python is widely used for data science and AI applications,fact,0.45,2026-07-21T22:08:31.695262
+mem_agent_000_0008,agent_000,System performance degrades with poorly indexed queries (variant 2),observation,0.55,2025-07-26T22:08:31.695262
+mem_agent_000_0009,agent_000,Chose to implement incremental updates strategy (variant 2),decision,0.39,2026-02-05T22:08:31.695262
+mem_agent_000_0010,agent_000,Machine learning requires large labeled datasets for training (variant 3),fact,0.78,2025-12-24T22:08:31.695262
+mem_agent_000_0011,agent_000,Query latency increased significantly with graph growth,observation,0.85,2026-06-08T22:08:31.695262
+mem_agent_000_0012,agent_000,Decided on REST API for system integration (variant 3),decision,0.49,2026-02-20T22:08:31.695262
+mem_agent_000_0013,agent_000,User frequently asks about performance optimization (variant 2),observation,0.79,2026-04-15T22:08:31.695262
+mem_agent_000_0014,agent_000,Python is widely used for data science and AI applications (variant 2),fact,0.71,2025-07-31T22:08:31.695262
+mem_agent_000_0015,agent_000,Python is widely used for data science and AI applications (variant 3),fact,0.56,2026-04-03T22:08:31.695262
+mem_agent_000_0016,agent_000,Query latency increased significantly with graph growth,observation,0.64,2026-02-04T22:08:31.695262
+mem_agent_000_0017,agent_000,Decided on REST API for system integration,decision,0.71,2026-06-07T22:08:31.695262
+mem_agent_000_0018,agent_000,System performance degrades with poorly indexed queries (variant 3),observation,0.59,2026-02-09T22:08:31.695262
+mem_agent_000_0019,agent_000,Query latency increased significantly with graph growth,observation,0.85,2026-03-29T22:08:31.695262
+mem_agent_000_0020,agent_000,"Neo4j uses property graphs with nodes, edges, and properties (variant 2)",fact,0.32,2025-10-27T22:08:31.695262
+mem_agent_000_0021,agent_000,Version control systems track changes in source code (variant 3),fact,0.89,2025-10-01T22:08:31.695262
+mem_agent_000_0022,agent_000,Version control systems track changes in source code (variant 2),fact,0.79,2025-10-29T22:08:31.695262
+mem_agent_000_0023,agent_000,User likes code examples and demonstrations (variant 3),preference,0.59,2025-08-30T22:08:31.695262
+mem_agent_000_0024,agent_000,Decided on REST API for system integration (variant 3),decision,0.42,2025-09-10T22:08:31.695262
+mem_agent_000_0025,agent_000,Query latency increased significantly with graph growth (variant 3),observation,0.76,2026-07-18T22:08:31.695262
+mem_agent_000_0026,agent_000,Decided to prioritize data quality over quantity (variant 3),decision,0.99,2026-02-27T22:08:31.695262
+mem_agent_000_0027,agent_000,Machine learning requires large labeled datasets for training (variant 2),fact,0.67,2026-05-22T22:08:31.695262
+mem_agent_000_0028,agent_000,Machine learning requires large labeled datasets for training (variant 3),fact,0.66,2026-01-26T22:08:31.695262
+mem_agent_000_0029,agent_000,Decided on REST API for system integration (variant 3),decision,0.55,2026-07-20T22:08:31.695262
+mem_agent_000_0030,agent_000,User frequently asks about performance optimization,observation,0.54,2026-01-07T22:08:31.695262
+mem_agent_000_0031,agent_000,Chose to implement incremental updates strategy (variant 2),decision,0.35,2025-07-30T22:08:31.695262
+mem_agent_000_0032,agent_000,Recent queries indicate shift in research direction,observation,0.57,2026-03-01T22:08:31.695262
+mem_agent_000_0033,agent_000,APIs enable communication between different software systems (variant 3),fact,0.86,2026-04-26T22:08:31.695262
+mem_agent_000_0034,agent_000,Chose Neo4j for graph-based data representation (variant 3),decision,0.93,2026-06-29T22:08:31.695262
+mem_agent_000_0035,agent_000,Decided on REST API for system integration (variant 3),decision,0.72,2025-07-31T22:08:31.695262
+mem_agent_000_0036,agent_000,Query latency increased significantly with graph growth,observation,0.41,2026-04-10T22:08:31.695262
+mem_agent_000_0037,agent_000,User frequently asks about performance optimization (variant 3),observation,0.44,2026-04-07T22:08:31.695262
+mem_agent_000_0038,agent_000,Recent queries indicate shift in research direction (variant 2),observation,0.6,2026-05-30T22:08:31.695262
+mem_agent_000_0039,agent_000,Query latency increased significantly with graph growth (variant 2),observation,0.68,2026-04-08T22:08:31.695262
+mem_agent_000_0040,agent_000,APIs enable communication between different software systems (variant 2),fact,0.6,2026-05-11T22:08:31.695262
+mem_agent_000_0041,agent_000,Decided on REST API for system integration,decision,0.93,2026-02-23T22:08:31.695262
+mem_agent_000_0042,agent_000,Memory relationships show clustering patterns,observation,0.95,2026-01-14T22:08:31.695262
+mem_agent_000_0043,agent_000,Machine learning requires large labeled datasets for training (variant 3),fact,0.79,2025-08-06T22:08:31.695262
+mem_agent_000_0044,agent_000,Memory relationships show clustering patterns (variant 3),observation,0.48,2025-09-12T22:08:31.695262
+mem_agent_000_0045,agent_000,Python is widely used for data science and AI applications,fact,0.75,2025-11-07T22:08:31.695262
+mem_agent_000_0046,agent_000,Python is widely used for data science and AI applications (variant 2),fact,0.73,2026-04-05T22:08:31.695262
+mem_agent_000_0047,agent_000,Chose to implement incremental updates strategy (variant 2),decision,0.97,2026-01-12T22:08:31.695262
+mem_agent_000_0048,agent_000,Chose to implement incremental updates strategy (variant 2),decision,0.62,2025-12-08T22:08:31.695262
+mem_agent_000_0049,agent_000,Recent queries indicate shift in research direction,observation,0.39,2025-11-01T22:08:31.695262
+mem_agent_000_0050,agent_000,"Neo4j uses property graphs with nodes, edges, and properties (variant 3)",fact,0.75,2026-01-14T22:08:31.695262
+mem_agent_000_0051,agent_000,APIs enable communication between different software systems (variant 3),fact,0.31,2025-12-28T22:08:31.695262
+mem_agent_000_0052,agent_000,Decided to prioritize data quality over quantity,decision,0.57,2026-03-08T22:08:31.695262
+mem_agent_000_0053,agent_000,System performance degrades with poorly indexed queries (variant 3),observation,0.68,2026-05-05T22:08:31.695262
+mem_agent_000_0054,agent_000,Decided on REST API for system integration,decision,0.47,2025-09-11T22:08:31.695262
+mem_agent_000_0055,agent_000,APIs enable communication between different software systems,fact,0.5,2025-09-21T22:08:31.695262
+mem_agent_000_0056,agent_000,Python is widely used for data science and AI applications (variant 2),fact,0.52,2025-09-17T22:08:31.695262
+mem_agent_000_0057,agent_000,Selected Python for implementation due to ecosystem,decision,0.46,2026-03-11T22:08:31.695262
+mem_agent_000_0058,agent_000,Chose to implement incremental updates strategy,decision,0.32,2026-07-09T22:08:31.695262
+mem_agent_000_0059,agent_000,System performance degrades with poorly indexed queries,observation,0.97,2025-10-24T22:08:31.695262
+mem_agent_000_0060,agent_000,Version control systems track changes in source code (variant 3),fact,0.47,2025-11-17T22:08:31.695262
+mem_agent_000_0061,agent_000,System performance degrades with poorly indexed queries (variant 2),observation,0.59,2025-11-01T22:08:31.695262
+mem_agent_000_0062,agent_000,Recent queries indicate shift in research direction (variant 3),observation,0.51,2026-03-06T22:08:31.695262
+mem_agent_000_0063,agent_000,Decided to prioritize data quality over quantity (variant 2),decision,0.64,2026-02-20T22:08:31.695262
+mem_agent_000_0064,agent_000,Query latency increased significantly with graph growth (variant 3),observation,0.5,2026-04-14T22:08:31.695262
+mem_agent_000_0065,agent_000,Chose Neo4j for graph-based data representation (variant 3),decision,0.65,2026-01-16T22:08:31.695262
+mem_agent_000_0066,agent_000,Query latency increased significantly with graph growth,observation,0.43,2026-05-09T22:08:31.695262
+mem_agent_000_0067,agent_000,Decided on REST API for system integration,decision,0.41,2025-11-18T22:08:31.695262
+mem_agent_000_0068,agent_000,Python is widely used for data science and AI applications (variant 2),fact,0.54,2025-09-11T22:08:31.695262
+mem_agent_000_0069,agent_000,System performance degrades with poorly indexed queries,observation,0.33,2026-05-04T22:08:31.695262
+mem_agent_000_0070,agent_000,Recent queries indicate shift in research direction (variant 3),observation,0.84,2026-05-06T22:08:31.695262
+mem_agent_000_0071,agent_000,Chose to implement incremental updates strategy (variant 2),decision,0.77,2026-03-31T22:08:31.695262
+mem_agent_000_0072,agent_000,Chose Neo4j for graph-based data representation,decision,0.54,2025-12-23T22:08:31.695262
+mem_agent_000_0073,agent_000,Discussed deployment and scaling considerations (variant 2),interaction,0.78,2025-08-18T22:08:31.695262
+mem_agent_000_0074,agent_000,Machine learning requires large labeled datasets for training (variant 3),fact,0.65,2026-03-24T22:08:31.695262
+mem_agent_000_0075,agent_000,Version control systems track changes in source code (variant 2),fact,0.67,2026-01-24T22:08:31.695262
+mem_agent_000_0076,agent_000,Memory relationships show clustering patterns (variant 3),observation,0.67,2026-06-16T22:08:31.695262
+mem_agent_000_0077,agent_000,User frequently asks about performance optimization (variant 3),observation,0.61,2026-03-04T22:08:31.695262
+mem_agent_000_0078,agent_000,System performance degrades with poorly indexed queries (variant 3),observation,0.66,2026-05-06T22:08:31.695262
+mem_agent_000_0079,agent_000,Query latency increased significantly with graph growth,observation,0.99,2026-03-19T22:08:31.695262
+mem_agent_000_0080,agent_000,Machine learning requires large labeled datasets for training (variant 3),fact,0.35,2026-06-17T22:08:31.695262
+mem_agent_000_0081,agent_000,Recent queries indicate shift in research direction (variant 3),observation,0.57,2025-09-10T22:08:31.695262
+mem_agent_000_0082,agent_000,Chose to implement incremental updates strategy (variant 2),decision,0.59,2026-02-20T22:08:31.695262
+mem_agent_000_0083,agent_000,Chose to implement incremental updates strategy (variant 3),decision,0.63,2026-04-03T22:08:31.695262
+mem_agent_000_0084,agent_000,Recent queries indicate shift in research direction,observation,0.99,2025-07-26T22:08:31.695262
+mem_agent_000_0085,agent_000,APIs enable communication between different software systems,fact,0.74,2025-10-02T22:08:31.695262
+mem_agent_000_0086,agent_000,Decided on REST API for system integration (variant 2),decision,0.34,2025-11-13T22:08:31.695262
+mem_agent_000_0087,agent_000,User prefers structured data formats like JSON (variant 2),preference,0.84,2026-02-02T22:08:31.695262
+mem_agent_000_0088,agent_000,Selected Python for implementation due to ecosystem (variant 2),decision,0.87,2026-05-13T22:08:31.695262
+mem_agent_000_0089,agent_000,Version control systems track changes in source code,fact,0.41,2025-10-08T22:08:31.695262
+mem_agent_000_0090,agent_000,User frequently asks about performance optimization (variant 3),observation,0.8,2026-02-18T22:08:31.695262
+mem_agent_000_0091,agent_000,Decided to prioritize data quality over quantity (variant 2),decision,0.67,2026-07-10T22:08:31.695262
+mem_agent_000_0092,agent_000,Query latency increased significantly with graph growth,observation,0.62,2025-11-29T22:08:31.695262
+mem_agent_000_0093,agent_000,Chose to implement incremental updates strategy,decision,0.62,2026-01-19T22:08:31.695262
+mem_agent_000_0094,agent_000,Decided to prioritize data quality over quantity,decision,0.81,2026-02-18T22:08:31.695262
+mem_agent_000_0095,agent_000,Selected Python for implementation due to ecosystem (variant 3),decision,0.82,2026-03-27T22:08:31.695262
+mem_agent_000_0096,agent_000,"Neo4j uses property graphs with nodes, edges, and properties (variant 3)",fact,0.61,2026-07-15T22:08:31.695262
+mem_agent_000_0097,agent_000,Version control systems track changes in source code (variant 2),fact,0.8,2025-12-03T22:08:31.695262
+mem_agent_000_0098,agent_000,Decided to prioritize data quality over quantity (variant 2),decision,0.63,2025-09-30T22:08:31.695262
+mem_agent_000_0099,agent_000,Memory relationships show clustering patterns (variant 3),observation,0.97,2025-09-17T22:08:31.695262
+mem_agent_001_0000,agent_001,Default memory (variant 3),conversation,0.63,2026-10-23T22:08:31.695262
+mem_agent_001_0001,agent_001,Default memory,conversation,0.82,2026-10-25T22:08:31.695262
+mem_agent_001_0002,agent_001,Audience attention spans are limited (variant 2),observation,0.5,2027-01-20T22:08:31.695262
+mem_agent_001_0003,agent_001,Default memory,conversation,0.98,2026-11-07T22:08:31.695262
+mem_agent_001_0004,agent_001,Default memory (variant 3),conversation,0.7,2026-08-22T22:08:31.695262
+mem_agent_001_0005,agent_001,User wants shorter paragraphs (variant 3),preference,0.71,2026-04-11T22:08:31.695262
+mem_agent_001_0006,agent_001,Technical writing requires precision and clarity (variant 2),fact,0.85,2026-09-06T22:08:31.695262
+mem_agent_001_0007,agent_001,User prefers to avoid jargon (variant 2),preference,0.97,2026-09-13T22:08:31.695262
+mem_agent_001_0008,agent_001,User prefers examples over abstract concepts (variant 3),preference,0.49,2027-02-11T22:08:31.695262
+mem_agent_001_0009,agent_001,Default memory (variant 2),conversation,0.75,2026-12-20T22:08:31.695262
+mem_agent_001_0010,agent_001,Default memory,conversation,0.97,2027-02-15T22:08:31.695262
+mem_agent_001_0011,agent_001,Complex topics need progressive disclosure,observation,0.92,2026-10-10T22:08:31.695262
+mem_agent_001_0012,agent_001,Audience attention spans are limited,observation,0.57,2026-11-14T22:08:31.695262
+mem_agent_001_0013,agent_001,Different formats work for different topics (variant 3),observation,0.7,2026-10-30T22:08:31.695262
+mem_agent_001_0014,agent_001,Technical content needs visual reinforcement (variant 3),observation,0.41,2026-03-21T22:08:31.695262
+mem_agent_001_0015,agent_001,Technical content needs visual reinforcement,observation,0.51,2026-09-04T22:08:31.695262
+mem_agent_001_0016,agent_001,User wants shorter paragraphs,preference,0.65,2026-09-20T22:08:31.695262
+mem_agent_001_0017,agent_001,User prefers examples over abstract concepts (variant 2),preference,0.6,2026-12-23T22:08:31.695262
+mem_agent_001_0018,agent_001,User prefers to avoid jargon,preference,0.53,2026-10-29T22:08:31.695262
+mem_agent_001_0019,agent_001,Default memory,conversation,0.63,2026-03-01T22:08:31.695262
+mem_agent_001_0020,agent_001,Readers engage more with personal stories,observation,0.73,2026-08-01T22:08:31.695262
+mem_agent_001_0021,agent_001,Default memory,conversation,0.91,2026-10-01T22:08:31.695262
+mem_agent_001_0022,agent_001,User likes bullet points and summaries (variant 2),preference,0.8,2026-04-23T22:08:31.695262
+mem_agent_001_0023,agent_001,User wants shorter paragraphs,preference,0.6,2026-03-17T22:08:31.695262
+mem_agent_001_0024,agent_001,Default memory (variant 3),conversation,0.76,2026-06-26T22:08:31.695262
+mem_agent_001_0025,agent_001,Complex topics need progressive disclosure,observation,0.75,2026-10-07T22:08:31.695262
+mem_agent_001_0026,agent_001,User prefers conversational tone,preference,0.91,2027-01-26T22:08:31.695262
+mem_agent_001_0027,agent_001,Chose narrative structure for content (variant 3),decision,0.62,2026-09-12T22:08:31.695262
+mem_agent_001_0028,agent_001,Readers engage more with personal stories,observation,0.73,2026-06-19T22:08:31.695262
+mem_agent_001_0029,agent_001,User wants shorter paragraphs (variant 2),preference,0.61,2026-04-10T22:08:31.695262
+mem_agent_001_0030,agent_001,Reviewed draft and provided feedback (variant 2),interaction,0.59,2026-08-12T22:08:31.695262
+mem_agent_001_0031,agent_001,User likes bullet points and summaries,preference,0.41,2026-10-14T22:08:31.695262
+mem_agent_001_0032,agent_001,User prefers examples over abstract concepts (variant 2),preference,0.8,2026-09-18T22:08:31.695262
+mem_agent_001_0033,agent_001,User prefers conversational tone (variant 3),preference,0.95,2026-03-17T22:08:31.695262
+mem_agent_001_0034,agent_001,Technical content needs visual reinforcement (variant 2),observation,0.57,2026-06-03T22:08:31.695262
+mem_agent_001_0035,agent_001,Default memory,conversation,0.69,2026-03-09T22:08:31.695262
+mem_agent_001_0036,agent_001,Readers engage more with personal stories (variant 2),observation,0.98,2026-04-28T22:08:31.695262
+mem_agent_001_0037,agent_001,Readers engage more with personal stories,observation,0.76,2026-03-10T22:08:31.695262
+mem_agent_001_0038,agent_001,Default memory,conversation,0.99,2027-01-17T22:08:31.695262
+mem_agent_001_0039,agent_001,Default memory,conversation,0.4,2026-06-13T22:08:31.695262
+mem_agent_001_0040,agent_001,User likes bullet points and summaries,preference,0.79,2026-10-01T22:08:31.695262
+mem_agent_001_0041,agent_001,Default memory (variant 3),conversation,0.41,2026-08-25T22:08:31.695262
+mem_agent_001_0042,agent_001,Default memory,conversation,0.35,2027-02-16T22:08:31.695262
+mem_agent_001_0043,agent_001,Technical content needs visual reinforcement,observation,0.86,2026-09-19T22:08:31.695262
+mem_agent_001_0044,agent_001,Default memory,conversation,0.48,2026-09-16T22:08:31.695262
+mem_agent_001_0045,agent_001,Default memory (variant 2),conversation,0.44,2026-11-06T22:08:31.695262
+mem_agent_001_0046,agent_001,User likes bullet points and summaries,preference,0.74,2026-07-05T22:08:31.695262
+mem_agent_001_0047,agent_001,User prefers conversational tone,preference,0.45,2026-10-11T22:08:31.695262
+mem_agent_001_0048,agent_001,Different formats work for different topics (variant 2),observation,0.44,2026-03-12T22:08:31.695262
+mem_agent_001_0049,agent_001,Collaborated on content outline,interaction,0.79,2026-06-03T22:08:31.695262
+mem_agent_001_0050,agent_001,Readers engage more with personal stories (variant 2),observation,0.67,2026-11-03T22:08:31.695262
+mem_agent_001_0051,agent_001,Clear structure improves comprehension (variant 2),fact,0.6,2026-12-11T22:08:31.695262
+mem_agent_001_0052,agent_001,Default memory (variant 3),conversation,0.8,2026-12-10T22:08:31.695262
+mem_agent_001_0053,agent_001,Collaborated on content outline (variant 3),interaction,0.73,2026-03-09T22:08:31.695262
+mem_agent_001_0054,agent_001,Technical content needs visual reinforcement (variant 3),observation,0.61,2026-03-05T22:08:31.695262
+mem_agent_001_0055,agent_001,Default memory (variant 3),conversation,0.53,2026-07-09T22:08:31.695262
+mem_agent_001_0056,agent_001,Default memory,conversation,0.43,2026-04-25T22:08:31.695262
+mem_agent_001_0057,agent_001,User prefers conversational tone,preference,0.83,2026-05-19T22:08:31.695262
+mem_agent_001_0058,agent_001,User likes bullet points and summaries (variant 3),preference,0.34,2026-10-05T22:08:31.695262
+mem_agent_001_0059,agent_001,Different formats work for different topics,observation,0.77,2026-04-02T22:08:31.695262
+mem_agent_001_0060,agent_001,Default memory (variant 2),conversation,0.48,2026-07-04T22:08:31.695262
+mem_agent_001_0061,agent_001,User wants shorter paragraphs,preference,0.79,2026-05-20T22:08:31.695262
+mem_agent_001_0062,agent_001,Complex topics need progressive disclosure (variant 2),observation,0.35,2026-10-01T22:08:31.695262
+mem_agent_001_0063,agent_001,Technical content needs visual reinforcement,observation,0.86,2026-02-20T22:08:31.695262
+mem_agent_001_0064,agent_001,Complex topics need progressive disclosure (variant 3),observation,0.83,2026-08-25T22:08:31.695262
+mem_agent_001_0065,agent_001,Technical content needs visual reinforcement (variant 2),observation,0.56,2026-07-23T22:08:31.695262
+mem_agent_001_0066,agent_001,Decided on consistent formatting style (variant 3),decision,0.9,2026-10-21T22:08:31.695262
+mem_agent_001_0067,agent_001,User wants shorter paragraphs,preference,0.65,2027-02-10T22:08:31.695262
+mem_agent_001_0068,agent_001,User likes bullet points and summaries (variant 3),preference,0.85,2026-05-12T22:08:31.695262
+mem_agent_001_0069,agent_001,Default memory,conversation,0.37,2026-08-16T22:08:31.695262
+mem_agent_001_0070,agent_001,User wants shorter paragraphs (variant 2),preference,0.65,2026-06-04T22:08:31.695262
+mem_agent_001_0071,agent_001,Complex topics need progressive disclosure (variant 3),observation,0.46,2026-06-10T22:08:31.695262
+mem_agent_001_0072,agent_001,User wants shorter paragraphs (variant 3),preference,0.44,2026-06-01T22:08:31.695262
+mem_agent_001_0073,agent_001,Default memory (variant 3),conversation,0.91,2026-03-01T22:08:31.695262
+mem_agent_001_0074,agent_001,User asked for blog post on AI trends (variant 3),interaction,0.51,2026-05-24T22:08:31.695262
+mem_agent_001_0075,agent_001,Technical content needs visual reinforcement (variant 2),observation,0.59,2026-05-01T22:08:31.695262
+mem_agent_001_0076,agent_001,User prefers conversational tone,preference,0.68,2026-04-05T22:08:31.695262
+mem_agent_001_0077,agent_001,User prefers conversational tone,preference,0.51,2026-05-08T22:08:31.695262
+mem_agent_001_0078,agent_001,Default memory (variant 2),conversation,0.96,2026-10-12T22:08:31.695262
+mem_agent_001_0079,agent_001,Technical content needs visual reinforcement (variant 3),observation,0.4,2026-09-26T22:08:31.695262
+mem_agent_001_0080,agent_001,Default memory,conversation,0.62,2026-02-27T22:08:31.695262
+mem_agent_001_0081,agent_001,User wants shorter paragraphs,preference,0.84,2026-07-06T22:08:31.695262
+mem_agent_001_0082,agent_001,User prefers to avoid jargon (variant 2),preference,0.64,2026-08-22T22:08:31.695262
+mem_agent_001_0083,agent_001,Default memory,conversation,0.39,2026-04-23T22:08:31.695262
+mem_agent_001_0084,agent_001,User prefers examples over abstract concepts (variant 3),preference,0.76,2026-10-04T22:08:31.695262
+mem_agent_001_0085,agent_001,Default memory (variant 2),conversation,0.81,2026-06-16T22:08:31.695262
+mem_agent_001_0086,agent_001,Default memory,conversation,0.39,2027-01-18T22:08:31.695262
+mem_agent_001_0087,agent_001,Default memory (variant 2),conversation,0.6,2026-11-19T22:08:31.695262
+mem_agent_001_0088,agent_001,Chose to break long sections into smaller parts (variant 2),decision,0.73,2026-10-04T22:08:31.695262
+mem_agent_001_0089,agent_001,Default memory,conversation,1.0,2026-08-26T22:08:31.695262
+mem_agent_001_0090,agent_001,User prefers to avoid jargon (variant 3),preference,0.4,2026-09-18T22:08:31.695262
+mem_agent_001_0091,agent_001,Audience attention spans are limited (variant 3),observation,0.37,2026-04-11T22:08:31.695262
+mem_agent_001_0092,agent_001,Different formats work for different topics (variant 3),observation,0.47,2026-04-12T22:08:31.695262
+mem_agent_001_0093,agent_001,Storytelling engages audiences emotionally (variant 3),fact,0.7,2026-06-05T22:08:31.695262
+mem_agent_001_0094,agent_001,User prefers examples over abstract concepts (variant 3),preference,0.53,2026-05-12T22:08:31.695262
+mem_agent_001_0095,agent_001,Default memory,conversation,0.83,2026-12-07T22:08:31.695262
+mem_agent_001_0096,agent_001,Audience attention spans are limited (variant 3),observation,0.99,2026-03-29T22:08:31.695262
+mem_agent_001_0097,agent_001,User prefers examples over abstract concepts (variant 3),preference,0.5,2026-10-12T22:08:31.695262
+mem_agent_001_0098,agent_001,User prefers conversational tone,preference,0.44,2026-10-29T22:08:31.695262
+mem_agent_001_0099,agent_001,User wants shorter paragraphs,preference,0.56,2026-02-21T22:08:31.695262
+mem_agent_002_0000,agent_002,Default memory (variant 2),conversation,0.65,2026-09-28T22:08:31.695262
+mem_agent_002_0001,agent_002,Adopted feature branch workflow,decision,0.66,2027-01-02T22:08:31.695262
+mem_agent_002_0002,agent_002,Selected React for component reusability,decision,0.61,2026-11-07T22:08:31.695262
+mem_agent_002_0003,agent_002,Default memory,conversation,0.84,2027-01-06T22:08:31.695262
+mem_agent_002_0004,agent_002,Default memory,conversation,0.73,2026-04-30T22:08:31.695262
+mem_agent_002_0005,agent_002,Default memory (variant 3),conversation,0.59,2026-04-15T22:08:31.695262
+mem_agent_002_0006,agent_002,Default memory,conversation,0.68,2027-03-13T22:08:31.695262
+mem_agent_002_0007,agent_002,User prefers modular architecture patterns,preference,0.36,2027-02-07T22:08:31.695262
+mem_agent_002_0008,agent_002,Unit tests improve code reliability and maintainability (variant 2),fact,0.58,2027-02-19T22:08:31.695262
+mem_agent_002_0009,agent_002,Unit tests improve code reliability and maintainability (variant 2),fact,0.96,2026-06-19T22:08:31.695262
+mem_agent_002_0010,agent_002,Unit tests improve code reliability and maintainability,fact,0.65,2027-01-21T22:08:31.695262
+mem_agent_002_0011,agent_002,Docker containerizes applications for deployment (variant 2),fact,0.59,2026-07-14T22:08:31.695262
+mem_agent_002_0012,agent_002,Unit tests improve code reliability and maintainability (variant 2),fact,0.74,2026-11-05T22:08:31.695262
+mem_agent_002_0013,agent_002,Added comprehensive test coverage (variant 2),decision,1.0,2026-05-07T22:08:31.695262
+mem_agent_002_0014,agent_002,Explained async/await patterns for handling promises,interaction,0.69,2027-01-22T22:08:31.695262
+mem_agent_002_0015,agent_002,React is a JavaScript library for building UIs (variant 3),fact,0.63,2026-09-05T22:08:31.695262
+mem_agent_002_0016,agent_002,Docker containerizes applications for deployment (variant 2),fact,0.82,2026-07-13T22:08:31.695262
+mem_agent_002_0017,agent_002,Git enables collaborative software development,fact,0.92,2026-05-11T22:08:31.695262
+mem_agent_002_0018,agent_002,Adopted feature branch workflow (variant 2),decision,0.62,2026-06-01T22:08:31.695262
+mem_agent_002_0019,agent_002,Default memory (variant 3),conversation,0.46,2026-11-24T22:08:31.695262
+mem_agent_002_0020,agent_002,Default memory,conversation,0.85,2026-11-04T22:08:31.695262
+mem_agent_002_0021,agent_002,Added comprehensive test coverage,decision,0.91,2027-03-15T22:08:31.695262
+mem_agent_002_0022,agent_002,Added comprehensive test coverage (variant 2),decision,0.52,2026-12-06T22:08:31.695262
+mem_agent_002_0023,agent_002,Default memory (variant 3),conversation,0.35,2027-02-09T22:08:31.695262
+mem_agent_002_0024,agent_002,Implemented Docker for consistent environments (variant 2),decision,0.34,2026-04-26T22:08:31.695262
+mem_agent_002_0025,agent_002,Default memory (variant 3),conversation,0.55,2026-11-05T22:08:31.695262
+mem_agent_002_0026,agent_002,Chose TypeScript for type safety (variant 2),decision,0.35,2027-04-02T22:08:31.695262
+mem_agent_002_0027,agent_002,Default memory,conversation,0.99,2026-09-16T22:08:31.695262
+mem_agent_002_0028,agent_002,Default memory,conversation,0.37,2026-07-03T22:08:31.695262
+mem_agent_002_0029,agent_002,Added comprehensive test coverage (variant 3),decision,0.43,2026-05-06T22:08:31.695262
+mem_agent_002_0030,agent_002,Adopted feature branch workflow,decision,0.59,2027-02-15T22:08:31.695262
+mem_agent_002_0031,agent_002,Unit tests improve code reliability and maintainability (variant 3),fact,0.75,2026-12-29T22:08:31.695262
+mem_agent_002_0032,agent_002,Implemented Docker for consistent environments (variant 2),decision,0.82,2026-09-25T22:08:31.695262
+mem_agent_002_0033,agent_002,Selected React for component reusability,decision,0.4,2026-11-30T22:08:31.695262
+mem_agent_002_0034,agent_002,React is a JavaScript library for building UIs,fact,0.52,2026-07-06T22:08:31.695262
+mem_agent_002_0035,agent_002,Git enables collaborative software development,fact,0.36,2026-07-07T22:08:31.695262
+mem_agent_002_0036,agent_002,Default memory (variant 3),conversation,0.85,2026-10-29T22:08:31.695262
+mem_agent_002_0037,agent_002,Git enables collaborative software development (variant 2),fact,0.33,2026-09-02T22:08:31.695262
+mem_agent_002_0038,agent_002,Default memory,conversation,0.5,2026-06-30T22:08:31.695262
+mem_agent_002_0039,agent_002,Selected React for component reusability (variant 3),decision,0.36,2026-07-24T22:08:31.695262
+mem_agent_002_0040,agent_002,TypeScript provides static typing for JavaScript (variant 3),fact,0.84,2027-01-08T22:08:31.695262
+mem_agent_002_0041,agent_002,Adopted feature branch workflow (variant 2),decision,0.47,2027-03-04T22:08:31.695262
+mem_agent_002_0042,agent_002,Implemented Docker for consistent environments (variant 2),decision,0.6,2027-01-19T22:08:31.695262
+mem_agent_002_0043,agent_002,React is a JavaScript library for building UIs (variant 2),fact,0.48,2026-05-30T22:08:31.695262
+mem_agent_002_0044,agent_002,Implemented Docker for consistent environments,decision,0.85,2026-09-28T22:08:31.695262
+mem_agent_002_0045,agent_002,Default memory (variant 3),conversation,0.98,2026-10-15T22:08:31.695262
+mem_agent_002_0046,agent_002,React is a JavaScript library for building UIs (variant 2),fact,0.72,2027-02-13T22:08:31.695262
+mem_agent_002_0047,agent_002,Selected React for component reusability,decision,0.59,2026-07-21T22:08:31.695262
+mem_agent_002_0048,agent_002,Explained async/await patterns for handling promises (variant 2),interaction,0.94,2026-04-27T22:08:31.695262
+mem_agent_002_0049,agent_002,Default memory (variant 2),conversation,1.0,2026-12-25T22:08:31.695262
+mem_agent_002_0050,agent_002,Default memory (variant 3),conversation,0.41,2026-05-19T22:08:31.695262
+mem_agent_002_0051,agent_002,Chose TypeScript for type safety,decision,0.52,2026-09-09T22:08:31.695262
+mem_agent_002_0052,agent_002,Selected React for component reusability (variant 2),decision,0.49,2026-06-29T22:08:31.695262
+mem_agent_002_0053,agent_002,Selected React for component reusability (variant 3),decision,0.46,2026-12-03T22:08:31.695262
+mem_agent_002_0054,agent_002,Docker containerizes applications for deployment (variant 2),fact,0.77,2026-08-12T22:08:31.695262
+mem_agent_002_0055,agent_002,Adopted feature branch workflow (variant 2),decision,0.61,2026-09-25T22:08:31.695262
+mem_agent_002_0056,agent_002,Unit tests improve code reliability and maintainability,fact,0.78,2026-12-13T22:08:31.695262
+mem_agent_002_0057,agent_002,TypeScript provides static typing for JavaScript (variant 2),fact,0.64,2026-06-23T22:08:31.695262
+mem_agent_002_0058,agent_002,Selected React for component reusability (variant 2),decision,0.61,2027-02-08T22:08:31.695262
+mem_agent_002_0059,agent_002,Code complexity increased with new features,observation,0.63,2026-07-05T22:08:31.695262
+mem_agent_002_0060,agent_002,Default memory (variant 3),conversation,0.94,2026-09-28T22:08:31.695262
+mem_agent_002_0061,agent_002,Added comprehensive test coverage,decision,0.33,2026-07-05T22:08:31.695262
+mem_agent_002_0062,agent_002,Default memory,conversation,0.89,2026-05-24T22:08:31.695262
+mem_agent_002_0063,agent_002,TypeScript provides static typing for JavaScript (variant 3),fact,0.73,2026-08-13T22:08:31.695262
+mem_agent_002_0064,agent_002,Docker containerizes applications for deployment (variant 2),fact,0.78,2026-09-24T22:08:31.695262
+mem_agent_002_0065,agent_002,Implemented Docker for consistent environments,decision,0.74,2026-11-14T22:08:31.695262
+mem_agent_002_0066,agent_002,Default memory,conversation,0.73,2026-10-04T22:08:31.695262
+mem_agent_002_0067,agent_002,Default memory (variant 3),conversation,0.58,2026-07-16T22:08:31.695262
+mem_agent_002_0068,agent_002,Added comprehensive test coverage (variant 2),decision,0.97,2026-05-14T22:08:31.695262
+mem_agent_002_0069,agent_002,Implemented Docker for consistent environments (variant 3),decision,0.96,2026-04-19T22:08:31.695262
+mem_agent_002_0070,agent_002,Added comprehensive test coverage (variant 3),decision,0.9,2026-10-07T22:08:31.695262
+mem_agent_002_0071,agent_002,Default memory,conversation,0.57,2026-12-21T22:08:31.695262
+mem_agent_002_0072,agent_002,Default memory (variant 2),conversation,0.54,2026-07-31T22:08:31.695262
+mem_agent_002_0073,agent_002,Default memory (variant 2),conversation,0.76,2026-11-27T22:08:31.695262
+mem_agent_002_0074,agent_002,Git enables collaborative software development (variant 3),fact,0.86,2027-01-20T22:08:31.695262
+mem_agent_002_0075,agent_002,React is a JavaScript library for building UIs (variant 3),fact,0.78,2026-10-14T22:08:31.695262
+mem_agent_002_0076,agent_002,Default memory (variant 3),conversation,0.84,2027-04-05T22:08:31.695262
+mem_agent_002_0077,agent_002,Default memory (variant 2),conversation,0.78,2026-07-18T22:08:31.695262
+mem_agent_002_0078,agent_002,Docker containerizes applications for deployment (variant 3),fact,0.52,2027-04-01T22:08:31.695262
+mem_agent_002_0079,agent_002,Default memory,conversation,0.76,2027-04-09T22:08:31.695262
+mem_agent_002_0080,agent_002,Default memory (variant 3),conversation,0.41,2026-11-29T22:08:31.695262
+mem_agent_002_0081,agent_002,Adopted feature branch workflow,decision,0.57,2027-03-22T22:08:31.695262
+mem_agent_002_0082,agent_002,Docker containerizes applications for deployment,fact,0.39,2026-04-16T22:08:31.695262
+mem_agent_002_0083,agent_002,Default memory (variant 2),conversation,0.64,2026-05-09T22:08:31.695262
+mem_agent_002_0084,agent_002,Implemented Docker for consistent environments,decision,0.51,2027-02-05T22:08:31.695262
+mem_agent_002_0085,agent_002,Docker containerizes applications for deployment (variant 3),fact,0.69,2026-06-04T22:08:31.695262
+mem_agent_002_0086,agent_002,Unit tests improve code reliability and maintainability (variant 3),fact,0.49,2027-03-07T22:08:31.695262
+mem_agent_002_0087,agent_002,Default memory,conversation,0.44,2026-07-30T22:08:31.695262
+mem_agent_002_0088,agent_002,Default memory (variant 3),conversation,0.45,2026-09-30T22:08:31.695262
+mem_agent_002_0089,agent_002,Default memory,conversation,0.51,2026-11-26T22:08:31.695262
+mem_agent_002_0090,agent_002,Git enables collaborative software development,fact,0.53,2026-04-12T22:08:31.695262
+mem_agent_002_0091,agent_002,Default memory (variant 3),conversation,0.37,2026-11-29T22:08:31.695262
+mem_agent_002_0092,agent_002,Selected React for component reusability,decision,0.55,2027-02-03T22:08:31.695262
+mem_agent_002_0093,agent_002,Default memory (variant 3),conversation,0.74,2027-02-24T22:08:31.695262
+mem_agent_002_0094,agent_002,Added comprehensive test coverage,decision,0.41,2026-07-15T22:08:31.695262
+mem_agent_002_0095,agent_002,Default memory (variant 2),conversation,0.73,2026-07-18T22:08:31.695262
+mem_agent_002_0096,agent_002,Selected React for component reusability,decision,0.49,2027-01-23T22:08:31.695262
+mem_agent_002_0097,agent_002,Default memory (variant 2),conversation,0.78,2027-02-16T22:08:31.695262
+mem_agent_002_0098,agent_002,Default memory,conversation,0.41,2026-06-10T22:08:31.695262
+mem_agent_002_0099,agent_002,Docker containerizes applications for deployment,fact,0.86,2026-11-10T22:08:31.695262
+mem_agent_003_0000,agent_003,Different formats work for different topics,observation,0.43,2026-02-19T22:08:31.695262
+mem_agent_003_0001,agent_003,Default memory (variant 3),conversation,0.59,2026-06-15T22:08:31.695262
+mem_agent_003_0002,agent_003,User prefers to avoid jargon (variant 3),preference,0.34,2026-01-26T22:08:31.695262
+mem_agent_003_0003,agent_003,Default memory (variant 3),conversation,0.53,2026-04-24T22:08:31.695262
+mem_agent_003_0004,agent_003,Default memory,conversation,0.5,2026-01-27T22:08:31.695262
+mem_agent_003_0005,agent_003,Complex topics need progressive disclosure,observation,0.47,2026-04-04T22:08:31.695262
+mem_agent_003_0006,agent_003,Default memory,conversation,0.39,2026-08-04T22:08:31.695262
+mem_agent_003_0007,agent_003,Complex topics need progressive disclosure (variant 3),observation,0.78,2026-04-13T22:08:31.695262
+mem_agent_003_0008,agent_003,Default memory (variant 3),conversation,0.82,2026-10-24T22:08:31.695262
+mem_agent_003_0009,agent_003,Different formats work for different topics (variant 3),observation,0.57,2026-04-27T22:08:31.695262
+mem_agent_003_0010,agent_003,Readers engage more with personal stories,observation,0.41,2025-12-18T22:08:31.695262
+mem_agent_003_0011,agent_003,Audience attention spans are limited,observation,0.61,2026-08-21T22:08:31.695262
+mem_agent_003_0012,agent_003,Default memory (variant 2),conversation,0.32,2026-05-30T22:08:31.695262
+mem_agent_003_0013,agent_003,User prefers conversational tone (variant 3),preference,0.4,2026-07-22T22:08:31.695262
+mem_agent_003_0014,agent_003,Complex topics need progressive disclosure (variant 2),observation,0.38,2026-11-27T22:08:31.695262
+mem_agent_003_0015,agent_003,User likes bullet points and summaries (variant 3),preference,0.95,2026-02-13T22:08:31.695262
+mem_agent_003_0016,agent_003,Readers engage more with personal stories (variant 2),observation,0.68,2026-03-04T22:08:31.695262
+mem_agent_003_0017,agent_003,User prefers examples over abstract concepts (variant 3),preference,0.59,2026-03-11T22:08:31.695262
+mem_agent_003_0018,agent_003,User prefers to avoid jargon (variant 2),preference,0.46,2026-06-10T22:08:31.695262
+mem_agent_003_0019,agent_003,Default memory (variant 3),conversation,0.5,2026-09-03T22:08:31.695262
+mem_agent_003_0020,agent_003,User likes bullet points and summaries (variant 3),preference,0.92,2026-01-05T22:08:31.695262
+mem_agent_003_0021,agent_003,Chose narrative structure for content,decision,0.89,2026-11-11T22:08:31.695262
+mem_agent_003_0022,agent_003,User prefers examples over abstract concepts,preference,0.91,2026-01-26T22:08:31.695262
+mem_agent_003_0023,agent_003,User prefers to avoid jargon,preference,0.44,2026-05-13T22:08:31.695262
+mem_agent_003_0024,agent_003,Readers engage more with personal stories (variant 2),observation,0.66,2026-05-17T22:08:31.695262
+mem_agent_003_0025,agent_003,User prefers conversational tone (variant 3),preference,0.49,2026-02-11T22:08:31.695262
+mem_agent_003_0026,agent_003,Readers engage more with personal stories,observation,0.82,2026-06-17T22:08:31.695262
+mem_agent_003_0027,agent_003,Technical content needs visual reinforcement (variant 2),observation,0.7,2026-10-06T22:08:31.695262
+mem_agent_003_0028,agent_003,Default memory (variant 2),conversation,0.81,2026-07-09T22:08:31.695262
+mem_agent_003_0029,agent_003,User wants shorter paragraphs,preference,1.0,2025-12-17T22:08:31.695262
+mem_agent_003_0030,agent_003,Reviewed draft and provided feedback (variant 2),interaction,0.63,2026-02-08T22:08:31.695262
+mem_agent_003_0031,agent_003,Default memory,conversation,0.41,2026-11-02T22:08:31.695262
+mem_agent_003_0032,agent_003,User wants shorter paragraphs (variant 2),preference,0.89,2026-03-25T22:08:31.695262
+mem_agent_003_0033,agent_003,Default memory,conversation,0.64,2025-12-20T22:08:31.695262
+mem_agent_003_0034,agent_003,Readers engage more with personal stories,observation,0.75,2026-08-21T22:08:31.695262
+mem_agent_003_0035,agent_003,Default memory (variant 3),conversation,0.93,2026-05-20T22:08:31.695262
+mem_agent_003_0036,agent_003,User wants shorter paragraphs (variant 2),preference,0.84,2026-11-08T22:08:31.695262
+mem_agent_003_0037,agent_003,Default memory,conversation,0.73,2025-12-29T22:08:31.695262
+mem_agent_003_0038,agent_003,Default memory,conversation,0.61,2025-12-09T22:08:31.695262
+mem_agent_003_0039,agent_003,User wants shorter paragraphs (variant 2),preference,0.94,2026-04-02T22:08:31.695262
+mem_agent_003_0040,agent_003,User prefers to avoid jargon,preference,0.79,2026-04-15T22:08:31.695262
+mem_agent_003_0041,agent_003,Different audiences need different communication styles (variant 3),fact,0.81,2026-12-06T22:08:31.695262
+mem_agent_003_0042,agent_003,Technical content needs visual reinforcement,observation,0.98,2026-07-18T22:08:31.695262
+mem_agent_003_0043,agent_003,Technical content needs visual reinforcement (variant 3),observation,0.56,2026-04-22T22:08:31.695262
+mem_agent_003_0044,agent_003,Default memory,conversation,0.33,2026-08-22T22:08:31.695262
+mem_agent_003_0045,agent_003,Clear structure improves comprehension,fact,0.96,2026-11-28T22:08:31.695262
+mem_agent_003_0046,agent_003,Default memory (variant 3),conversation,0.87,2025-12-29T22:08:31.695262
+mem_agent_003_0047,agent_003,Complex topics need progressive disclosure (variant 2),observation,0.57,2026-10-26T22:08:31.695262
+mem_agent_003_0048,agent_003,Decided to use simpler vocabulary (variant 3),decision,0.46,2026-01-16T22:08:31.695262
+mem_agent_003_0049,agent_003,Audience attention spans are limited (variant 3),observation,0.89,2026-08-05T22:08:31.695262
+mem_agent_003_0050,agent_003,Default memory (variant 3),conversation,0.33,2026-10-31T22:08:31.695262
+mem_agent_003_0051,agent_003,Default memory,conversation,0.85,2025-12-31T22:08:31.695262
+mem_agent_003_0052,agent_003,Readers engage more with personal stories,observation,0.8,2026-01-08T22:08:31.695262
+mem_agent_003_0053,agent_003,Different formats work for different topics,observation,0.77,2026-05-22T22:08:31.695262
+mem_agent_003_0054,agent_003,Default memory (variant 3),conversation,0.97,2026-05-14T22:08:31.695262
+mem_agent_003_0055,agent_003,Default memory,conversation,0.31,2026-08-30T22:08:31.695262
+mem_agent_003_0056,agent_003,Default memory (variant 2),conversation,0.51,2026-04-28T22:08:31.695262
+mem_agent_003_0057,agent_003,Default memory (variant 3),conversation,0.78,2026-04-28T22:08:31.695262
+mem_agent_003_0058,agent_003,Audience attention spans are limited (variant 2),observation,0.34,2026-07-31T22:08:31.695262
+mem_agent_003_0059,agent_003,Default memory,conversation,0.82,2026-09-28T22:08:31.695262
+mem_agent_003_0060,agent_003,Complex topics need progressive disclosure (variant 3),observation,0.43,2026-09-27T22:08:31.695262
+mem_agent_003_0061,agent_003,Clear structure improves comprehension (variant 3),fact,0.99,2026-02-01T22:08:31.695262
+mem_agent_003_0062,agent_003,Technical content needs visual reinforcement (variant 2),observation,0.5,2026-11-06T22:08:31.695262
+mem_agent_003_0063,agent_003,User wants shorter paragraphs (variant 3),preference,0.62,2026-11-12T22:08:31.695262
+mem_agent_003_0064,agent_003,Audience attention spans are limited,observation,0.56,2026-09-30T22:08:31.695262
+mem_agent_003_0065,agent_003,Default memory (variant 3),conversation,0.38,2026-03-16T22:08:31.695262
+mem_agent_003_0066,agent_003,Default memory (variant 2),conversation,0.7,2026-07-18T22:08:31.695262
+mem_agent_003_0067,agent_003,Chose narrative structure for content (variant 2),decision,0.79,2026-10-22T22:08:31.695262
+mem_agent_003_0068,agent_003,User likes bullet points and summaries (variant 2),preference,0.88,2026-09-29T22:08:31.695262
+mem_agent_003_0069,agent_003,User wants shorter paragraphs,preference,0.8,2026-04-11T22:08:31.695262
+mem_agent_003_0070,agent_003,Default memory,conversation,0.92,2026-08-07T22:08:31.695262
+mem_agent_003_0071,agent_003,Default memory (variant 3),conversation,0.7,2025-12-12T22:08:31.695262
+mem_agent_003_0072,agent_003,Readers engage more with personal stories (variant 2),observation,0.83,2026-06-23T22:08:31.695262
+mem_agent_003_0073,agent_003,Readers engage more with personal stories (variant 3),observation,0.55,2026-10-03T22:08:31.695262
+mem_agent_003_0074,agent_003,Audience attention spans are limited (variant 2),observation,0.55,2025-12-23T22:08:31.695262
+mem_agent_003_0075,agent_003,Complex topics need progressive disclosure (variant 3),observation,0.46,2026-04-01T22:08:31.695262
+mem_agent_003_0076,agent_003,Default memory (variant 2),conversation,0.9,2026-05-02T22:08:31.695262
+mem_agent_003_0077,agent_003,Technical content needs visual reinforcement (variant 3),observation,0.91,2026-02-13T22:08:31.695262
+mem_agent_003_0078,agent_003,User prefers conversational tone,preference,0.78,2026-02-26T22:08:31.695262
+mem_agent_003_0079,agent_003,User prefers conversational tone (variant 2),preference,0.92,2026-08-26T22:08:31.695262
+mem_agent_003_0080,agent_003,Default memory,conversation,0.31,2026-08-31T22:08:31.695262
+mem_agent_003_0081,agent_003,Different formats work for different topics,observation,0.31,2026-10-09T22:08:31.695262
+mem_agent_003_0082,agent_003,Default memory (variant 3),conversation,0.51,2026-07-19T22:08:31.695262
+mem_agent_003_0083,agent_003,User prefers to avoid jargon (variant 3),preference,0.69,2026-05-09T22:08:31.695262
+mem_agent_003_0084,agent_003,Default memory (variant 2),conversation,0.31,2026-11-10T22:08:31.695262
+mem_agent_003_0085,agent_003,User prefers examples over abstract concepts (variant 2),preference,0.62,2026-09-11T22:08:31.695262
+mem_agent_003_0086,agent_003,Active voice is more engaging than passive voice (variant 3),fact,0.83,2026-05-12T22:08:31.695262
+mem_agent_003_0087,agent_003,Default memory,conversation,0.7,2026-02-03T22:08:31.695262
+mem_agent_003_0088,agent_003,Readers engage more with personal stories (variant 2),observation,0.75,2026-03-19T22:08:31.695262
+mem_agent_003_0089,agent_003,Different formats work for different topics,observation,0.97,2026-05-20T22:08:31.695262
+mem_agent_003_0090,agent_003,User wants shorter paragraphs,preference,0.6,2026-02-17T22:08:31.695262
+mem_agent_003_0091,agent_003,Default memory,conversation,0.8,2025-12-23T22:08:31.695262
+mem_agent_003_0092,agent_003,Technical content needs visual reinforcement (variant 3),observation,0.56,2026-09-26T22:08:31.695262
+mem_agent_003_0093,agent_003,Default memory (variant 3),conversation,0.89,2026-07-03T22:08:31.695262
+mem_agent_003_0094,agent_003,Default memory (variant 3),conversation,0.8,2026-10-15T22:08:31.695262
+mem_agent_003_0095,agent_003,Different formats work for different topics (variant 2),observation,0.59,2026-06-18T22:08:31.695262
+mem_agent_003_0096,agent_003,User likes bullet points and summaries (variant 3),preference,0.94,2025-12-11T22:08:31.695262
+mem_agent_003_0097,agent_003,Default memory (variant 2),conversation,0.91,2026-03-16T22:08:31.695262
+mem_agent_003_0098,agent_003,User wants shorter paragraphs (variant 2),preference,0.35,2025-12-30T22:08:31.695262
+mem_agent_003_0099,agent_003,User prefers examples over abstract concepts,preference,0.67,2026-04-10T22:08:31.695262
+mem_agent_004_0000,agent_004,Adopted feature branch workflow,decision,0.55,2027-03-12T22:08:31.695262
+mem_agent_004_0001,agent_004,Default memory (variant 3),conversation,0.38,2026-10-26T22:08:31.695262
+mem_agent_004_0002,agent_004,Default memory,conversation,0.64,2026-11-05T22:08:31.695262
+mem_agent_004_0003,agent_004,Docker containerizes applications for deployment,fact,0.35,2027-02-08T22:08:31.695262
+mem_agent_004_0004,agent_004,User prefers modular architecture patterns (variant 3),preference,0.57,2026-12-29T22:08:31.695262
+mem_agent_004_0005,agent_004,Default memory (variant 2),conversation,0.4,2026-08-07T22:08:31.695262
+mem_agent_004_0006,agent_004,Git enables collaborative software development (variant 2),fact,0.99,2026-05-12T22:08:31.695262
+mem_agent_004_0007,agent_004,React is a JavaScript library for building UIs (variant 3),fact,0.88,2026-07-09T22:08:31.695262
+mem_agent_004_0008,agent_004,Default memory,conversation,0.83,2026-08-12T22:08:31.695262
+mem_agent_004_0009,agent_004,Default memory (variant 2),conversation,0.83,2026-04-26T22:08:31.695262
+mem_agent_004_0010,agent_004,User reported bug in form validation (variant 2),interaction,0.85,2027-01-30T22:08:31.695262
+mem_agent_004_0011,agent_004,Chose TypeScript for type safety (variant 2),decision,0.35,2026-11-30T22:08:31.695262
+mem_agent_004_0012,agent_004,Default memory (variant 2),conversation,0.91,2026-05-26T22:08:31.695262
+mem_agent_004_0013,agent_004,TypeScript provides static typing for JavaScript (variant 2),fact,0.86,2027-04-08T22:08:31.695262
+mem_agent_004_0014,agent_004,Default memory (variant 3),conversation,0.35,2026-05-17T22:08:31.695262
+mem_agent_004_0015,agent_004,Docker containerizes applications for deployment,fact,0.4,2026-07-02T22:08:31.695262
+mem_agent_004_0016,agent_004,Docker containerizes applications for deployment (variant 2),fact,0.98,2026-08-04T22:08:31.695262
+mem_agent_004_0017,agent_004,Default memory (variant 2),conversation,0.5,2026-08-08T22:08:31.695262
+mem_agent_004_0018,agent_004,Docker containerizes applications for deployment,fact,0.33,2026-11-15T22:08:31.695262
+mem_agent_004_0019,agent_004,Chose TypeScript for type safety (variant 3),decision,0.92,2026-07-09T22:08:31.695262
+mem_agent_004_0020,agent_004,Default memory (variant 3),conversation,0.43,2027-01-26T22:08:31.695262
+mem_agent_004_0021,agent_004,Default memory (variant 2),conversation,0.79,2027-01-28T22:08:31.695262
+mem_agent_004_0022,agent_004,Default memory (variant 2),conversation,0.46,2026-06-05T22:08:31.695262
+mem_agent_004_0023,agent_004,TypeScript provides static typing for JavaScript,fact,0.44,2026-12-04T22:08:31.695262
+mem_agent_004_0024,agent_004,React is a JavaScript library for building UIs (variant 3),fact,0.74,2026-08-07T22:08:31.695262
+mem_agent_004_0025,agent_004,Default memory,conversation,0.99,2026-10-09T22:08:31.695262
+mem_agent_004_0026,agent_004,Selected React for component reusability (variant 3),decision,0.42,2026-09-10T22:08:31.695262
+mem_agent_004_0027,agent_004,Docker containerizes applications for deployment (variant 2),fact,0.5,2026-10-07T22:08:31.695262
+mem_agent_004_0028,agent_004,"User prefers clean, readable code (variant 2)",preference,0.85,2026-09-30T22:08:31.695262
+mem_agent_004_0029,agent_004,Chose TypeScript for type safety,decision,0.5,2026-09-11T22:08:31.695262
+mem_agent_004_0030,agent_004,Git enables collaborative software development (variant 3),fact,0.83,2027-03-14T22:08:31.695262
+mem_agent_004_0031,agent_004,Added comprehensive test coverage (variant 2),decision,0.47,2026-08-31T22:08:31.695262
+mem_agent_004_0032,agent_004,Default memory (variant 2),conversation,0.39,2026-11-17T22:08:31.695262
+mem_agent_004_0033,agent_004,Added comprehensive test coverage,decision,0.95,2027-04-04T22:08:31.695262
+mem_agent_004_0034,agent_004,Docker containerizes applications for deployment,fact,0.83,2026-08-12T22:08:31.695262
+mem_agent_004_0035,agent_004,Test suite execution time growing (variant 2),observation,0.74,2026-05-26T22:08:31.695262
+mem_agent_004_0036,agent_004,Docker containerizes applications for deployment (variant 2),fact,0.64,2026-08-06T22:08:31.695262
+mem_agent_004_0037,agent_004,Chose TypeScript for type safety (variant 3),decision,0.59,2026-06-21T22:08:31.695262
+mem_agent_004_0038,agent_004,Adopted feature branch workflow (variant 2),decision,0.61,2026-06-28T22:08:31.695262
+mem_agent_004_0039,agent_004,User prefers test-driven development approach (variant 3),preference,0.86,2026-09-18T22:08:31.695262
+mem_agent_004_0040,agent_004,Adopted feature branch workflow (variant 2),decision,0.92,2026-06-01T22:08:31.695262
+mem_agent_004_0041,agent_004,Implemented Docker for consistent environments (variant 2),decision,0.42,2026-07-14T22:08:31.695262
+mem_agent_004_0042,agent_004,TypeScript provides static typing for JavaScript (variant 2),fact,0.43,2026-08-14T22:08:31.695262
+mem_agent_004_0043,agent_004,Selected React for component reusability (variant 3),decision,0.88,2027-04-24T22:08:31.695262
+mem_agent_004_0044,agent_004,Added comprehensive test coverage (variant 3),decision,0.94,2026-10-19T22:08:31.695262
+mem_agent_004_0045,agent_004,React is a JavaScript library for building UIs (variant 3),fact,0.39,2027-03-12T22:08:31.695262
+mem_agent_004_0046,agent_004,Default memory (variant 3),conversation,0.71,2026-10-18T22:08:31.695262
+mem_agent_004_0047,agent_004,Docker containerizes applications for deployment (variant 2),fact,1.0,2026-10-26T22:08:31.695262
+mem_agent_004_0048,agent_004,Test suite execution time growing (variant 3),observation,0.56,2027-03-09T22:08:31.695262
+mem_agent_004_0049,agent_004,Added comprehensive test coverage (variant 2),decision,0.83,2026-12-03T22:08:31.695262
+mem_agent_004_0050,agent_004,Unit tests improve code reliability and maintainability (variant 2),fact,0.81,2026-05-09T22:08:31.695262
+mem_agent_004_0051,agent_004,Default memory (variant 3),conversation,0.69,2026-11-17T22:08:31.695262
+mem_agent_004_0052,agent_004,Chose TypeScript for type safety (variant 2),decision,0.73,2027-03-28T22:08:31.695262
+mem_agent_004_0053,agent_004,Default memory (variant 3),conversation,0.56,2026-11-06T22:08:31.695262
+mem_agent_004_0054,agent_004,Git enables collaborative software development,fact,0.45,2026-10-19T22:08:31.695262
+mem_agent_004_0055,agent_004,Default memory (variant 2),conversation,0.83,2027-02-23T22:08:31.695262
+mem_agent_004_0056,agent_004,Unit tests improve code reliability and maintainability (variant 2),fact,0.56,2027-02-22T22:08:31.695262
+mem_agent_004_0057,agent_004,Implemented Docker for consistent environments (variant 3),decision,0.8,2026-12-02T22:08:31.695262
+mem_agent_004_0058,agent_004,Adopted feature branch workflow (variant 3),decision,0.79,2026-12-18T22:08:31.695262
+mem_agent_004_0059,agent_004,Git enables collaborative software development (variant 3),fact,0.81,2026-09-08T22:08:31.695262
+mem_agent_004_0060,agent_004,Default memory (variant 2),conversation,0.63,2027-01-30T22:08:31.695262
+mem_agent_004_0061,agent_004,Implemented Docker for consistent environments (variant 2),decision,0.64,2026-09-05T22:08:31.695262
+mem_agent_004_0062,agent_004,Docker containerizes applications for deployment,fact,0.82,2026-12-05T22:08:31.695262
+mem_agent_004_0063,agent_004,Default memory (variant 3),conversation,0.93,2027-03-20T22:08:31.695262
+mem_agent_004_0064,agent_004,Default memory (variant 3),conversation,0.52,2026-11-03T22:08:31.695262
+mem_agent_004_0065,agent_004,Added comprehensive test coverage,decision,0.61,2026-11-30T22:08:31.695262
+mem_agent_004_0066,agent_004,Selected React for component reusability (variant 2),decision,0.77,2026-10-05T22:08:31.695262
+mem_agent_004_0067,agent_004,Git enables collaborative software development (variant 3),fact,0.43,2026-11-18T22:08:31.695262
+mem_agent_004_0068,agent_004,Default memory (variant 3),conversation,0.46,2027-03-28T22:08:31.695262
+mem_agent_004_0069,agent_004,Default memory (variant 3),conversation,0.83,2026-09-02T22:08:31.695262
+mem_agent_004_0070,agent_004,Docker containerizes applications for deployment,fact,0.91,2026-09-09T22:08:31.695262
+mem_agent_004_0071,agent_004,Docker containerizes applications for deployment,fact,0.42,2026-10-28T22:08:31.695262
+mem_agent_004_0072,agent_004,Added comprehensive test coverage (variant 3),decision,0.45,2027-01-12T22:08:31.695262
+mem_agent_004_0073,agent_004,Default memory (variant 2),conversation,0.49,2026-09-22T22:08:31.695262
+mem_agent_004_0074,agent_004,Default memory (variant 2),conversation,0.57,2026-07-11T22:08:31.695262
+mem_agent_004_0075,agent_004,Default memory,conversation,0.3,2027-02-05T22:08:31.695262
+mem_agent_004_0076,agent_004,Selected React for component reusability,decision,0.98,2026-05-04T22:08:31.695262
+mem_agent_004_0077,agent_004,Default memory (variant 3),conversation,0.93,2026-08-25T22:08:31.695262
+mem_agent_004_0078,agent_004,Discussed refactoring strategy for legacy code,interaction,0.72,2027-03-12T22:08:31.695262
+mem_agent_004_0079,agent_004,Git enables collaborative software development (variant 3),fact,0.32,2026-06-02T22:08:31.695262
+mem_agent_004_0080,agent_004,React is a JavaScript library for building UIs,fact,0.99,2026-07-02T22:08:31.695262
+mem_agent_004_0081,agent_004,Discussed refactoring strategy for legacy code,interaction,0.68,2026-08-23T22:08:31.695262
+mem_agent_004_0082,agent_004,Selected React for component reusability,decision,0.83,2027-01-17T22:08:31.695262
+mem_agent_004_0083,agent_004,Default memory,conversation,0.48,2027-04-02T22:08:31.695262
+mem_agent_004_0084,agent_004,Implemented Docker for consistent environments,decision,0.94,2027-02-01T22:08:31.695262
+mem_agent_004_0085,agent_004,Default memory (variant 2),conversation,0.55,2026-06-08T22:08:31.695262
+mem_agent_004_0086,agent_004,Default memory (variant 2),conversation,0.49,2027-01-15T22:08:31.695262
+mem_agent_004_0087,agent_004,Git enables collaborative software development (variant 2),fact,0.85,2026-11-12T22:08:31.695262
+mem_agent_004_0088,agent_004,React is a JavaScript library for building UIs (variant 3),fact,0.46,2027-04-20T22:08:31.695262
+mem_agent_004_0089,agent_004,Performance bottlenecks in core modules,observation,0.82,2026-06-08T22:08:31.695262
+mem_agent_004_0090,agent_004,Default memory,conversation,0.51,2026-06-24T22:08:31.695262
+mem_agent_004_0091,agent_004,Implemented Docker for consistent environments (variant 3),decision,0.72,2027-01-12T22:08:31.695262
+mem_agent_004_0092,agent_004,Added comprehensive test coverage,decision,0.84,2027-01-08T22:08:31.695262
+mem_agent_004_0093,agent_004,Default memory (variant 3),conversation,0.65,2027-03-20T22:08:31.695262
+mem_agent_004_0094,agent_004,Unit tests improve code reliability and maintainability (variant 3),fact,0.38,2027-02-06T22:08:31.695262
+mem_agent_004_0095,agent_004,Default memory (variant 2),conversation,0.56,2027-03-29T22:08:31.695262
+mem_agent_004_0096,agent_004,Default memory (variant 2),conversation,0.55,2026-08-06T22:08:31.695262
+mem_agent_004_0097,agent_004,Default memory,conversation,0.44,2026-12-03T22:08:31.695262
+mem_agent_004_0098,agent_004,Implemented Docker for consistent environments (variant 2),decision,0.61,2027-04-17T22:08:31.695262
+mem_agent_004_0099,agent_004,Selected React for component reusability,decision,0.7,2026-11-17T22:08:31.695262

@@ -1,0 +1,222 @@
+source_id,target_id,type,strength,reason,created_at
+mem_agent_000_0097,mem_agent_000_0051,follows,0.91,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0052,mem_agent_000_0070,supports,0.01,,2026-05-14T22:08:31.698258
+mem_agent_000_0091,mem_agent_000_0048,follows,0.31,,2026-05-14T22:08:31.698258
+mem_agent_000_0099,mem_agent_000_0063,supports,0.39,,2026-05-14T22:08:31.698258
+mem_agent_000_0084,mem_agent_000_0076,supports,0.57,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0038,mem_agent_000_0025,elaborates,0.87,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_000_0043,mem_agent_000_0019,supersedes,0.29,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_000_0057,mem_agent_000_0038,follows,0.0,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0061,mem_agent_000_0041,follows,0.51,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_000_0050,mem_agent_000_0039,supersedes,0.69,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0056,mem_agent_000_0041,supports,0.92,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0033,mem_agent_000_0038,elaborates,0.99,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_000_0031,mem_agent_000_0000,elaborates,0.05,,2026-05-14T22:08:31.698258
+mem_agent_000_0073,mem_agent_000_0077,elaborates,0.64,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0024,mem_agent_000_0006,supersedes,0.04,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_000_0002,mem_agent_000_0036,follows,0.67,,2026-05-14T22:08:31.698258
+mem_agent_000_0062,mem_agent_000_0005,elaborates,0.82,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0082,mem_agent_000_0053,supersedes,0.99,,2026-05-14T22:08:31.698258
+mem_agent_000_0020,mem_agent_000_0021,supports,0.67,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0086,mem_agent_000_0026,contradicts,0.1,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0083,mem_agent_000_0008,contradicts,0.61,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_000_0015,mem_agent_000_0000,relates_to,0.37,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0086,mem_agent_000_0006,contradicts,0.84,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0085,mem_agent_000_0039,relates_to,0.31,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_000_0041,mem_agent_000_0060,supersedes,0.42,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0010,mem_agent_000_0082,supports,0.27,,2026-05-14T22:08:31.698258
+mem_agent_000_0060,mem_agent_000_0051,elaborates,0.27,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0066,mem_agent_000_0034,supports,0.8,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_000_0078,mem_agent_000_0073,supports,0.14,,2026-05-14T22:08:31.698258
+mem_agent_000_0032,mem_agent_000_0019,supports,0.01,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_000_0021,mem_agent_000_0011,contradicts,0.5,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0084,mem_agent_000_0020,relates_to,0.08,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_000_0050,mem_agent_000_0032,elaborates,0.93,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0021,mem_agent_000_0091,contradicts,0.04,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0055,mem_agent_000_0047,supersedes,0.74,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0000,mem_agent_000_0029,follows,0.08,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0060,mem_agent_000_0016,relates_to,0.55,,2026-05-14T22:08:31.698258
+mem_agent_000_0072,mem_agent_000_0032,follows,0.87,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_000_0015,mem_agent_000_0076,relates_to,0.58,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_000_0022,mem_agent_000_0016,elaborates,0.92,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_000_0061,mem_agent_000_0047,contradicts,0.58,,2026-05-14T22:08:31.698258
+mem_agent_000_0064,mem_agent_000_0045,supersedes,0.2,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0024,mem_agent_001_0023,elaborates,0.19,,2026-05-14T22:08:31.698258
+mem_agent_001_0056,mem_agent_001_0038,relates_to,0.56,,2026-05-14T22:08:31.698258
+mem_agent_001_0041,mem_agent_001_0040,relates_to,0.45,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_001_0057,mem_agent_001_0095,contradicts,0.23,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_001_0046,mem_agent_001_0018,supersedes,0.87,,2026-05-14T22:08:31.698258
+mem_agent_001_0089,mem_agent_001_0097,contradicts,0.19,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0000,mem_agent_001_0016,follows,0.73,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0091,mem_agent_001_0020,supports,0.68,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_001_0089,mem_agent_001_0012,supersedes,0.14,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0000,mem_agent_001_0083,contradicts,0.59,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0001,mem_agent_001_0086,contradicts,0.86,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0073,mem_agent_001_0068,relates_to,0.27,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0074,mem_agent_001_0008,supersedes,0.42,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_001_0023,mem_agent_001_0088,elaborates,0.78,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0017,mem_agent_001_0008,supports,0.05,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0037,mem_agent_001_0064,supersedes,0.49,,2026-05-14T22:08:31.698258
+mem_agent_001_0070,mem_agent_001_0010,elaborates,0.16,,2026-05-14T22:08:31.698258
+mem_agent_001_0092,mem_agent_001_0016,contradicts,0.3,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_001_0005,mem_agent_001_0013,relates_to,0.44,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0053,mem_agent_001_0011,relates_to,0.29,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0092,mem_agent_001_0036,follows,0.74,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0093,mem_agent_001_0032,elaborates,0.5,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_001_0091,mem_agent_001_0054,supersedes,0.25,,2026-05-14T22:08:31.698258
+mem_agent_001_0045,mem_agent_001_0038,relates_to,0.24,,2026-05-14T22:08:31.698258
+mem_agent_001_0085,mem_agent_001_0081,supports,0.22,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_001_0028,mem_agent_001_0082,supports,0.16,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0014,mem_agent_001_0085,relates_to,0.5,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0066,mem_agent_001_0086,supports,0.06,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0065,mem_agent_001_0025,elaborates,0.72,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0062,mem_agent_001_0099,elaborates,0.32,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_001_0080,mem_agent_001_0021,relates_to,0.93,,2026-05-14T22:08:31.698258
+mem_agent_001_0059,mem_agent_001_0045,supersedes,0.43,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0028,mem_agent_001_0020,elaborates,0.31,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_001_0073,mem_agent_001_0060,supersedes,0.83,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0080,mem_agent_001_0008,follows,0.04,,2026-05-14T22:08:31.698258
+mem_agent_001_0069,mem_agent_001_0011,supersedes,0.87,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0035,mem_agent_001_0023,elaborates,0.72,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_001_0077,mem_agent_001_0044,follows,0.68,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_001_0014,mem_agent_001_0000,relates_to,0.86,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0068,mem_agent_001_0072,contradicts,0.15,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_001_0080,mem_agent_001_0003,elaborates,0.82,,2026-05-14T22:08:31.698258
+mem_agent_001_0040,mem_agent_001_0002,follows,0.42,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_001_0048,mem_agent_001_0093,contradicts,0.47,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_001_0003,mem_agent_001_0086,relates_to,0.34,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0007,mem_agent_001_0097,supersedes,0.27,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_001_0087,mem_agent_001_0007,supports,0.9,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_001_0054,mem_agent_001_0043,elaborates,0.33,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_001_0080,mem_agent_001_0019,contradicts,0.55,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_002_0039,mem_agent_002_0020,contradicts,0.22,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0068,mem_agent_002_0081,supersedes,0.13,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0050,mem_agent_002_0098,relates_to,0.27,,2026-05-14T22:08:31.698258
+mem_agent_002_0061,mem_agent_002_0074,elaborates,0.33,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_002_0050,mem_agent_002_0035,contradicts,0.78,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_002_0089,mem_agent_002_0023,contradicts,0.86,,2026-05-14T22:08:31.698258
+mem_agent_002_0011,mem_agent_002_0060,elaborates,0.22,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0027,mem_agent_002_0076,follows,0.82,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0063,mem_agent_002_0012,follows,0.55,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0024,mem_agent_002_0046,supports,0.81,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0065,mem_agent_002_0014,supports,0.72,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0089,mem_agent_002_0040,follows,0.03,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0083,mem_agent_002_0035,relates_to,0.84,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0085,mem_agent_002_0037,contradicts,0.81,,2026-05-14T22:08:31.698258
+mem_agent_002_0060,mem_agent_002_0002,elaborates,0.95,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0069,mem_agent_002_0021,supersedes,0.05,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0094,mem_agent_002_0086,supersedes,0.66,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0090,mem_agent_002_0057,follows,0.56,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_002_0025,mem_agent_002_0049,relates_to,0.16,,2026-05-14T22:08:31.698258
+mem_agent_002_0077,mem_agent_002_0048,relates_to,0.89,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0029,mem_agent_002_0080,follows,0.48,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0051,mem_agent_002_0046,follows,0.63,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0090,mem_agent_002_0053,supersedes,0.15,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0036,mem_agent_002_0020,supports,0.52,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0083,mem_agent_002_0042,supports,0.05,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0000,mem_agent_002_0096,relates_to,0.39,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0057,mem_agent_002_0041,elaborates,0.96,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0005,mem_agent_002_0043,elaborates,0.82,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0049,mem_agent_002_0084,relates_to,0.52,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0055,mem_agent_002_0079,contradicts,0.52,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_002_0073,mem_agent_002_0008,contradicts,0.99,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0022,mem_agent_002_0094,relates_to,0.46,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0079,mem_agent_002_0032,relates_to,0.96,,2026-05-14T22:08:31.698258
+mem_agent_002_0002,mem_agent_002_0060,supports,0.98,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0055,mem_agent_002_0046,supersedes,0.5,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0029,mem_agent_002_0074,elaborates,0.7,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0002,mem_agent_002_0014,supports,0.84,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0028,mem_agent_002_0092,follows,0.57,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0011,mem_agent_002_0010,supersedes,0.73,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0010,mem_agent_002_0006,relates_to,0.11,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0086,mem_agent_002_0023,supports,0.53,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_002_0073,mem_agent_002_0053,follows,0.14,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0059,mem_agent_002_0055,elaborates,0.08,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_002_0020,mem_agent_002_0030,supports,0.45,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0077,mem_agent_002_0001,supersedes,0.04,,2026-05-14T22:08:31.698258
+mem_agent_002_0088,mem_agent_002_0003,supports,0.85,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_002_0047,mem_agent_002_0002,relates_to,0.1,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_003_0009,mem_agent_003_0060,contradicts,0.86,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0025,mem_agent_003_0059,contradicts,0.98,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_003_0004,mem_agent_003_0077,contradicts,0.76,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_003_0033,mem_agent_003_0030,follows,0.9,,2026-05-14T22:08:31.698258
+mem_agent_003_0067,mem_agent_003_0051,follows,0.9,,2026-05-14T22:08:31.698258
+mem_agent_003_0052,mem_agent_003_0002,supports,0.13,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0028,mem_agent_003_0022,supports,0.78,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_003_0001,mem_agent_003_0008,contradicts,0.47,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0028,mem_agent_003_0013,supersedes,0.29,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0096,mem_agent_003_0039,elaborates,0.23,,2026-05-14T22:08:31.698258
+mem_agent_003_0044,mem_agent_003_0035,supports,0.85,,2026-05-14T22:08:31.698258
+mem_agent_003_0020,mem_agent_003_0036,contradicts,0.33,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_003_0034,mem_agent_003_0055,supports,0.42,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_003_0053,mem_agent_003_0012,contradicts,0.37,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_003_0005,mem_agent_003_0047,supersedes,0.36,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_003_0093,mem_agent_003_0036,elaborates,0.22,,2026-05-14T22:08:31.698258
+mem_agent_003_0018,mem_agent_003_0093,supersedes,0.86,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_003_0013,mem_agent_003_0090,elaborates,0.29,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_003_0096,mem_agent_003_0060,supports,0.06,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_003_0087,mem_agent_003_0023,relates_to,0.13,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_003_0048,mem_agent_003_0008,contradicts,0.56,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_003_0074,mem_agent_003_0072,relates_to,0.14,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0003,mem_agent_003_0026,relates_to,0.88,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0002,mem_agent_003_0070,relates_to,0.22,,2026-05-14T22:08:31.698258
+mem_agent_003_0039,mem_agent_003_0013,contradicts,0.82,,2026-05-14T22:08:31.698258
+mem_agent_003_0085,mem_agent_003_0049,follows,0.63,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_003_0033,mem_agent_003_0077,relates_to,0.6,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_003_0018,mem_agent_003_0059,contradicts,0.99,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_003_0030,mem_agent_003_0049,contradicts,0.7,,2026-05-14T22:08:31.698258
+mem_agent_003_0078,mem_agent_003_0099,follows,0.7,,2026-05-14T22:08:31.698258
+mem_agent_003_0088,mem_agent_003_0079,supports,0.54,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0043,mem_agent_003_0024,relates_to,0.37,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0096,mem_agent_003_0094,supports,0.8,,2026-05-14T22:08:31.698258
+mem_agent_003_0030,mem_agent_003_0097,contradicts,0.21,,2026-05-14T22:08:31.698258
+mem_agent_003_0098,mem_agent_003_0041,follows,0.93,,2026-05-14T22:08:31.698258
+mem_agent_003_0009,mem_agent_003_0042,follows,0.59,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0002,mem_agent_003_0028,supersedes,0.85,Sequential reasoning,2026-05-14T22:08:31.698258
+mem_agent_003_0013,mem_agent_003_0092,contradicts,0.66,,2026-05-14T22:08:31.698258
+mem_agent_003_0065,mem_agent_003_0017,relates_to,0.05,Supporting evidence,2026-05-14T22:08:31.698258
+mem_agent_003_0088,mem_agent_003_0072,follows,0.29,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0074,mem_agent_003_0031,follows,0.42,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_003_0041,mem_agent_003_0040,contradicts,0.87,Causal relationship,2026-05-14T22:08:31.698258
+mem_agent_003_0046,mem_agent_003_0056,elaborates,0.62,,2026-05-14T22:08:31.698258
+mem_agent_003_0025,mem_agent_003_0082,elaborates,0.78,,2026-05-14T22:08:31.698258
+mem_agent_003_0010,mem_agent_003_0023,elaborates,0.99,Semantic similarity,2026-05-14T22:08:31.698258
+mem_agent_003_0096,mem_agent_003_0013,supports,0.05,,2026-05-14T22:08:31.699280
+mem_agent_003_0010,mem_agent_003_0039,supersedes,0.1,,2026-05-14T22:08:31.699280
+mem_agent_003_0019,mem_agent_003_0047,supports,0.34,,2026-05-14T22:08:31.699280
+mem_agent_004_0045,mem_agent_004_0097,supersedes,0.12,Semantic similarity,2026-05-14T22:08:31.699280
+mem_agent_004_0027,mem_agent_004_0043,contradicts,0.05,,2026-05-14T22:08:31.699280
+mem_agent_004_0023,mem_agent_004_0037,contradicts,0.25,,2026-05-14T22:08:31.699280
+mem_agent_004_0090,mem_agent_004_0023,supports,0.83,Sequential reasoning,2026-05-14T22:08:31.699280
+mem_agent_004_0036,mem_agent_004_0057,contradicts,0.82,Causal relationship,2026-05-14T22:08:31.699280
+mem_agent_004_0019,mem_agent_004_0061,relates_to,0.67,Supporting evidence,2026-05-14T22:08:31.699280
+mem_agent_004_0057,mem_agent_004_0004,relates_to,0.87,Semantic similarity,2026-05-14T22:08:31.699280
+mem_agent_004_0037,mem_agent_004_0067,elaborates,0.65,,2026-05-14T22:08:31.699280
+mem_agent_004_0025,mem_agent_004_0092,supports,0.85,Causal relationship,2026-05-14T22:08:31.699280
+mem_agent_004_0041,mem_agent_004_0069,supersedes,0.59,Sequential reasoning,2026-05-14T22:08:31.699280
+mem_agent_004_0015,mem_agent_004_0063,elaborates,0.57,Supporting evidence,2026-05-14T22:08:31.699280
+mem_agent_004_0003,mem_agent_004_0022,supports,0.17,Supporting evidence,2026-05-14T22:08:31.699280
+mem_agent_004_0014,mem_agent_004_0008,relates_to,0.14,Semantic similarity,2026-05-14T22:08:31.699280
+mem_agent_004_0049,mem_agent_004_0092,supports,0.9,Supporting evidence,2026-05-14T22:08:31.699280
+mem_agent_004_0049,mem_agent_004_0058,follows,0.44,Sequential reasoning,2026-05-14T22:08:31.699280
+mem_agent_004_0059,mem_agent_004_0028,supports,0.68,Semantic similarity,2026-05-14T22:08:31.699280
+mem_agent_004_0001,mem_agent_004_0089,supersedes,0.65,Semantic similarity,2026-05-14T22:08:31.699280
+mem_agent_004_0046,mem_agent_004_0049,contradicts,0.66,Sequential reasoning,2026-05-14T22:08:31.699280
+mem_agent_004_0000,mem_agent_004_0095,follows,0.21,Semantic similarity,2026-05-14T22:08:31.699280
+mem_agent_004_0057,mem_agent_004_0058,supports,0.69,Causal relationship,2026-05-14T22:08:31.699280
+mem_agent_004_0014,mem_agent_004_0090,elaborates,0.64,Sequential reasoning,2026-05-14T22:08:31.699280
+mem_agent_004_0092,mem_agent_004_0000,elaborates,0.61,,2026-05-14T22:08:31.699280
+mem_agent_004_0008,mem_agent_004_0026,supports,0.56,Supporting evidence,2026-05-14T22:08:31.699280
+mem_agent_004_0085,mem_agent_004_0039,supports,0.05,Semantic similarity,2026-05-14T22:08:31.699280
+mem_agent_004_0090,mem_agent_004_0013,supersedes,0.52,Semantic similarity,2026-05-14T22:08:31.699280
+mem_agent_004_0001,mem_agent_004_0051,elaborates,0.49,Sequential reasoning,2026-05-14T22:08:31.699280
+mem_agent_004_0009,mem_agent_004_0048,supersedes,0.37,Supporting evidence,2026-05-14T22:08:31.699280
+mem_agent_004_0038,mem_agent_004_0078,supersedes,0.21,Sequential reasoning,2026-05-14T22:08:31.699280
+mem_agent_004_0049,mem_agent_004_0072,relates_to,0.23,Sequential reasoning,2026-05-14T22:08:31.699280
+mem_agent_004_0071,mem_agent_004_0028,relates_to,0.17,Causal relationship,2026-05-14T22:08:31.699280
+mem_agent_004_0076,mem_agent_004_0073,elaborates,0.38,,2026-05-14T22:08:31.699280
+mem_agent_004_0094,mem_agent_004_0030,elaborates,0.81,,2026-05-14T22:08:31.699280
+mem_agent_004_0077,mem_agent_004_0052,elaborates,0.56,Supporting evidence,2026-05-14T22:08:31.699280
+mem_agent_004_0006,mem_agent_004_0048,contradicts,0.01,Causal relationship,2026-05-14T22:08:31.699280
+mem_agent_004_0022,mem_agent_004_0011,relates_to,0.15,Sequential reasoning,2026-05-14T22:08:31.699280
+mem_agent_004_0006,mem_agent_004_0080,supports,0.05,Supporting evidence,2026-05-14T22:08:31.699280
