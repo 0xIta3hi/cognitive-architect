@@ -6,7 +6,7 @@ import datetime
 from typing import List, Tuple, Dict, Any
 
 # Import connect_to_db from edge_poison module
-from edge_poison import connect_to_db
+from .edge_poison import connect_to_db
 # Import datetime conversion utility to handle Neo4j timezone-aware datetimes
 from memgraph.core.graph import _convert_neo4j_datetime
 
