@@ -1,0 +1,1692 @@
+================================================================================
+MEMGRAPH ADVERSARIAL ATTACK EVALUATION SUITE
+================================================================================
+Connected successfully at 2026-08-23 20:01:05.867981
+
+================================================================================
+1. EDGE POISONING EVALUATION (n=20)
+================================================================================
+
+Available edges in graph: 100
+Running edge poisoning on 20 edges
+
+[POISON 1/20] mem_agent_000_0015 → mem_agent_000_0000
+  Original type: CONTRADICTS
+[POISON] mem_agent_000_0015 → mem_agent_000_0000: CONTRADICTS → SUPPORTS at 2026-08-23 20:01:05.901488
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0015 → mem_agent_000_0000: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 2/20] mem_agent_000_0031 → mem_agent_000_0000
+  Original type: CONTRADICTS
+[POISON] mem_agent_000_0031 → mem_agent_000_0000: CONTRADICTS → SUPPORTS at 2026-08-23 20:01:05.910892
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0031 → mem_agent_000_0000: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 3/20] mem_agent_000_0062 → mem_agent_000_0005
+  Original type: CONTRADICTS
+[POISON] mem_agent_000_0062 → mem_agent_000_0005: CONTRADICTS → SUPPORTS at 2026-08-23 20:01:05.922235
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0062 → mem_agent_000_0005: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 4/20] mem_agent_000_0024 → mem_agent_000_0006
+  Original type: CONTRADICTS
+[POISON] mem_agent_000_0024 → mem_agent_000_0006: CONTRADICTS → SUPPORTS at 2026-08-23 20:01:05.936289
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0024 → mem_agent_000_0006: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 5/20] mem_agent_000_0086 → mem_agent_000_0006
+  Original type: CONTRADICTS
+[POISON] mem_agent_000_0086 → mem_agent_000_0006: CONTRADICTS → SUPPORTS at 2026-08-23 20:01:05.949505
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0086 → mem_agent_000_0006: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 6/20] mem_agent_000_0083 → mem_agent_000_0008
+  Original type: contradicts
+[POISON] mem_agent_000_0083 → mem_agent_000_0008: contradicts → SUPPORTS at 2026-08-23 20:01:05.961192
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0083 → mem_agent_000_0008: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 7/20] mem_agent_000_0021 → mem_agent_000_0011
+  Original type: contradicts
+[POISON] mem_agent_000_0021 → mem_agent_000_0011: contradicts → SUPPORTS at 2026-08-23 20:01:05.971343
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0021 → mem_agent_000_0011: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 8/20] mem_agent_000_0022 → mem_agent_000_0016
+  Original type: elaborates
+[POISON] mem_agent_000_0022 → mem_agent_000_0016: elaborates → SUPPORTS at 2026-08-23 20:01:05.981249
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0022 → mem_agent_000_0016: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 9/20] mem_agent_000_0060 → mem_agent_000_0016
+  Original type: relates_to
+[POISON] mem_agent_000_0060 → mem_agent_000_0016: relates_to → SUPPORTS at 2026-08-23 20:01:05.993471
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0060 → mem_agent_000_0016: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 10/20] mem_agent_000_0032 → mem_agent_000_0019
+  Original type: supports
+[POISON] mem_agent_000_0032 → mem_agent_000_0019: supports → CONTRADICTS at 2026-08-23 20:01:06.004155
+  New type: CONTRADICTS
+[VERIFY] mem_agent_000_0032 → mem_agent_000_0019: expected=CONTRADICTS, actual=CONTRADICTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 11/20] mem_agent_000_0043 → mem_agent_000_0019
+  Original type: supersedes
+[POISON] mem_agent_000_0043 → mem_agent_000_0019: supersedes → SUPPORTS at 2026-08-23 20:01:06.013709
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0043 → mem_agent_000_0019: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 12/20] mem_agent_000_0084 → mem_agent_000_0020
+  Original type: relates_to
+[POISON] mem_agent_000_0084 → mem_agent_000_0020: relates_to → SUPPORTS at 2026-08-23 20:01:06.021911
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0084 → mem_agent_000_0020: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 13/20] mem_agent_000_0020 → mem_agent_000_0021
+  Original type: supports
+[POISON] mem_agent_000_0020 → mem_agent_000_0021: supports → CONTRADICTS at 2026-08-23 20:01:06.029033
+  New type: CONTRADICTS
+[VERIFY] mem_agent_000_0020 → mem_agent_000_0021: expected=CONTRADICTS, actual=CONTRADICTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 14/20] mem_agent_000_0038 → mem_agent_000_0025
+  Original type: elaborates
+[POISON] mem_agent_000_0038 → mem_agent_000_0025: elaborates → SUPPORTS at 2026-08-23 20:01:06.036798
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0038 → mem_agent_000_0025: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 15/20] mem_agent_000_0086 → mem_agent_000_0026
+  Original type: contradicts
+[POISON] mem_agent_000_0086 → mem_agent_000_0026: contradicts → SUPPORTS at 2026-08-23 20:01:06.045854
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0086 → mem_agent_000_0026: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 16/20] mem_agent_000_0000 → mem_agent_000_0029
+  Original type: SUPPORTS
+[POISON] mem_agent_000_0000 → mem_agent_000_0029: SUPPORTS → CONTRADICTS at 2026-08-23 20:01:06.054367
+  New type: CONTRADICTS
+[VERIFY] mem_agent_000_0000 → mem_agent_000_0029: expected=CONTRADICTS, actual=CONTRADICTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 17/20] mem_agent_000_0050 → mem_agent_000_0032
+  Original type: elaborates
+[POISON] mem_agent_000_0050 → mem_agent_000_0032: elaborates → SUPPORTS at 2026-08-23 20:01:06.062079
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0050 → mem_agent_000_0032: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 18/20] mem_agent_000_0072 → mem_agent_000_0032
+  Original type: follows
+[POISON] mem_agent_000_0072 → mem_agent_000_0032: follows → SUPPORTS at 2026-08-23 20:01:06.069348
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0072 → mem_agent_000_0032: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 19/20] mem_agent_000_0066 → mem_agent_000_0034
+  Original type: supports
+[POISON] mem_agent_000_0066 → mem_agent_000_0034: supports → CONTRADICTS at 2026-08-23 20:01:06.078978
+  New type: CONTRADICTS
+[VERIFY] mem_agent_000_0066 → mem_agent_000_0034: expected=CONTRADICTS, actual=CONTRADICTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[POISON 20/20] mem_agent_000_0002 → mem_agent_000_0036
+  Original type: follows
+[POISON] mem_agent_000_0002 → mem_agent_000_0036: follows → SUPPORTS at 2026-08-23 20:01:06.088128
+  New type: SUPPORTS
+[VERIFY] mem_agent_000_0002 → mem_agent_000_0036: expected=SUPPORTS, actual=SUPPORTS VERIFIED
+  Verified: True
+  Retrieved context changed: False
+
+[INFO] Edge types restored to pre-attack state
+
+EDGE POISONING RESULTS
+──────────────────────────────────────────────────────────────────────────────────
+ │ Run │ Source   │ Target   │ Old Type    │ New Type    │ Verified │ Ctx Changed │
+──────────────────────────────────────────────────────────────────────────────────
+ │ 1   │ 000_0015 │ 000_0000 │ CONTRADICTS │ SUPPORTS    │ ✓        │ ✗           │
+ │ 2   │ 000_0031 │ 000_0000 │ CONTRADICTS │ SUPPORTS    │ ✓        │ ✗           │
+ │ 3   │ 000_0062 │ 000_0005 │ CONTRADICTS │ SUPPORTS    │ ✓        │ ✗           │
+ │ 4   │ 000_0024 │ 000_0006 │ CONTRADICTS │ SUPPORTS    │ ✓        │ ✗           │
+ │ 5   │ 000_0086 │ 000_0006 │ CONTRADICTS │ SUPPORTS    │ ✓        │ ✗           │
+ │ 6   │ 000_0083 │ 000_0008 │ contradicts │ SUPPORTS    │ ✓        │ ✗           │
+ │ 7   │ 000_0021 │ 000_0011 │ contradicts │ SUPPORTS    │ ✓        │ ✗           │
+ │ 8   │ 000_0022 │ 000_0016 │ elaborates  │ SUPPORTS    │ ✓        │ ✗           │
+ │ 9   │ 000_0060 │ 000_0016 │ relates_to  │ SUPPORTS    │ ✓        │ ✗           │
+ │ 10  │ 000_0032 │ 000_0019 │ supports    │ CONTRADICTS │ ✓        │ ✗           │
+ │ 11  │ 000_0043 │ 000_0019 │ supersedes  │ SUPPORTS    │ ✓        │ ✗           │
+ │ 12  │ 000_0084 │ 000_0020 │ relates_to  │ SUPPORTS    │ ✓        │ ✗           │
+ │ 13  │ 000_0020 │ 000_0021 │ supports    │ CONTRADICTS │ ✓        │ ✗           │
+ │ 14  │ 000_0038 │ 000_0025 │ elaborates  │ SUPPORTS    │ ✓        │ ✗           │
+ │ 15  │ 000_0086 │ 000_0026 │ contradicts │ SUPPORTS    │ ✓        │ ✗           │
+ │ 16  │ 000_0000 │ 000_0029 │ SUPPORTS    │ CONTRADICTS │ ✓        │ ✗           │
+ │ 17  │ 000_0050 │ 000_0032 │ elaborates  │ SUPPORTS    │ ✓        │ ✗           │
+ │ 18  │ 000_0072 │ 000_0032 │ follows     │ SUPPORTS    │ ✓        │ ✗           │
+ │ 19  │ 000_0066 │ 000_0034 │ supports    │ CONTRADICTS │ ✓        │ ✗           │
+ │ 20  │ 000_0002 │ 000_0036 │ follows     │ SUPPORTS    │ ✓        │ ✗           │
+──────────────────────────────────────────────────────────────────────────────────
+
+POISON SUMMARY (n=20):
+  Mutation success : 20/20 (100.0%)
+  Mutation failed  : 0/20
+  Retrieval impact : 0/20 showed retrieval-set change
+
+NOTE: Edge Poisoning is a REASONING-LAYER attack.
+  Edge mutations do not change WHICH memories are retrieved.
+  Impact: retrieved subgraph carries inverted relationship semantics.
+  Agent draws opposite conclusions from identical memory content.
+
+Edge types tested:
+  CONTRADICTS: 5 edges
+  SUPPORTS: 1 edges
+  contradicts: 3 edges
+  elaborates: 3 edges
+  follows: 2 edges
+  relates_to: 2 edges
+  supersedes: 1 edges
+  supports: 3 edges
+
+================================================================================
+2. TEMPORAL DRIFT BURIAL EVALUATION (n=20)
+================================================================================
+
+Memories currently inside 7-day window: 109
+Running temporal drift burial on 20 memories
+
+[DRIFT 1/20] agent_004 / mem_agent_004_0030
+  Original timestamp: 2027-03-14T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_004, memory=mem_agent_004_0030: 2027-03-14T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.427395000+00:00 at 2026-08-23 20:01:06.430059
+  New timestamp: 2026-05-25T14:31:06.427395000+00:00
+[VERIFY] agent=agent_004, memory=mem_agent_004_0030: expected=2026-05-25 14:31:06.427395+00:00, actual=2026-05-25 14:31:06.427395+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 2/20] agent_004 / mem_agent_004_0073
+  Original timestamp: 2026-09-22T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_004, memory=mem_agent_004_0073: 2026-09-22T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.434591000+00:00 at 2026-08-23 20:01:06.436557
+  New timestamp: 2026-05-25T14:31:06.434591000+00:00
+[VERIFY] agent=agent_004, memory=mem_agent_004_0073: expected=2026-05-25 14:31:06.434591+00:00, actual=2026-05-25 14:31:06.434591+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 3/20] agent_001 / mem_agent_001_0069
+  Original timestamp: 2026-08-16T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_001, memory=mem_agent_001_0069: 2026-08-16T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.439869000+00:00 at 2026-08-23 20:01:06.441476
+  New timestamp: 2026-05-25T14:31:06.439869000+00:00
+[VERIFY] agent=agent_001, memory=mem_agent_001_0069: expected=2026-05-25 14:31:06.439869+00:00, actual=2026-05-25 14:31:06.439869+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 4/20] agent_003 / mem_agent_003_0031
+  Original timestamp: 2026-11-02T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_003, memory=mem_agent_003_0031: 2026-11-02T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.444119000+00:00 at 2026-08-23 20:01:06.445737
+  New timestamp: 2026-05-25T14:31:06.444119000+00:00
+[VERIFY] agent=agent_003, memory=mem_agent_003_0031: expected=2026-05-25 14:31:06.444119+00:00, actual=2026-05-25 14:31:06.444119+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 5/20] agent_001 / mem_agent_001_0006
+  Original timestamp: 2026-09-06T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_001, memory=mem_agent_001_0006: 2026-09-06T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.448398000+00:00 at 2026-08-23 20:01:06.449749
+  New timestamp: 2026-05-25T14:31:06.448398000+00:00
+[VERIFY] agent=agent_001, memory=mem_agent_001_0006: expected=2026-05-25 14:31:06.448398+00:00, actual=2026-05-25 14:31:06.448398+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 6/20] agent_001 / mem_agent_001_0082
+  Original timestamp: 2026-08-22T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_001, memory=mem_agent_001_0082: 2026-08-22T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.451649000+00:00 at 2026-08-23 20:01:06.452936
+  New timestamp: 2026-05-25T14:31:06.451649000+00:00
+[VERIFY] agent=agent_001, memory=mem_agent_001_0082: expected=2026-05-25 14:31:06.451649+00:00, actual=2026-05-25 14:31:06.451649+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 7/20] agent_004 / mem_agent_004_0058
+  Original timestamp: 2026-12-18T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_004, memory=mem_agent_004_0058: 2026-12-18T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.455157000+00:00 at 2026-08-23 20:01:06.456595
+  New timestamp: 2026-05-25T14:31:06.455157000+00:00
+[VERIFY] agent=agent_004, memory=mem_agent_004_0058: expected=2026-05-25 14:31:06.455157+00:00, actual=2026-05-25 14:31:06.455157+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 8/20] agent_003 / mem_agent_003_0034
+  Original timestamp: 2026-08-21T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_003, memory=mem_agent_003_0034: 2026-08-21T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.459508000+00:00 at 2026-08-23 20:01:06.461067
+  New timestamp: 2026-05-25T14:31:06.459508000+00:00
+[VERIFY] agent=agent_003, memory=mem_agent_003_0034: expected=2026-05-25 14:31:06.459508+00:00, actual=2026-05-25 14:31:06.459508+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 9/20] agent_004 / mem_agent_004_0002
+  Original timestamp: 2026-11-05T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_004, memory=mem_agent_004_0002: 2026-11-05T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.464139000+00:00 at 2026-08-23 20:01:06.465710
+  New timestamp: 2026-05-25T14:31:06.464139000+00:00
+[VERIFY] agent=agent_004, memory=mem_agent_004_0002: expected=2026-05-25 14:31:06.464139+00:00, actual=2026-05-25 14:31:06.464139+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 10/20] agent_004 / mem_agent_004_0088
+  Original timestamp: 2027-04-20T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_004, memory=mem_agent_004_0088: 2027-04-20T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.468187000+00:00 at 2026-08-23 20:01:06.469608
+  New timestamp: 2026-05-25T14:31:06.468187000+00:00
+[VERIFY] agent=agent_004, memory=mem_agent_004_0088: expected=2026-05-25 14:31:06.468187+00:00, actual=2026-05-25 14:31:06.468187+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 11/20] agent_001 / mem_agent_001_0002
+  Original timestamp: 2027-01-20T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_001, memory=mem_agent_001_0002: 2027-01-20T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.471664000+00:00 at 2026-08-23 20:01:06.473252
+  New timestamp: 2026-05-25T14:31:06.471664000+00:00
+[VERIFY] agent=agent_001, memory=mem_agent_001_0002: expected=2026-05-25 14:31:06.471664+00:00, actual=2026-05-25 14:31:06.471664+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 12/20] agent_002 / mem_agent_002_0086
+  Original timestamp: 2027-03-07T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_002, memory=mem_agent_002_0086: 2027-03-07T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.475192000+00:00 at 2026-08-23 20:01:06.476491
+  New timestamp: 2026-05-25T14:31:06.475192000+00:00
+[VERIFY] agent=agent_002, memory=mem_agent_002_0086: expected=2026-05-25 14:31:06.475192+00:00, actual=2026-05-25 14:31:06.475192+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 13/20] agent_003 / mem_agent_003_0073
+  Original timestamp: 2026-10-03T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_003, memory=mem_agent_003_0073: 2026-10-03T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.479071000+00:00 at 2026-08-23 20:01:06.480475
+  New timestamp: 2026-05-25T14:31:06.479071000+00:00
+[VERIFY] agent=agent_003, memory=mem_agent_003_0073: expected=2026-05-25 14:31:06.479071+00:00, actual=2026-05-25 14:31:06.479071+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 14/20] agent_001 / mem_agent_001_0009
+  Original timestamp: 2026-12-20T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_001, memory=mem_agent_001_0009: 2026-12-20T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.482919000+00:00 at 2026-08-23 20:01:06.484293
+  New timestamp: 2026-05-25T14:31:06.482919000+00:00
+[VERIFY] agent=agent_001, memory=mem_agent_001_0009: expected=2026-05-25 14:31:06.482919+00:00, actual=2026-05-25 14:31:06.482919+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 15/20] agent_002 / mem_agent_002_0080
+  Original timestamp: 2026-11-29T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_002, memory=mem_agent_002_0080: 2026-11-29T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.486398000+00:00 at 2026-08-23 20:01:06.487846
+  New timestamp: 2026-05-25T14:31:06.486398000+00:00
+[VERIFY] agent=agent_002, memory=mem_agent_002_0080: expected=2026-05-25 14:31:06.486398+00:00, actual=2026-05-25 14:31:06.486398+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 16/20] agent_002 / mem_agent_002_0076
+  Original timestamp: 2027-04-05T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_002, memory=mem_agent_002_0076: 2027-04-05T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.489934000+00:00 at 2026-08-23 20:01:06.491217
+  New timestamp: 2026-05-25T14:31:06.489934000+00:00
+[VERIFY] agent=agent_002, memory=mem_agent_002_0076: expected=2026-05-25 14:31:06.489934+00:00, actual=2026-05-25 14:31:06.489934+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 17/20] agent_002 / mem_agent_002_0056
+  Original timestamp: 2026-12-13T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_002, memory=mem_agent_002_0056: 2026-12-13T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.493241000+00:00 at 2026-08-23 20:01:06.494977
+  New timestamp: 2026-05-25T14:31:06.493241000+00:00
+[VERIFY] agent=agent_002, memory=mem_agent_002_0056: expected=2026-05-25 14:31:06.493241+00:00, actual=2026-05-25 14:31:06.493241+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 18/20] agent_001 / mem_agent_001_0027
+  Original timestamp: 2026-09-12T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_001, memory=mem_agent_001_0027: 2026-09-12T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.496963000+00:00 at 2026-08-23 20:01:06.498220
+  New timestamp: 2026-05-25T14:31:06.496963000+00:00
+[VERIFY] agent=agent_001, memory=mem_agent_001_0027: expected=2026-05-25 14:31:06.496963+00:00, actual=2026-05-25 14:31:06.496963+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 19/20] agent_001 / mem_agent_001_0044
+  Original timestamp: 2026-09-16T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_001, memory=mem_agent_001_0044: 2026-09-16T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.500169000+00:00 at 2026-08-23 20:01:06.501555
+  New timestamp: 2026-05-25T14:31:06.500169000+00:00
+[VERIFY] agent=agent_001, memory=mem_agent_001_0044: expected=2026-05-25 14:31:06.500169+00:00, actual=2026-05-25 14:31:06.500169+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[DRIFT 20/20] agent_004 / mem_agent_004_0092
+  Original timestamp: 2027-01-08T22:08:31.695262000+00:00
+  Memory in 7-day retrieval (before): True
+[DRIFT] agent=agent_004, memory=mem_agent_004_0092: 2027-01-08T22:08:31.695262000+00:00 → 2026-05-25T14:31:06.503694000+00:00 at 2026-08-23 20:01:06.505128
+  New timestamp: 2026-05-25T14:31:06.503694000+00:00
+[VERIFY] agent=agent_004, memory=mem_agent_004_0092: expected=2026-05-25 14:31:06.503694+00:00, actual=2026-05-25 14:31:06.503694+00:00 VERIFIED
+  Verified: True
+  Is outside 7-day window: True
+  Memory in 7-day retrieval (after): False
+  Disappeared from retrieval: True
+
+[INFO] Timestamps restored to pre-attack state
+
+TEMPORAL DRIFT BURIAL RESULTS
+───────────────────────────────────────────────────────────────────────────
+ │ Run │ Agent    │ Memory   │ In Before │ Verified │ Buried │ Disappeared │
+───────────────────────────────────────────────────────────────────────────
+ │ 1   │ gent_004 │ 004_0030 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 2   │ gent_004 │ 004_0073 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 3   │ gent_001 │ 001_0069 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 4   │ gent_003 │ 003_0031 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 5   │ gent_001 │ 001_0006 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 6   │ gent_001 │ 001_0082 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 7   │ gent_004 │ 004_0058 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 8   │ gent_003 │ 003_0034 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 9   │ gent_004 │ 004_0002 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 10  │ gent_004 │ 004_0088 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 11  │ gent_001 │ 001_0002 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 12  │ gent_002 │ 002_0086 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 13  │ gent_003 │ 003_0073 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 14  │ gent_001 │ 001_0009 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 15  │ gent_002 │ 002_0080 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 16  │ gent_002 │ 002_0076 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 17  │ gent_002 │ 002_0056 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 18  │ gent_001 │ 001_0027 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 19  │ gent_001 │ 001_0044 │ ✓         │ ✓        │ ✓      │ ✓           │
+ │ 20  │ gent_004 │ 004_0092 │ ✓         │ ✓        │ ✓      │ ✓           │
+───────────────────────────────────────────────────────────────────────────
+
+DRIFT SUMMARY (n=20):
+  Timestamp mutations verified : 20/20 (100.0%)
+  Timestamp mutations failed   : 0/20
+  Outside 7-day window         : 20/20 (100.0%)
+  Disappeared from retrieval   : 20/20 (100.0% of in-window targets)
+  (denominator=20: only memories confirmed present before attack)
+
+================================================================================
+3. FLOOD ATTACK — STATISTICAL EVALUATION (10 runs per batch size)
+================================================================================
+
+Configuration:
+  Batch sizes      : [5, 10, 20, 50]
+  Runs per batch   : 10
+  Importance boost : 0.95 (baseline ~0.8-1.0)
+  Recency window   : 7 days
+  State management : Full timestamp reset between runs
+  Total memories   : 500
+  Total agents     : 5
+
+────────────────────────────────────────────────────────────
+[FLOOD] Batch size: 5 (10 independent runs)
+────────────────────────────────────────────────────────────
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:07.893016
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_003, memory=mem_agent_003_0007: 2026-04-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:07.893016000+00:00 at 2026-08-23 20:01:07.895510
+[DRIFT] agent=agent_002, memory=mem_agent_002_0058: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:07.893016000+00:00 at 2026-08-23 20:01:07.899975
+[DRIFT] agent=agent_004, memory=mem_agent_004_0053: 2026-11-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:07.893016000+00:00 at 2026-08-23 20:01:07.903046
+[DRIFT] agent=agent_002, memory=mem_agent_002_0017: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:07.893016000+00:00 at 2026-08-23 20:01:07.906074
+[DRIFT] agent=agent_003, memory=mem_agent_003_0069: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:07.893016000+00:00 at 2026-08-23 20:01:07.909512
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run  1: 5/5 drifted | contamination=0/5 | agent=001
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:08.650768
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_004, memory=mem_agent_004_0080: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:08.650768000+00:00 at 2026-08-23 20:01:08.652821
+[DRIFT] agent=agent_001, memory=mem_agent_001_0037: 2026-03-06T12:58:09.864219000+00:00 → 2026-08-20T08:01:08.650768000+00:00 at 2026-08-23 20:01:08.656226
+[DRIFT] agent=agent_002, memory=mem_agent_002_0056: 2026-12-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:08.650768000+00:00 at 2026-08-23 20:01:08.659696
+[DRIFT] agent=agent_002, memory=mem_agent_002_0012: 2026-03-06T12:47:15.638530000+00:00 → 2026-08-20T08:01:08.650768000+00:00 at 2026-08-23 20:01:08.662842
+[DRIFT] agent=agent_002, memory=mem_agent_002_0068: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:08.650768000+00:00 at 2026-08-23 20:01:08.665818
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run  2: 5/5 drifted | contamination=0/5 | agent=004
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:09.390335
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_001, memory=mem_agent_001_0038: 2027-01-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:09.390335000+00:00 at 2026-08-23 20:01:09.392121
+[DRIFT] agent=agent_002, memory=mem_agent_002_0034: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:09.390335000+00:00 at 2026-08-23 20:01:09.395185
+[DRIFT] agent=agent_003, memory=mem_agent_003_0073: 2026-10-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:09.390335000+00:00 at 2026-08-23 20:01:09.398276
+[DRIFT] agent=agent_002, memory=mem_agent_002_0062: 2026-05-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:09.390335000+00:00 at 2026-08-23 20:01:09.401148
+[DRIFT] agent=agent_000, memory=mem_agent_000_0070: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:09.390335000+00:00 at 2026-08-23 20:01:09.404100
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run  3: 5/5 drifted | contamination=0/5 | agent=001
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:10.331854
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0003: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:10.331854000+00:00 at 2026-08-23 20:01:10.335723
+[DRIFT] agent=agent_003, memory=mem_agent_003_0090: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:10.331854000+00:00 at 2026-08-23 20:01:10.342830
+[DRIFT] agent=agent_001, memory=mem_agent_001_0019: 2026-03-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:10.331854000+00:00 at 2026-08-23 20:01:10.348536
+[DRIFT] agent=agent_003, memory=mem_agent_003_0005: 2026-04-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:10.331854000+00:00 at 2026-08-23 20:01:10.354529
+[DRIFT] agent=agent_001, memory=mem_agent_001_0051: 2026-03-07T19:12:43.419644000+00:00 → 2026-08-20T08:01:10.331854000+00:00 at 2026-08-23 20:01:10.361187
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run  4: 5/5 drifted | contamination=0/5 | agent=004
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:16.142447
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_001, memory=mem_agent_001_0017: 2026-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:16.142447000+00:00 at 2026-08-23 20:01:16.146575
+[DRIFT] agent=agent_000, memory=mem_agent_000_0050: 2026-01-14T22:08:31.695262000+00:00 → 2026-08-20T08:01:16.142447000+00:00 at 2026-08-23 20:01:16.155997
+[DRIFT] agent=agent_002, memory=mem_agent_002_0061: 2026-07-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:16.142447000+00:00 at 2026-08-23 20:01:16.171688
+[DRIFT] agent=agent_004, memory=mem_agent_004_0085: 2026-03-06T12:47:15.599432000+00:00 → 2026-08-20T08:01:16.142447000+00:00 at 2026-08-23 20:01:16.181885
+[DRIFT] agent=agent_001, memory=mem_agent_001_0004: 2026-08-22T22:08:31.695262000+00:00 → 2026-08-20T08:01:16.142447000+00:00 at 2026-08-23 20:01:16.194426
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run  5: 5/5 drifted | contamination=0/5 | agent=004
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:22.157427
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_003, memory=mem_agent_003_0003: 2026-04-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:22.157427000+00:00 at 2026-08-23 20:01:22.165652
+[DRIFT] agent=agent_004, memory=mem_agent_004_0097: 2026-12-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:22.157427000+00:00 at 2026-08-23 20:01:22.179562
+[DRIFT] agent=agent_000, memory=mem_agent_000_0015: 2026-04-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:22.157427000+00:00 at 2026-08-23 20:01:22.192825
+[DRIFT] agent=agent_001, memory=mem_agent_001_0083: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:22.157427000+00:00 at 2026-08-23 20:01:22.212494
+[DRIFT] agent=agent_003, memory=mem_agent_003_0009: 2026-03-06T12:47:15.542848000+00:00 → 2026-08-20T08:01:22.157427000+00:00 at 2026-08-23 20:01:22.218627
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run  6: 5/5 drifted | contamination=0/5 | agent=001
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:22.851704
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0063: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:22.851704000+00:00 at 2026-08-23 20:01:22.853083
+[DRIFT] agent=agent_002, memory=mem_agent_002_0070: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:22.851704000+00:00 at 2026-08-23 20:01:22.856038
+[DRIFT] agent=agent_001, memory=mem_agent_001_0098: 2026-10-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:22.851704000+00:00 at 2026-08-23 20:01:22.858862
+[DRIFT] agent=agent_000, memory=mem_agent_000_0096: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:22.851704000+00:00 at 2026-08-23 20:01:22.861121
+[DRIFT] agent=agent_003, memory=mem_agent_003_0086: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:22.851704000+00:00 at 2026-08-23 20:01:22.863232
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run  7: 5/5 drifted | contamination=0/5 | agent=001
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:23.531479
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0079: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:23.531479000+00:00 at 2026-08-23 20:01:23.533083
+[DRIFT] agent=agent_003, memory=mem_agent_003_0075: 2026-04-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:23.531479000+00:00 at 2026-08-23 20:01:23.535754
+[DRIFT] agent=agent_004, memory=mem_agent_004_0051: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:23.531479000+00:00 at 2026-08-23 20:01:23.538070
+[DRIFT] agent=agent_003, memory=mem_agent_003_0000: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:23.531479000+00:00 at 2026-08-23 20:01:23.540177
+[DRIFT] agent=agent_004, memory=mem_agent_004_0007: 2026-07-09T22:08:31.695262000+00:00 → 2026-08-20T08:01:23.531479000+00:00 at 2026-08-23 20:01:23.542596
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run  8: 5/5 drifted | contamination=0/5 | agent=001
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:24.065226
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0039: 2026-07-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:24.065226000+00:00 at 2026-08-23 20:01:24.066958
+[DRIFT] agent=agent_003, memory=mem_agent_003_0001: 2026-06-15T22:08:31.695262000+00:00 → 2026-08-20T08:01:24.065226000+00:00 at 2026-08-23 20:01:24.069828
+[DRIFT] agent=agent_000, memory=mem_agent_000_0061: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:24.065226000+00:00 at 2026-08-23 20:01:24.072932
+[DRIFT] agent=agent_004, memory=mem_agent_004_0045: 2027-03-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:24.065226000+00:00 at 2026-08-23 20:01:24.075962
+[DRIFT] agent=agent_003, memory=mem_agent_003_0093: 2026-03-06T12:57:20.515067000+00:00 → 2026-08-20T08:01:24.065226000+00:00 at 2026-08-23 20:01:24.078528
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run  9: 5/5 drifted | contamination=0/5 | agent=004
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:24.587471
+[FLOOD] Targets: 5 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_001, memory=mem_agent_001_0056: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:24.587471000+00:00 at 2026-08-23 20:01:24.589310
+[DRIFT] agent=agent_000, memory=mem_agent_000_0047: 2026-03-06T12:45:23.087905000+00:00 → 2026-08-20T08:01:24.587471000+00:00 at 2026-08-23 20:01:24.591992
+[DRIFT] agent=agent_004, memory=mem_agent_004_0062: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:24.587471000+00:00 at 2026-08-23 20:01:24.594292
+[DRIFT] agent=agent_000, memory=mem_agent_000_0053: 2026-05-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:24.587471000+00:00 at 2026-08-23 20:01:24.596625
+[DRIFT] agent=agent_001, memory=mem_agent_001_0060: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:24.587471000+00:00 at 2026-08-23 20:01:24.598868
+[FLOOD] Complete: 5 succeeded, 0 failed
+  Run 10: 5/5 drifted | contamination=0/5 | agent=004
+
+────────────────────────────────────────────────────────────
+[FLOOD] Batch size: 10 (10 independent runs)
+────────────────────────────────────────────────────────────
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:25.134300
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_000, memory=mem_agent_000_0097: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.136093
+[DRIFT] agent=agent_001, memory=mem_agent_001_0021: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.139042
+[DRIFT] agent=agent_000, memory=mem_agent_000_0096: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.141373
+[DRIFT] agent=agent_003, memory=mem_agent_003_0093: 2026-03-06T12:57:20.515067000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.143811
+[DRIFT] agent=agent_001, memory=mem_agent_001_0046: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.146113
+[DRIFT] agent=agent_002, memory=mem_agent_002_0047: 2026-03-06T12:47:15.674814000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.148552
+[DRIFT] agent=agent_001, memory=mem_agent_001_0066: 2026-10-21T22:08:31.695262000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.151002
+[DRIFT] agent=agent_001, memory=mem_agent_001_0087: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.153356
+[DRIFT] agent=agent_001, memory=mem_agent_001_0052: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.156407
+[DRIFT] agent=agent_003, memory=mem_agent_003_0029: 2025-12-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:25.134300000+00:00 at 2026-08-23 20:01:25.158664
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run  1: 10/10 drifted | contamination=0/5 | agent=004
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:25.685940
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0054: 2026-08-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.687914
+[DRIFT] agent=agent_001, memory=mem_agent_001_0025: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.691641
+[DRIFT] agent=agent_003, memory=mem_agent_003_0014: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.694773
+[DRIFT] agent=agent_003, memory=mem_agent_003_0023: 2026-05-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.697349
+[DRIFT] agent=agent_003, memory=mem_agent_003_0057: 2026-04-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.700233
+[DRIFT] agent=agent_004, memory=mem_agent_004_0084: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.703799
+[DRIFT] agent=agent_004, memory=mem_agent_004_0003: 2027-02-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.707277
+[DRIFT] agent=agent_002, memory=mem_agent_002_0041: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.710638
+[DRIFT] agent=agent_000, memory=mem_agent_000_0084: 2026-03-07T19:12:42.943524000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.714085
+[DRIFT] agent=agent_004, memory=mem_agent_004_0021: 2027-01-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:25.685940000+00:00 at 2026-08-23 20:01:25.718094
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run  2: 10/10 drifted | contamination=1/5 | agent=000
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:26.274251
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_004, memory=mem_agent_004_0043: 2027-04-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.275692
+[DRIFT] agent=agent_001, memory=mem_agent_001_0087: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.278061
+[DRIFT] agent=agent_000, memory=mem_agent_000_0040: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.280256
+[DRIFT] agent=agent_000, memory=mem_agent_000_0022: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.282542
+[DRIFT] agent=agent_001, memory=mem_agent_001_0083: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.285015
+[DRIFT] agent=agent_004, memory=mem_agent_004_0016: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.287745
+[DRIFT] agent=agent_001, memory=mem_agent_001_0029: 2026-04-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.290403
+[DRIFT] agent=agent_000, memory=mem_agent_000_0041: 2026-02-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.293579
+[DRIFT] agent=agent_001, memory=mem_agent_001_0023: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.296605
+[DRIFT] agent=agent_004, memory=mem_agent_004_0011: 2026-11-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.274251000+00:00 at 2026-08-23 20:01:26.299513
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run  3: 10/10 drifted | contamination=0/5 | agent=002
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:26.906439
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_003, memory=mem_agent_003_0004: 2026-01-27T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.908033
+[DRIFT] agent=agent_003, memory=mem_agent_003_0071: 2025-12-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.910952
+[DRIFT] agent=agent_002, memory=mem_agent_002_0049: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.913701
+[DRIFT] agent=agent_001, memory=mem_agent_001_0011: 2026-10-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.916113
+[DRIFT] agent=agent_003, memory=mem_agent_003_0046: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.918552
+[DRIFT] agent=agent_000, memory=mem_agent_000_0051: 2025-12-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.921085
+[DRIFT] agent=agent_000, memory=mem_agent_000_0016: 2026-02-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.923435
+[DRIFT] agent=agent_002, memory=mem_agent_002_0083: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.926104
+[DRIFT] agent=agent_004, memory=mem_agent_004_0065: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.928832
+[DRIFT] agent=agent_002, memory=mem_agent_002_0029: 2026-05-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:26.906439000+00:00 at 2026-08-23 20:01:26.931256
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run  4: 10/10 drifted | contamination=0/5 | agent=002
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:27.567426
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_001, memory=mem_agent_001_0074: 2026-05-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.568953
+[DRIFT] agent=agent_003, memory=mem_agent_003_0087: 2026-02-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.571369
+[DRIFT] agent=agent_004, memory=mem_agent_004_0070: 2026-09-09T22:08:31.695262000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.573949
+[DRIFT] agent=agent_001, memory=mem_agent_001_0088: 2026-10-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.576411
+[DRIFT] agent=agent_001, memory=mem_agent_001_0041: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.578785
+[DRIFT] agent=agent_001, memory=mem_agent_001_0050: 2026-11-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.581111
+[DRIFT] agent=agent_003, memory=mem_agent_003_0096: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.583581
+[DRIFT] agent=agent_000, memory=mem_agent_000_0070: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.586128
+[DRIFT] agent=agent_000, memory=mem_agent_000_0092: 2025-11-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.588552
+[DRIFT] agent=agent_004, memory=mem_agent_004_0073: 2026-09-22T22:08:31.695262000+00:00 → 2026-08-20T08:01:27.567426000+00:00 at 2026-08-23 20:01:27.591296
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run  5: 10/10 drifted | contamination=0/5 | agent=001
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:28.170558
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0088: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.172606
+[DRIFT] agent=agent_004, memory=mem_agent_004_0079: 2026-06-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.174984
+[DRIFT] agent=agent_001, memory=mem_agent_001_0011: 2026-10-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.177177
+[DRIFT] agent=agent_000, memory=mem_agent_000_0089: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.179408
+[DRIFT] agent=agent_001, memory=mem_agent_001_0084: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.181758
+[DRIFT] agent=agent_002, memory=mem_agent_002_0016: 2026-07-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.184380
+[DRIFT] agent=agent_002, memory=mem_agent_002_0028: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.186706
+[DRIFT] agent=agent_001, memory=mem_agent_001_0074: 2026-05-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.189173
+[DRIFT] agent=agent_000, memory=mem_agent_000_0024: 2025-09-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.192068
+[DRIFT] agent=agent_000, memory=mem_agent_000_0065: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:28.170558000+00:00 at 2026-08-23 20:01:28.194548
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run  6: 10/10 drifted | contamination=3/5 | agent=000
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:28.798811
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_003, memory=mem_agent_003_0032: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.800092
+[DRIFT] agent=agent_003, memory=mem_agent_003_0009: 2026-03-06T12:47:15.542848000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.802819
+[DRIFT] agent=agent_002, memory=mem_agent_002_0031: 2026-12-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.805307
+[DRIFT] agent=agent_002, memory=mem_agent_002_0018: 2026-06-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.807981
+[DRIFT] agent=agent_004, memory=mem_agent_004_0031: 2026-08-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.810513
+[DRIFT] agent=agent_000, memory=mem_agent_000_0052: 2026-03-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.813029
+[DRIFT] agent=agent_004, memory=mem_agent_004_0021: 2027-01-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.815314
+[DRIFT] agent=agent_001, memory=mem_agent_001_0059: 2026-04-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.817573
+[DRIFT] agent=agent_004, memory=mem_agent_004_0033: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.819796
+[DRIFT] agent=agent_001, memory=mem_agent_001_0021: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:28.798811000+00:00 at 2026-08-23 20:01:28.821954
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run  7: 10/10 drifted | contamination=0/5 | agent=002
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:29.446079
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_000, memory=mem_agent_000_0072: 2025-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.447666
+[DRIFT] agent=agent_004, memory=mem_agent_004_0038: 2026-06-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.450801
+[DRIFT] agent=agent_004, memory=mem_agent_004_0071: 2026-10-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.453329
+[DRIFT] agent=agent_002, memory=mem_agent_002_0033: 2026-11-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.456078
+[DRIFT] agent=agent_003, memory=mem_agent_003_0008: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.458993
+[DRIFT] agent=agent_002, memory=mem_agent_002_0026: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.461963
+[DRIFT] agent=agent_001, memory=mem_agent_001_0023: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.464765
+[DRIFT] agent=agent_003, memory=mem_agent_003_0088: 2026-03-19T22:08:31.695262000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.467348
+[DRIFT] agent=agent_000, memory=mem_agent_000_0011: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.469952
+[DRIFT] agent=agent_004, memory=mem_agent_004_0096: 2026-08-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:29.446079000+00:00 at 2026-08-23 20:01:29.472749
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run  8: 10/10 drifted | contamination=0/5 | agent=002
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:30.209105
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_000, memory=mem_agent_000_0056: 2025-09-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.211283
+[DRIFT] agent=agent_000, memory=mem_agent_000_0040: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.214764
+[DRIFT] agent=agent_000, memory=mem_agent_000_0059: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.217448
+[DRIFT] agent=agent_003, memory=mem_agent_003_0018: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.219904
+[DRIFT] agent=agent_004, memory=mem_agent_004_0089: 2026-06-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.222076
+[DRIFT] agent=agent_002, memory=mem_agent_002_0041: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.224924
+[DRIFT] agent=agent_002, memory=mem_agent_002_0000: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.227067
+[DRIFT] agent=agent_001, memory=mem_agent_001_0017: 2026-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.230018
+[DRIFT] agent=agent_001, memory=mem_agent_001_0020: 2026-08-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.232202
+[DRIFT] agent=agent_003, memory=mem_agent_003_0076: 2026-05-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:30.209105000+00:00 at 2026-08-23 20:01:30.234505
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run  9: 10/10 drifted | contamination=0/5 | agent=003
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:31.042668
+[FLOOD] Targets: 10 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_003, memory=mem_agent_003_0099: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.044175
+[DRIFT] agent=agent_004, memory=mem_agent_004_0004: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.047286
+[DRIFT] agent=agent_004, memory=mem_agent_004_0003: 2027-02-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.049881
+[DRIFT] agent=agent_002, memory=mem_agent_002_0063: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.052191
+[DRIFT] agent=agent_000, memory=mem_agent_000_0023: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.054591
+[DRIFT] agent=agent_000, memory=mem_agent_000_0072: 2025-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.057076
+[DRIFT] agent=agent_004, memory=mem_agent_004_0017: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.059586
+[DRIFT] agent=agent_003, memory=mem_agent_003_0031: 2026-11-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.061995
+[DRIFT] agent=agent_004, memory=mem_agent_004_0006: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.064272
+[DRIFT] agent=agent_004, memory=mem_agent_004_0035: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:31.042668000+00:00 at 2026-08-23 20:01:31.066671
+[FLOOD] Complete: 10 succeeded, 0 failed
+  Run 10: 10/10 drifted | contamination=0/5 | agent=002
+
+────────────────────────────────────────────────────────────
+[FLOOD] Batch size: 20 (10 independent runs)
+────────────────────────────────────────────────────────────
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:31.847321
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_001, memory=mem_agent_001_0092: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:31.851248
+[DRIFT] agent=agent_000, memory=mem_agent_000_0014: 2025-07-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:31.858504
+[DRIFT] agent=agent_003, memory=mem_agent_003_0067: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:31.868271
+[DRIFT] agent=agent_001, memory=mem_agent_001_0095: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:31.901187
+[DRIFT] agent=agent_004, memory=mem_agent_004_0064: 2026-11-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:31.931892
+[DRIFT] agent=agent_004, memory=mem_agent_004_0085: 2026-03-06T12:47:15.599432000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:31.968622
+[DRIFT] agent=agent_003, memory=mem_agent_003_0082: 2026-07-19T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.001292
+[DRIFT] agent=agent_000, memory=mem_agent_000_0007: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.034787
+[DRIFT] agent=agent_002, memory=mem_agent_002_0037: 2026-09-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.066386
+[DRIFT] agent=agent_003, memory=mem_agent_003_0012: 2026-05-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.096482
+[DRIFT] agent=agent_004, memory=mem_agent_004_0022: 2026-06-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.132088
+[DRIFT] agent=agent_000, memory=mem_agent_000_0029: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.168014
+[DRIFT] agent=agent_003, memory=mem_agent_003_0046: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.202328
+[DRIFT] agent=agent_002, memory=mem_agent_002_0060: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.235312
+[DRIFT] agent=agent_002, memory=mem_agent_002_0084: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.271968
+[DRIFT] agent=agent_003, memory=mem_agent_003_0024: 2026-05-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.316456
+[DRIFT] agent=agent_001, memory=mem_agent_001_0038: 2027-01-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.364230
+[DRIFT] agent=agent_003, memory=mem_agent_003_0062: 2026-11-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.415026
+[DRIFT] agent=agent_004, memory=mem_agent_004_0001: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.467023
+[DRIFT] agent=agent_004, memory=mem_agent_004_0045: 2027-03-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:31.847321000+00:00 at 2026-08-23 20:01:32.519295
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run  1: 20/20 drifted | contamination=0/5 | agent=004
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:37.449578
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0011: 2026-07-14T22:08:31.695262000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.451119
+[DRIFT] agent=agent_001, memory=mem_agent_001_0050: 2026-11-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.454071
+[DRIFT] agent=agent_001, memory=mem_agent_001_0098: 2026-10-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.456882
+[DRIFT] agent=agent_001, memory=mem_agent_001_0063: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.459492
+[DRIFT] agent=agent_001, memory=mem_agent_001_0056: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.462233
+[DRIFT] agent=agent_003, memory=mem_agent_003_0046: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.464962
+[DRIFT] agent=agent_001, memory=mem_agent_001_0059: 2026-04-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.467727
+[DRIFT] agent=agent_002, memory=mem_agent_002_0027: 2026-09-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.470720
+[DRIFT] agent=agent_001, memory=mem_agent_001_0096: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.473190
+[DRIFT] agent=agent_002, memory=mem_agent_002_0068: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.475758
+[DRIFT] agent=agent_004, memory=mem_agent_004_0015: 2026-07-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.478250
+[DRIFT] agent=agent_001, memory=mem_agent_001_0076: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.481714
+[DRIFT] agent=agent_002, memory=mem_agent_002_0078: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.485795
+[DRIFT] agent=agent_004, memory=mem_agent_004_0047: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.488844
+[DRIFT] agent=agent_004, memory=mem_agent_004_0023: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.491785
+[DRIFT] agent=agent_002, memory=mem_agent_002_0089: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.494749
+[DRIFT] agent=agent_004, memory=mem_agent_004_0038: 2026-06-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.497744
+[DRIFT] agent=agent_003, memory=mem_agent_003_0000: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.500760
+[DRIFT] agent=agent_000, memory=mem_agent_000_0061: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.504629
+[DRIFT] agent=agent_004, memory=mem_agent_004_0064: 2026-11-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:37.449578000+00:00 at 2026-08-23 20:01:37.507742
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run  2: 20/20 drifted | contamination=0/5 | agent=002
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:38.021161
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0043: 2026-05-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.022712
+[DRIFT] agent=agent_004, memory=mem_agent_004_0099: 2026-11-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.025250
+[DRIFT] agent=agent_004, memory=mem_agent_004_0021: 2027-01-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.027985
+[DRIFT] agent=agent_001, memory=mem_agent_001_0007: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.030832
+[DRIFT] agent=agent_004, memory=mem_agent_004_0054: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.033398
+[DRIFT] agent=agent_000, memory=mem_agent_000_0035: 2025-07-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.036073
+[DRIFT] agent=agent_001, memory=mem_agent_001_0048: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.038589
+[DRIFT] agent=agent_004, memory=mem_agent_004_0050: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.041181
+[DRIFT] agent=agent_002, memory=mem_agent_002_0035: 2026-07-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.043890
+[DRIFT] agent=agent_003, memory=mem_agent_003_0015: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.046374
+[DRIFT] agent=agent_003, memory=mem_agent_003_0071: 2025-12-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.049008
+[DRIFT] agent=agent_004, memory=mem_agent_004_0071: 2026-10-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.051609
+[DRIFT] agent=agent_004, memory=mem_agent_004_0097: 2026-12-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.054119
+[DRIFT] agent=agent_004, memory=mem_agent_004_0088: 2027-04-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.056743
+[DRIFT] agent=agent_000, memory=mem_agent_000_0095: 2026-03-27T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.059165
+[DRIFT] agent=agent_003, memory=mem_agent_003_0074: 2025-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.061746
+[DRIFT] agent=agent_000, memory=mem_agent_000_0051: 2025-12-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.064964
+[DRIFT] agent=agent_003, memory=mem_agent_003_0099: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.068236
+[DRIFT] agent=agent_002, memory=mem_agent_002_0044: 2026-09-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.071351
+[DRIFT] agent=agent_002, memory=mem_agent_002_0091: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:38.021161000+00:00 at 2026-08-23 20:01:38.074761
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run  3: 20/20 drifted | contamination=0/5 | agent=001
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:38.636432
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_001, memory=mem_agent_001_0048: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.638087
+[DRIFT] agent=agent_003, memory=mem_agent_003_0048: 2026-01-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.640519
+[DRIFT] agent=agent_001, memory=mem_agent_001_0042: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.642793
+[DRIFT] agent=agent_003, memory=mem_agent_003_0009: 2026-03-06T12:47:15.542848000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.645963
+[DRIFT] agent=agent_000, memory=mem_agent_000_0017: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.648295
+[DRIFT] agent=agent_003, memory=mem_agent_003_0069: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.650943
+[DRIFT] agent=agent_003, memory=mem_agent_003_0017: 2026-03-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.653387
+[DRIFT] agent=agent_000, memory=mem_agent_000_0007: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.655880
+[DRIFT] agent=agent_004, memory=mem_agent_004_0052: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.658780
+[DRIFT] agent=agent_003, memory=mem_agent_003_0050: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.661058
+[DRIFT] agent=agent_004, memory=mem_agent_004_0044: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.663243
+[DRIFT] agent=agent_004, memory=mem_agent_004_0038: 2026-06-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.665495
+[DRIFT] agent=agent_002, memory=mem_agent_002_0031: 2026-12-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.667825
+[DRIFT] agent=agent_001, memory=mem_agent_001_0017: 2026-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.670046
+[DRIFT] agent=agent_003, memory=mem_agent_003_0006: 2026-08-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.672104
+[DRIFT] agent=agent_000, memory=mem_agent_000_0078: 2026-05-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.675080
+[DRIFT] agent=agent_004, memory=mem_agent_004_0024: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.677568
+[DRIFT] agent=agent_000, memory=mem_agent_000_0051: 2025-12-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.679958
+[DRIFT] agent=agent_004, memory=mem_agent_004_0062: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.683039
+[DRIFT] agent=agent_001, memory=mem_agent_001_0011: 2026-10-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:38.636432000+00:00 at 2026-08-23 20:01:38.686063
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run  4: 20/20 drifted | contamination=0/5 | agent=004
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:39.220820
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_004, memory=mem_agent_004_0081: 2026-08-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.222126
+[DRIFT] agent=agent_004, memory=mem_agent_004_0039: 2026-09-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.224857
+[DRIFT] agent=agent_004, memory=mem_agent_004_0031: 2026-08-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.227034
+[DRIFT] agent=agent_003, memory=mem_agent_003_0052: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.229114
+[DRIFT] agent=agent_001, memory=mem_agent_001_0036: 2026-04-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.231170
+[DRIFT] agent=agent_000, memory=mem_agent_000_0067: 2025-11-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.233410
+[DRIFT] agent=agent_003, memory=mem_agent_003_0022: 2026-01-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.235770
+[DRIFT] agent=agent_001, memory=mem_agent_001_0094: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.238028
+[DRIFT] agent=agent_001, memory=mem_agent_001_0095: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.240150
+[DRIFT] agent=agent_001, memory=mem_agent_001_0014: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.242222
+[DRIFT] agent=agent_000, memory=mem_agent_000_0037: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.244468
+[DRIFT] agent=agent_004, memory=mem_agent_004_0085: 2026-03-06T12:47:15.599432000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.246699
+[DRIFT] agent=agent_001, memory=mem_agent_001_0063: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.248920
+[DRIFT] agent=agent_002, memory=mem_agent_002_0071: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.251421
+[DRIFT] agent=agent_002, memory=mem_agent_002_0047: 2026-03-06T12:47:15.674814000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.253594
+[DRIFT] agent=agent_004, memory=mem_agent_004_0020: 2027-01-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.255859
+[DRIFT] agent=agent_004, memory=mem_agent_004_0073: 2026-09-22T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.258003
+[DRIFT] agent=agent_003, memory=mem_agent_003_0097: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.260088
+[DRIFT] agent=agent_000, memory=mem_agent_000_0074: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.262105
+[DRIFT] agent=agent_003, memory=mem_agent_003_0034: 2026-08-21T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.220820000+00:00 at 2026-08-23 20:01:39.264160
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run  5: 20/20 drifted | contamination=0/5 | agent=003
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:39.837449
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0087: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.838856
+[DRIFT] agent=agent_004, memory=mem_agent_004_0051: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.841122
+[DRIFT] agent=agent_001, memory=mem_agent_001_0099: 2026-03-06T12:45:23.224232000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.843344
+[DRIFT] agent=agent_000, memory=mem_agent_000_0080: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.845618
+[DRIFT] agent=agent_001, memory=mem_agent_001_0014: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.847824
+[DRIFT] agent=agent_002, memory=mem_agent_002_0005: 2026-04-15T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.850050
+[DRIFT] agent=agent_002, memory=mem_agent_002_0065: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.852225
+[DRIFT] agent=agent_002, memory=mem_agent_002_0076: 2027-04-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.854453
+[DRIFT] agent=agent_000, memory=mem_agent_000_0015: 2026-04-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.856726
+[DRIFT] agent=agent_004, memory=mem_agent_004_0011: 2026-11-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.859200
+[DRIFT] agent=agent_002, memory=mem_agent_002_0012: 2026-03-06T12:47:15.638530000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.861521
+[DRIFT] agent=agent_004, memory=mem_agent_004_0003: 2027-02-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.864356
+[DRIFT] agent=agent_001, memory=mem_agent_001_0067: 2027-02-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.866700
+[DRIFT] agent=agent_000, memory=mem_agent_000_0052: 2026-03-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.869038
+[DRIFT] agent=agent_001, memory=mem_agent_001_0093: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.871158
+[DRIFT] agent=agent_003, memory=mem_agent_003_0033: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.873376
+[DRIFT] agent=agent_000, memory=mem_agent_000_0039: 2026-04-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.875621
+[DRIFT] agent=agent_002, memory=mem_agent_002_0016: 2026-07-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.877867
+[DRIFT] agent=agent_003, memory=mem_agent_003_0013: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.880028
+[DRIFT] agent=agent_000, memory=mem_agent_000_0059: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:39.837449000+00:00 at 2026-08-23 20:01:39.882089
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run  6: 20/20 drifted | contamination=0/5 | agent=001
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:40.390093
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_001, memory=mem_agent_001_0007: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.391611
+[DRIFT] agent=agent_004, memory=mem_agent_004_0013: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.394328
+[DRIFT] agent=agent_004, memory=mem_agent_004_0072: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.396761
+[DRIFT] agent=agent_004, memory=mem_agent_004_0092: 2027-01-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.399060
+[DRIFT] agent=agent_002, memory=mem_agent_002_0075: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.401248
+[DRIFT] agent=agent_000, memory=mem_agent_000_0086: 2025-11-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.403481
+[DRIFT] agent=agent_002, memory=mem_agent_002_0010: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.405719
+[DRIFT] agent=agent_000, memory=mem_agent_000_0023: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.407875
+[DRIFT] agent=agent_004, memory=mem_agent_004_0080: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.410065
+[DRIFT] agent=agent_004, memory=mem_agent_004_0034: 2026-08-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.412193
+[DRIFT] agent=agent_003, memory=mem_agent_003_0009: 2026-03-06T12:47:15.542848000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.414770
+[DRIFT] agent=agent_001, memory=mem_agent_001_0075: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.418018
+[DRIFT] agent=agent_000, memory=mem_agent_000_0092: 2025-11-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.421527
+[DRIFT] agent=agent_000, memory=mem_agent_000_0031: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.424953
+[DRIFT] agent=agent_004, memory=mem_agent_004_0025: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.428344
+[DRIFT] agent=agent_000, memory=mem_agent_000_0064: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.431532
+[DRIFT] agent=agent_001, memory=mem_agent_001_0045: 2026-11-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.434574
+[DRIFT] agent=agent_003, memory=mem_agent_003_0054: 2026-05-14T22:08:31.695262000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.437448
+[DRIFT] agent=agent_001, memory=mem_agent_001_0010: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.440192
+[DRIFT] agent=agent_004, memory=mem_agent_004_0033: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:40.390093000+00:00 at 2026-08-23 20:01:40.442928
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run  7: 20/20 drifted | contamination=0/5 | agent=002
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:41.027030
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_004, memory=mem_agent_004_0064: 2026-11-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.028270
+[DRIFT] agent=agent_002, memory=mem_agent_002_0058: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.030634
+[DRIFT] agent=agent_004, memory=mem_agent_004_0037: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.032924
+[DRIFT] agent=agent_000, memory=mem_agent_000_0007: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.035048
+[DRIFT] agent=agent_001, memory=mem_agent_001_0013: 2026-03-07T19:12:43.232690000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.037161
+[DRIFT] agent=agent_002, memory=mem_agent_002_0091: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.039252
+[DRIFT] agent=agent_000, memory=mem_agent_000_0076: 2026-06-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.041695
+[DRIFT] agent=agent_000, memory=mem_agent_000_0010: 2025-12-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.043957
+[DRIFT] agent=agent_002, memory=mem_agent_002_0078: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.046590
+[DRIFT] agent=agent_000, memory=mem_agent_000_0070: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.048827
+[DRIFT] agent=agent_003, memory=mem_agent_003_0036: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.051205
+[DRIFT] agent=agent_000, memory=mem_agent_000_0041: 2026-02-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.053506
+[DRIFT] agent=agent_000, memory=mem_agent_000_0021: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.055780
+[DRIFT] agent=agent_002, memory=mem_agent_002_0036: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.057983
+[DRIFT] agent=agent_001, memory=mem_agent_001_0096: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.060368
+[DRIFT] agent=agent_001, memory=mem_agent_001_0021: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.062800
+[DRIFT] agent=agent_001, memory=mem_agent_001_0090: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.065056
+[DRIFT] agent=agent_000, memory=mem_agent_000_0073: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.067224
+[DRIFT] agent=agent_002, memory=mem_agent_002_0094: 2026-07-15T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.069587
+[DRIFT] agent=agent_001, memory=mem_agent_001_0072: 2026-06-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.027030000+00:00 at 2026-08-23 20:01:41.071738
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run  8: 20/20 drifted | contamination=5/5 | agent=000
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:41.604529
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_004, memory=mem_agent_004_0087: 2026-11-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.606079
+[DRIFT] agent=agent_003, memory=mem_agent_003_0023: 2026-05-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.608463
+[DRIFT] agent=agent_003, memory=mem_agent_003_0025: 2026-02-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.610726
+[DRIFT] agent=agent_001, memory=mem_agent_001_0037: 2026-03-06T12:58:09.864219000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.614016
+[DRIFT] agent=agent_000, memory=mem_agent_000_0037: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.617065
+[DRIFT] agent=agent_003, memory=mem_agent_003_0021: 2026-11-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.619770
+[DRIFT] agent=agent_002, memory=mem_agent_002_0048: 2026-04-27T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.622931
+[DRIFT] agent=agent_004, memory=mem_agent_004_0059: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.625153
+[DRIFT] agent=agent_002, memory=mem_agent_002_0066: 2026-03-06T12:58:09.946911000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.627422
+[DRIFT] agent=agent_003, memory=mem_agent_003_0060: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.629680
+[DRIFT] agent=agent_003, memory=mem_agent_003_0058: 2026-07-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.631932
+[DRIFT] agent=agent_003, memory=mem_agent_003_0093: 2026-03-06T12:57:20.515067000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.634074
+[DRIFT] agent=agent_002, memory=mem_agent_002_0022: 2026-12-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.636357
+[DRIFT] agent=agent_001, memory=mem_agent_001_0052: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.638592
+[DRIFT] agent=agent_001, memory=mem_agent_001_0041: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.640871
+[DRIFT] agent=agent_004, memory=mem_agent_004_0052: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.643035
+[DRIFT] agent=agent_004, memory=mem_agent_004_0082: 2027-01-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.645185
+[DRIFT] agent=agent_000, memory=mem_agent_000_0068: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.647406
+[DRIFT] agent=agent_001, memory=mem_agent_001_0070: 2026-06-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.650049
+[DRIFT] agent=agent_000, memory=mem_agent_000_0006: 2025-12-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:41.604529000+00:00 at 2026-08-23 20:01:41.652227
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run  9: 20/20 drifted | contamination=0/5 | agent=002
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:42.198386
+[FLOOD] Targets: 20 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_003, memory=mem_agent_003_0021: 2026-11-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.200275
+[DRIFT] agent=agent_004, memory=mem_agent_004_0084: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.203332
+[DRIFT] agent=agent_000, memory=mem_agent_000_0041: 2026-02-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.206163
+[DRIFT] agent=agent_001, memory=mem_agent_001_0068: 2026-05-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.208915
+[DRIFT] agent=agent_001, memory=mem_agent_001_0065: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.211467
+[DRIFT] agent=agent_003, memory=mem_agent_003_0003: 2026-04-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.214589
+[DRIFT] agent=agent_001, memory=mem_agent_001_0057: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.217138
+[DRIFT] agent=agent_003, memory=mem_agent_003_0020: 2026-01-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.219640
+[DRIFT] agent=agent_000, memory=mem_agent_000_0077: 2026-03-06T12:47:15.569852000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.222142
+[DRIFT] agent=agent_003, memory=mem_agent_003_0095: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.224629
+[DRIFT] agent=agent_004, memory=mem_agent_004_0071: 2026-10-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.227190
+[DRIFT] agent=agent_004, memory=mem_agent_004_0082: 2027-01-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.229735
+[DRIFT] agent=agent_004, memory=mem_agent_004_0074: 2026-07-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.232323
+[DRIFT] agent=agent_004, memory=mem_agent_004_0013: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.235071
+[DRIFT] agent=agent_000, memory=mem_agent_000_0038: 2026-05-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.237768
+[DRIFT] agent=agent_003, memory=mem_agent_003_0067: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.240377
+[DRIFT] agent=agent_001, memory=mem_agent_001_0043: 2026-03-06T12:45:23.187906000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.242858
+[DRIFT] agent=agent_002, memory=mem_agent_002_0041: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.245797
+[DRIFT] agent=agent_003, memory=mem_agent_003_0058: 2026-07-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.248518
+[DRIFT] agent=agent_003, memory=mem_agent_003_0093: 2026-03-06T12:57:20.515067000+00:00 → 2026-08-20T08:01:42.198386000+00:00 at 2026-08-23 20:01:42.251176
+[FLOOD] Complete: 20 succeeded, 0 failed
+  Run 10: 20/20 drifted | contamination=3/5 | agent=000
+
+────────────────────────────────────────────────────────────
+[FLOOD] Batch size: 50 (10 independent runs)
+────────────────────────────────────────────────────────────
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:42.777779
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_001, memory=mem_agent_001_0096: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.779507
+[DRIFT] agent=agent_000, memory=mem_agent_000_0097: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.782523
+[DRIFT] agent=agent_004, memory=mem_agent_004_0036: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.785417
+[DRIFT] agent=agent_001, memory=mem_agent_001_0079: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.788921
+[DRIFT] agent=agent_001, memory=mem_agent_001_0086: 2027-01-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.791545
+[DRIFT] agent=agent_003, memory=mem_agent_003_0083: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.794379
+[DRIFT] agent=agent_003, memory=mem_agent_003_0074: 2025-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.796930
+[DRIFT] agent=agent_004, memory=mem_agent_004_0090: 2026-06-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.799421
+[DRIFT] agent=agent_002, memory=mem_agent_002_0055: 2026-09-25T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.801957
+[DRIFT] agent=agent_003, memory=mem_agent_003_0051: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.805296
+[DRIFT] agent=agent_003, memory=mem_agent_003_0049: 2026-08-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.808628
+[DRIFT] agent=agent_002, memory=mem_agent_002_0076: 2027-04-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.811194
+[DRIFT] agent=agent_001, memory=mem_agent_001_0009: 2026-12-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.813567
+[DRIFT] agent=agent_001, memory=mem_agent_001_0068: 2026-05-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.815881
+[DRIFT] agent=agent_003, memory=mem_agent_003_0002: 2026-01-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.818110
+[DRIFT] agent=agent_002, memory=mem_agent_002_0063: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.820679
+[DRIFT] agent=agent_004, memory=mem_agent_004_0012: 2026-05-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.823019
+[DRIFT] agent=agent_003, memory=mem_agent_003_0042: 2026-07-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.825397
+[DRIFT] agent=agent_001, memory=mem_agent_001_0042: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.827758
+[DRIFT] agent=agent_002, memory=mem_agent_002_0077: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.830069
+[DRIFT] agent=agent_000, memory=mem_agent_000_0037: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.832408
+[DRIFT] agent=agent_004, memory=mem_agent_004_0083: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.834639
+[DRIFT] agent=agent_000, memory=mem_agent_000_0075: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.836948
+[DRIFT] agent=agent_000, memory=mem_agent_000_0018: 2026-02-09T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.839216
+[DRIFT] agent=agent_001, memory=mem_agent_001_0056: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.841567
+[DRIFT] agent=agent_003, memory=mem_agent_003_0040: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.843844
+[DRIFT] agent=agent_000, memory=mem_agent_000_0074: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.846044
+[DRIFT] agent=agent_002, memory=mem_agent_002_0021: 2026-03-06T12:40:48.732049000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.848603
+[DRIFT] agent=agent_003, memory=mem_agent_003_0075: 2026-04-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.850802
+[DRIFT] agent=agent_003, memory=mem_agent_003_0032: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.852893
+[DRIFT] agent=agent_003, memory=mem_agent_003_0060: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.855038
+[DRIFT] agent=agent_000, memory=mem_agent_000_0085: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.857079
+[DRIFT] agent=agent_002, memory=mem_agent_002_0064: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.859106
+[DRIFT] agent=agent_003, memory=mem_agent_003_0041: 2026-12-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.861154
+[DRIFT] agent=agent_000, memory=mem_agent_000_0005: 2026-01-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.863348
+[DRIFT] agent=agent_002, memory=mem_agent_002_0085: 2026-03-06T12:57:20.475428000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.865870
+[DRIFT] agent=agent_001, memory=mem_agent_001_0035: 2026-03-09T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.868348
+[DRIFT] agent=agent_003, memory=mem_agent_003_0001: 2026-06-15T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.870738
+[DRIFT] agent=agent_003, memory=mem_agent_003_0012: 2026-05-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.873008
+[DRIFT] agent=agent_002, memory=mem_agent_002_0072: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.875626
+[DRIFT] agent=agent_001, memory=mem_agent_001_0031: 2026-10-14T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.877907
+[DRIFT] agent=agent_001, memory=mem_agent_001_0070: 2026-06-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.880086
+[DRIFT] agent=agent_002, memory=mem_agent_002_0004: 2026-04-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.882288
+[DRIFT] agent=agent_001, memory=mem_agent_001_0069: 2026-08-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.884688
+[DRIFT] agent=agent_001, memory=mem_agent_001_0089: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.887538
+[DRIFT] agent=agent_003, memory=mem_agent_003_0005: 2026-04-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.890052
+[DRIFT] agent=agent_004, memory=mem_agent_004_0044: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.892160
+[DRIFT] agent=agent_004, memory=mem_agent_004_0063: 2027-03-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.894148
+[DRIFT] agent=agent_000, memory=mem_agent_000_0021: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.896134
+[DRIFT] agent=agent_004, memory=mem_agent_004_0084: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:42.777779000+00:00 at 2026-08-23 20:01:42.898219
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run  1: 50/50 drifted | contamination=5/5 | agent=000
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:43.445862
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_003, memory=mem_agent_003_0085: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.447185
+[DRIFT] agent=agent_003, memory=mem_agent_003_0037: 2025-12-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.449544
+[DRIFT] agent=agent_001, memory=mem_agent_001_0078: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.451840
+[DRIFT] agent=agent_001, memory=mem_agent_001_0075: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.454062
+[DRIFT] agent=agent_004, memory=mem_agent_004_0098: 2027-04-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.456237
+[DRIFT] agent=agent_003, memory=mem_agent_003_0062: 2026-11-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.458494
+[DRIFT] agent=agent_000, memory=mem_agent_000_0072: 2025-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.460746
+[DRIFT] agent=agent_000, memory=mem_agent_000_0090: 2026-02-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.463381
+[DRIFT] agent=agent_003, memory=mem_agent_003_0033: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.465678
+[DRIFT] agent=agent_003, memory=mem_agent_003_0035: 2026-03-06T12:57:20.422399000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.467959
+[DRIFT] agent=agent_002, memory=mem_agent_002_0035: 2026-07-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.470150
+[DRIFT] agent=agent_004, memory=mem_agent_004_0063: 2027-03-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.472392
+[DRIFT] agent=agent_001, memory=mem_agent_001_0064: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.474611
+[DRIFT] agent=agent_002, memory=mem_agent_002_0093: 2026-03-07T19:12:43.367737000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.476895
+[DRIFT] agent=agent_004, memory=mem_agent_004_0076: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.479078
+[DRIFT] agent=agent_004, memory=mem_agent_004_0012: 2026-05-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.481253
+[DRIFT] agent=agent_000, memory=mem_agent_000_0025: 2026-07-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.483631
+[DRIFT] agent=agent_000, memory=mem_agent_000_0071: 2026-03-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.485895
+[DRIFT] agent=agent_000, memory=mem_agent_000_0020: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.488073
+[DRIFT] agent=agent_001, memory=mem_agent_001_0032: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.491203
+[DRIFT] agent=agent_002, memory=mem_agent_002_0079: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.493922
+[DRIFT] agent=agent_002, memory=mem_agent_002_0049: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.496089
+[DRIFT] agent=agent_003, memory=mem_agent_003_0095: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.499052
+[DRIFT] agent=agent_003, memory=mem_agent_003_0025: 2026-02-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.501169
+[DRIFT] agent=agent_004, memory=mem_agent_004_0009: 2026-04-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.503330
+[DRIFT] agent=agent_000, memory=mem_agent_000_0024: 2025-09-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.505582
+[DRIFT] agent=agent_004, memory=mem_agent_004_0030: 2027-03-14T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.507942
+[DRIFT] agent=agent_003, memory=mem_agent_003_0031: 2026-11-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.510071
+[DRIFT] agent=agent_004, memory=mem_agent_004_0043: 2027-04-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.512247
+[DRIFT] agent=agent_001, memory=mem_agent_001_0018: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.514402
+[DRIFT] agent=agent_000, memory=mem_agent_000_0087: 2026-02-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.516593
+[DRIFT] agent=agent_001, memory=mem_agent_001_0060: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.519058
+[DRIFT] agent=agent_000, memory=mem_agent_000_0081: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.521156
+[DRIFT] agent=agent_000, memory=mem_agent_000_0034: 2026-06-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.523484
+[DRIFT] agent=agent_002, memory=mem_agent_002_0095: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.526478
+[DRIFT] agent=agent_003, memory=mem_agent_003_0006: 2026-08-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.529263
+[DRIFT] agent=agent_002, memory=mem_agent_002_0059: 2026-07-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.531864
+[DRIFT] agent=agent_000, memory=mem_agent_000_0006: 2025-12-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.534113
+[DRIFT] agent=agent_003, memory=mem_agent_003_0097: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.536304
+[DRIFT] agent=agent_002, memory=mem_agent_002_0050: 2026-05-19T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.538439
+[DRIFT] agent=agent_002, memory=mem_agent_002_0072: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.540785
+[DRIFT] agent=agent_001, memory=mem_agent_001_0071: 2026-06-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.542965
+[DRIFT] agent=agent_000, memory=mem_agent_000_0043: 2025-08-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.545569
+[DRIFT] agent=agent_002, memory=mem_agent_002_0033: 2026-11-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.547874
+[DRIFT] agent=agent_000, memory=mem_agent_000_0029: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.550058
+[DRIFT] agent=agent_001, memory=mem_agent_001_0013: 2026-03-07T19:12:43.232690000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.552677
+[DRIFT] agent=agent_004, memory=mem_agent_004_0062: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.555348
+[DRIFT] agent=agent_001, memory=mem_agent_001_0015: 2026-09-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.557544
+[DRIFT] agent=agent_002, memory=mem_agent_002_0011: 2026-07-14T22:08:31.695262000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.559791
+[DRIFT] agent=agent_000, memory=mem_agent_000_0080: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:43.445862000+00:00 at 2026-08-23 20:01:43.561994
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run  2: 50/50 drifted | contamination=0/5 | agent=003
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:44.117889
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_004, memory=mem_agent_004_0047: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.119661
+[DRIFT] agent=agent_004, memory=mem_agent_004_0048: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.122521
+[DRIFT] agent=agent_000, memory=mem_agent_000_0049: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.125319
+[DRIFT] agent=agent_001, memory=mem_agent_001_0069: 2026-08-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.128074
+[DRIFT] agent=agent_001, memory=mem_agent_001_0043: 2026-03-06T12:45:23.187906000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.130732
+[DRIFT] agent=agent_001, memory=mem_agent_001_0032: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.133236
+[DRIFT] agent=agent_004, memory=mem_agent_004_0065: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.135546
+[DRIFT] agent=agent_001, memory=mem_agent_001_0003: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.138331
+[DRIFT] agent=agent_002, memory=mem_agent_002_0024: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.140593
+[DRIFT] agent=agent_003, memory=mem_agent_003_0061: 2026-02-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.142899
+[DRIFT] agent=agent_004, memory=mem_agent_004_0010: 2027-01-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.145512
+[DRIFT] agent=agent_001, memory=mem_agent_001_0031: 2026-10-14T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.147912
+[DRIFT] agent=agent_001, memory=mem_agent_001_0056: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.150614
+[DRIFT] agent=agent_002, memory=mem_agent_002_0048: 2026-04-27T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.153050
+[DRIFT] agent=agent_003, memory=mem_agent_003_0075: 2026-04-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.155138
+[DRIFT] agent=agent_002, memory=mem_agent_002_0025: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.157199
+[DRIFT] agent=agent_003, memory=mem_agent_003_0049: 2026-08-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.159255
+[DRIFT] agent=agent_000, memory=mem_agent_000_0091: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.161441
+[DRIFT] agent=agent_002, memory=mem_agent_002_0049: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.163644
+[DRIFT] agent=agent_002, memory=mem_agent_002_0023: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.165964
+[DRIFT] agent=agent_004, memory=mem_agent_004_0049: 2026-12-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.168696
+[DRIFT] agent=agent_004, memory=mem_agent_004_0094: 2027-02-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.171214
+[DRIFT] agent=agent_001, memory=mem_agent_001_0081: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.174120
+[DRIFT] agent=agent_004, memory=mem_agent_004_0033: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.177306
+[DRIFT] agent=agent_003, memory=mem_agent_003_0072: 2026-06-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.180590
+[DRIFT] agent=agent_000, memory=mem_agent_000_0092: 2025-11-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.183074
+[DRIFT] agent=agent_002, memory=mem_agent_002_0027: 2026-09-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.185238
+[DRIFT] agent=agent_004, memory=mem_agent_004_0038: 2026-06-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.187474
+[DRIFT] agent=agent_003, memory=mem_agent_003_0077: 2026-02-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.189782
+[DRIFT] agent=agent_003, memory=mem_agent_003_0018: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.191992
+[DRIFT] agent=agent_004, memory=mem_agent_004_0095: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.194063
+[DRIFT] agent=agent_002, memory=mem_agent_002_0098: 2026-06-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.196134
+[DRIFT] agent=agent_002, memory=mem_agent_002_0099: 2026-11-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.198226
+[DRIFT] agent=agent_002, memory=mem_agent_002_0058: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.200441
+[DRIFT] agent=agent_003, memory=mem_agent_003_0034: 2026-08-21T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.202782
+[DRIFT] agent=agent_001, memory=mem_agent_001_0054: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.205578
+[DRIFT] agent=agent_003, memory=mem_agent_003_0015: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.207853
+[DRIFT] agent=agent_000, memory=mem_agent_000_0069: 2026-05-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.210105
+[DRIFT] agent=agent_002, memory=mem_agent_002_0078: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.212398
+[DRIFT] agent=agent_000, memory=mem_agent_000_0057: 2026-03-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.214683
+[DRIFT] agent=agent_000, memory=mem_agent_000_0019: 2026-03-06T12:40:48.596621000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.216895
+[DRIFT] agent=agent_003, memory=mem_agent_003_0036: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.219162
+[DRIFT] agent=agent_003, memory=mem_agent_003_0092: 2026-09-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.221389
+[DRIFT] agent=agent_001, memory=mem_agent_001_0021: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.223638
+[DRIFT] agent=agent_002, memory=mem_agent_002_0088: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.225885
+[DRIFT] agent=agent_001, memory=mem_agent_001_0035: 2026-03-09T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.228096
+[DRIFT] agent=agent_001, memory=mem_agent_001_0026: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.230244
+[DRIFT] agent=agent_001, memory=mem_agent_001_0062: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.232933
+[DRIFT] agent=agent_000, memory=mem_agent_000_0020: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.235251
+[DRIFT] agent=agent_001, memory=mem_agent_001_0034: 2026-06-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.117889000+00:00 at 2026-08-23 20:01:44.237539
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run  3: 50/50 drifted | contamination=0/5 | agent=001
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:44.773155
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_000, memory=mem_agent_000_0010: 2025-12-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.774636
+[DRIFT] agent=agent_000, memory=mem_agent_000_0051: 2025-12-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.777058
+[DRIFT] agent=agent_000, memory=mem_agent_000_0052: 2026-03-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.779499
+[DRIFT] agent=agent_002, memory=mem_agent_002_0092: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.782073
+[DRIFT] agent=agent_004, memory=mem_agent_004_0009: 2026-04-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.784883
+[DRIFT] agent=agent_001, memory=mem_agent_001_0065: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.788522
+[DRIFT] agent=agent_001, memory=mem_agent_001_0080: 2026-03-06T12:57:20.572522000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.791299
+[DRIFT] agent=agent_003, memory=mem_agent_003_0037: 2025-12-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.794042
+[DRIFT] agent=agent_000, memory=mem_agent_000_0012: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.796773
+[DRIFT] agent=agent_000, memory=mem_agent_000_0069: 2026-05-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.799483
+[DRIFT] agent=agent_003, memory=mem_agent_003_0077: 2026-02-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.802193
+[DRIFT] agent=agent_002, memory=mem_agent_002_0038: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.804992
+[DRIFT] agent=agent_003, memory=mem_agent_003_0022: 2026-01-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.807747
+[DRIFT] agent=agent_000, memory=mem_agent_000_0068: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.810131
+[DRIFT] agent=agent_002, memory=mem_agent_002_0013: 2026-05-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.812465
+[DRIFT] agent=agent_003, memory=mem_agent_003_0051: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.814991
+[DRIFT] agent=agent_002, memory=mem_agent_002_0053: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.817941
+[DRIFT] agent=agent_001, memory=mem_agent_001_0001: 2026-10-25T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.820497
+[DRIFT] agent=agent_001, memory=mem_agent_001_0097: 2026-10-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.823022
+[DRIFT] agent=agent_001, memory=mem_agent_001_0078: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.826262
+[DRIFT] agent=agent_004, memory=mem_agent_004_0087: 2026-11-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.828727
+[DRIFT] agent=agent_001, memory=mem_agent_001_0022: 2026-04-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.831002
+[DRIFT] agent=agent_004, memory=mem_agent_004_0015: 2026-07-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.833135
+[DRIFT] agent=agent_003, memory=mem_agent_003_0066: 2026-07-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.835445
+[DRIFT] agent=agent_002, memory=mem_agent_002_0047: 2026-03-06T12:47:15.674814000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.837777
+[DRIFT] agent=agent_001, memory=mem_agent_001_0070: 2026-06-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.840031
+[DRIFT] agent=agent_004, memory=mem_agent_004_0094: 2027-02-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.842379
+[DRIFT] agent=agent_002, memory=mem_agent_002_0041: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.844811
+[DRIFT] agent=agent_002, memory=mem_agent_002_0075: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.847539
+[DRIFT] agent=agent_004, memory=mem_agent_004_0006: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.850092
+[DRIFT] agent=agent_003, memory=mem_agent_003_0018: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.852502
+[DRIFT] agent=agent_001, memory=mem_agent_001_0002: 2027-01-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.854845
+[DRIFT] agent=agent_004, memory=mem_agent_004_0051: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.857221
+[DRIFT] agent=agent_003, memory=mem_agent_003_0096: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.859833
+[DRIFT] agent=agent_002, memory=mem_agent_002_0077: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.862262
+[DRIFT] agent=agent_000, memory=mem_agent_000_0035: 2025-07-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.864971
+[DRIFT] agent=agent_001, memory=mem_agent_001_0074: 2026-05-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.867720
+[DRIFT] agent=agent_003, memory=mem_agent_003_0090: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.870324
+[DRIFT] agent=agent_002, memory=mem_agent_002_0056: 2026-12-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.873063
+[DRIFT] agent=agent_003, memory=mem_agent_003_0000: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.875736
+[DRIFT] agent=agent_002, memory=mem_agent_002_0026: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.878800
+[DRIFT] agent=agent_003, memory=mem_agent_003_0008: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.881192
+[DRIFT] agent=agent_004, memory=mem_agent_004_0049: 2026-12-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.883631
+[DRIFT] agent=agent_004, memory=mem_agent_004_0078: 2027-03-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.885934
+[DRIFT] agent=agent_001, memory=mem_agent_001_0009: 2026-12-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.888052
+[DRIFT] agent=agent_000, memory=mem_agent_000_0034: 2026-06-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.890237
+[DRIFT] agent=agent_002, memory=mem_agent_002_0016: 2026-07-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.892470
+[DRIFT] agent=agent_004, memory=mem_agent_004_0011: 2026-11-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.894711
+[DRIFT] agent=agent_003, memory=mem_agent_003_0089: 2026-05-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.897004
+[DRIFT] agent=agent_003, memory=mem_agent_003_0082: 2026-07-19T22:08:31.695262000+00:00 → 2026-08-20T08:01:44.773155000+00:00 at 2026-08-23 20:01:44.899237
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run  4: 50/50 drifted | contamination=0/5 | agent=002
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:45.413216
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_003, memory=mem_agent_003_0055: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.414517
+[DRIFT] agent=agent_003, memory=mem_agent_003_0069: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.416825
+[DRIFT] agent=agent_000, memory=mem_agent_000_0014: 2025-07-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.419131
+[DRIFT] agent=agent_001, memory=mem_agent_001_0097: 2026-10-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.421370
+[DRIFT] agent=agent_004, memory=mem_agent_004_0063: 2027-03-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.423687
+[DRIFT] agent=agent_000, memory=mem_agent_000_0043: 2025-08-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.426432
+[DRIFT] agent=agent_000, memory=mem_agent_000_0033: 2026-04-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.429119
+[DRIFT] agent=agent_001, memory=mem_agent_001_0074: 2026-05-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.431885
+[DRIFT] agent=agent_002, memory=mem_agent_002_0034: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.434999
+[DRIFT] agent=agent_002, memory=mem_agent_002_0043: 2026-05-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.437899
+[DRIFT] agent=agent_002, memory=mem_agent_002_0031: 2026-12-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.441117
+[DRIFT] agent=agent_002, memory=mem_agent_002_0051: 2026-09-09T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.443830
+[DRIFT] agent=agent_004, memory=mem_agent_004_0099: 2026-11-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.446271
+[DRIFT] agent=agent_001, memory=mem_agent_001_0009: 2026-12-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.448800
+[DRIFT] agent=agent_002, memory=mem_agent_002_0095: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.451127
+[DRIFT] agent=agent_004, memory=mem_agent_004_0028: 2026-09-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.453589
+[DRIFT] agent=agent_002, memory=mem_agent_002_0064: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.456030
+[DRIFT] agent=agent_003, memory=mem_agent_003_0034: 2026-08-21T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.458705
+[DRIFT] agent=agent_000, memory=mem_agent_000_0072: 2025-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.461242
+[DRIFT] agent=agent_001, memory=mem_agent_001_0044: 2026-09-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.463949
+[DRIFT] agent=agent_000, memory=mem_agent_000_0044: 2026-03-06T12:57:20.541254000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.466924
+[DRIFT] agent=agent_003, memory=mem_agent_003_0003: 2026-04-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.470484
+[DRIFT] agent=agent_004, memory=mem_agent_004_0031: 2026-08-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.473373
+[DRIFT] agent=agent_001, memory=mem_agent_001_0096: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.476149
+[DRIFT] agent=agent_002, memory=mem_agent_002_0067: 2026-07-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.479059
+[DRIFT] agent=agent_003, memory=mem_agent_003_0021: 2026-11-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.481884
+[DRIFT] agent=agent_004, memory=mem_agent_004_0073: 2026-09-22T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.485266
+[DRIFT] agent=agent_002, memory=mem_agent_002_0045: 2026-10-15T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.488275
+[DRIFT] agent=agent_002, memory=mem_agent_002_0052: 2026-06-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.491869
+[DRIFT] agent=agent_004, memory=mem_agent_004_0016: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.494883
+[DRIFT] agent=agent_001, memory=mem_agent_001_0031: 2026-10-14T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.498822
+[DRIFT] agent=agent_001, memory=mem_agent_001_0007: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.502316
+[DRIFT] agent=agent_001, memory=mem_agent_001_0073: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.505757
+[DRIFT] agent=agent_003, memory=mem_agent_003_0091: 2025-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.510918
+[DRIFT] agent=agent_004, memory=mem_agent_004_0009: 2026-04-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.516443
+[DRIFT] agent=agent_002, memory=mem_agent_002_0007: 2027-02-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.520962
+[DRIFT] agent=agent_004, memory=mem_agent_004_0054: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.525525
+[DRIFT] agent=agent_002, memory=mem_agent_002_0087: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.529396
+[DRIFT] agent=agent_001, memory=mem_agent_001_0047: 2026-10-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.532933
+[DRIFT] agent=agent_001, memory=mem_agent_001_0065: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.536153
+[DRIFT] agent=agent_001, memory=mem_agent_001_0043: 2026-03-06T12:45:23.187906000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.539426
+[DRIFT] agent=agent_000, memory=mem_agent_000_0071: 2026-03-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.542624
+[DRIFT] agent=agent_004, memory=mem_agent_004_0034: 2026-08-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.545305
+[DRIFT] agent=agent_002, memory=mem_agent_002_0083: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.547946
+[DRIFT] agent=agent_003, memory=mem_agent_003_0096: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.551181
+[DRIFT] agent=agent_002, memory=mem_agent_002_0044: 2026-09-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.555708
+[DRIFT] agent=agent_001, memory=mem_agent_001_0084: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.560523
+[DRIFT] agent=agent_003, memory=mem_agent_003_0023: 2026-05-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.565299
+[DRIFT] agent=agent_002, memory=mem_agent_002_0002: 2026-11-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.569667
+[DRIFT] agent=agent_000, memory=mem_agent_000_0099: 2025-09-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:45.413216000+00:00 at 2026-08-23 20:01:45.574063
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run  5: 50/50 drifted | contamination=5/5 | agent=000
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:46.555535
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0073: 2026-11-27T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.559286
+[DRIFT] agent=agent_003, memory=mem_agent_003_0015: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.566686
+[DRIFT] agent=agent_000, memory=mem_agent_000_0094: 2026-02-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.573490
+[DRIFT] agent=agent_001, memory=mem_agent_001_0088: 2026-10-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.581242
+[DRIFT] agent=agent_001, memory=mem_agent_001_0078: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.590348
+[DRIFT] agent=agent_000, memory=mem_agent_000_0016: 2026-02-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.597899
+[DRIFT] agent=agent_003, memory=mem_agent_003_0065: 2026-03-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.603342
+[DRIFT] agent=agent_004, memory=mem_agent_004_0066: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.608206
+[DRIFT] agent=agent_002, memory=mem_agent_002_0095: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.612572
+[DRIFT] agent=agent_002, memory=mem_agent_002_0029: 2026-05-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.616686
+[DRIFT] agent=agent_000, memory=mem_agent_000_0052: 2026-03-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.620579
+[DRIFT] agent=agent_000, memory=mem_agent_000_0024: 2025-09-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.625229
+[DRIFT] agent=agent_002, memory=mem_agent_002_0015: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.631116
+[DRIFT] agent=agent_004, memory=mem_agent_004_0074: 2026-07-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.637134
+[DRIFT] agent=agent_001, memory=mem_agent_001_0037: 2026-03-06T12:58:09.864219000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.642935
+[DRIFT] agent=agent_002, memory=mem_agent_002_0046: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.649548
+[DRIFT] agent=agent_002, memory=mem_agent_002_0061: 2026-07-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.654995
+[DRIFT] agent=agent_003, memory=mem_agent_003_0093: 2026-03-06T12:57:20.515067000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.660775
+[DRIFT] agent=agent_004, memory=mem_agent_004_0083: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.666411
+[DRIFT] agent=agent_003, memory=mem_agent_003_0055: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.673314
+[DRIFT] agent=agent_000, memory=mem_agent_000_0086: 2025-11-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.678558
+[DRIFT] agent=agent_001, memory=mem_agent_001_0074: 2026-05-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.684188
+[DRIFT] agent=agent_003, memory=mem_agent_003_0088: 2026-03-19T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.688863
+[DRIFT] agent=agent_003, memory=mem_agent_003_0062: 2026-11-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.694141
+[DRIFT] agent=agent_000, memory=mem_agent_000_0039: 2026-04-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.699040
+[DRIFT] agent=agent_003, memory=mem_agent_003_0097: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.703229
+[DRIFT] agent=agent_001, memory=mem_agent_001_0009: 2026-12-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.709492
+[DRIFT] agent=agent_002, memory=mem_agent_002_0079: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.714026
+[DRIFT] agent=agent_001, memory=mem_agent_001_0029: 2026-04-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.718369
+[DRIFT] agent=agent_000, memory=mem_agent_000_0040: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.722735
+[DRIFT] agent=agent_003, memory=mem_agent_003_0064: 2026-03-06T12:58:09.977825000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.727389
+[DRIFT] agent=agent_001, memory=mem_agent_001_0028: 2026-06-19T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.731623
+[DRIFT] agent=agent_003, memory=mem_agent_003_0034: 2026-08-21T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.735432
+[DRIFT] agent=agent_004, memory=mem_agent_004_0021: 2027-01-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.741299
+[DRIFT] agent=agent_000, memory=mem_agent_000_0043: 2025-08-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.745328
+[DRIFT] agent=agent_003, memory=mem_agent_003_0037: 2025-12-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.750567
+[DRIFT] agent=agent_003, memory=mem_agent_003_0030: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.754825
+[DRIFT] agent=agent_000, memory=mem_agent_000_0075: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.758799
+[DRIFT] agent=agent_001, memory=mem_agent_001_0004: 2026-08-22T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.763387
+[DRIFT] agent=agent_001, memory=mem_agent_001_0065: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.767675
+[DRIFT] agent=agent_004, memory=mem_agent_004_0046: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.771756
+[DRIFT] agent=agent_004, memory=mem_agent_004_0048: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.775712
+[DRIFT] agent=agent_002, memory=mem_agent_002_0087: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.780053
+[DRIFT] agent=agent_002, memory=mem_agent_002_0088: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.784243
+[DRIFT] agent=agent_000, memory=mem_agent_000_0076: 2026-06-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.788077
+[DRIFT] agent=agent_003, memory=mem_agent_003_0061: 2026-02-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.791591
+[DRIFT] agent=agent_000, memory=mem_agent_000_0030: 2026-01-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.796352
+[DRIFT] agent=agent_001, memory=mem_agent_001_0033: 2026-03-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.800187
+[DRIFT] agent=agent_004, memory=mem_agent_004_0082: 2027-01-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.803694
+[DRIFT] agent=agent_003, memory=mem_agent_003_0066: 2026-07-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:46.555535000+00:00 at 2026-08-23 20:01:46.807012
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run  6: 50/50 drifted | contamination=0/5 | agent=002
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:52.378483
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_004, memory=mem_agent_004_0081: 2026-08-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.382101
+[DRIFT] agent=agent_003, memory=mem_agent_003_0082: 2026-07-19T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.386407
+[DRIFT] agent=agent_000, memory=mem_agent_000_0049: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.390686
+[DRIFT] agent=agent_001, memory=mem_agent_001_0069: 2026-08-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.394175
+[DRIFT] agent=agent_001, memory=mem_agent_001_0097: 2026-10-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.398184
+[DRIFT] agent=agent_002, memory=mem_agent_002_0057: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.402241
+[DRIFT] agent=agent_004, memory=mem_agent_004_0021: 2027-01-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.407212
+[DRIFT] agent=agent_002, memory=mem_agent_002_0005: 2026-04-15T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.410681
+[DRIFT] agent=agent_001, memory=mem_agent_001_0055: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.415519
+[DRIFT] agent=agent_001, memory=mem_agent_001_0068: 2026-05-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.419807
+[DRIFT] agent=agent_001, memory=mem_agent_001_0019: 2026-03-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.423555
+[DRIFT] agent=agent_001, memory=mem_agent_001_0033: 2026-03-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.427194
+[DRIFT] agent=agent_000, memory=mem_agent_000_0040: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.430945
+[DRIFT] agent=agent_001, memory=mem_agent_001_0078: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.435313
+[DRIFT] agent=agent_000, memory=mem_agent_000_0030: 2026-01-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.439202
+[DRIFT] agent=agent_000, memory=mem_agent_000_0083: 2026-04-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.442843
+[DRIFT] agent=agent_001, memory=mem_agent_001_0062: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.446595
+[DRIFT] agent=agent_002, memory=mem_agent_002_0034: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.450887
+[DRIFT] agent=agent_000, memory=mem_agent_000_0052: 2026-03-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.454955
+[DRIFT] agent=agent_002, memory=mem_agent_002_0033: 2026-11-30T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.459077
+[DRIFT] agent=agent_002, memory=mem_agent_002_0078: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.462998
+[DRIFT] agent=agent_003, memory=mem_agent_003_0043: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.467137
+[DRIFT] agent=agent_002, memory=mem_agent_002_0090: 2026-04-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.471533
+[DRIFT] agent=agent_003, memory=mem_agent_003_0060: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.475863
+[DRIFT] agent=agent_000, memory=mem_agent_000_0018: 2026-02-09T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.479907
+[DRIFT] agent=agent_003, memory=mem_agent_003_0055: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.483941
+[DRIFT] agent=agent_002, memory=mem_agent_002_0039: 2026-07-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.487885
+[DRIFT] agent=agent_000, memory=mem_agent_000_0002: 2026-05-31T04:31:24.772164000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.491721
+[DRIFT] agent=agent_002, memory=mem_agent_002_0019: 2026-11-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.496224
+[DRIFT] agent=agent_002, memory=mem_agent_002_0046: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.501034
+[DRIFT] agent=agent_002, memory=mem_agent_002_0025: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.505608
+[DRIFT] agent=agent_003, memory=mem_agent_003_0010: 2025-12-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.511049
+[DRIFT] agent=agent_003, memory=mem_agent_003_0001: 2026-06-15T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.516430
+[DRIFT] agent=agent_000, memory=mem_agent_000_0069: 2026-05-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.522808
+[DRIFT] agent=agent_000, memory=mem_agent_000_0086: 2025-11-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.529177
+[DRIFT] agent=agent_004, memory=mem_agent_004_0022: 2026-06-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.536877
+[DRIFT] agent=agent_000, memory=mem_agent_000_0054: 2025-09-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.542450
+[DRIFT] agent=agent_004, memory=mem_agent_004_0080: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.549598
+[DRIFT] agent=agent_001, memory=mem_agent_001_0057: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.555517
+[DRIFT] agent=agent_004, memory=mem_agent_004_0091: 2027-01-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.560731
+[DRIFT] agent=agent_004, memory=mem_agent_004_0047: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.565835
+[DRIFT] agent=agent_003, memory=mem_agent_003_0031: 2026-11-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.569750
+[DRIFT] agent=agent_001, memory=mem_agent_001_0010: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.574773
+[DRIFT] agent=agent_001, memory=mem_agent_001_0045: 2026-11-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.581107
+[DRIFT] agent=agent_003, memory=mem_agent_003_0074: 2025-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.589619
+[DRIFT] agent=agent_001, memory=mem_agent_001_0043: 2026-03-06T12:45:23.187906000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.637369
+[DRIFT] agent=agent_004, memory=mem_agent_004_0058: 2026-12-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.703727
+[DRIFT] agent=agent_002, memory=mem_agent_002_0016: 2026-07-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.752820
+[DRIFT] agent=agent_003, memory=mem_agent_003_0022: 2026-01-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.808159
+[DRIFT] agent=agent_003, memory=mem_agent_003_0037: 2025-12-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:52.378483000+00:00 at 2026-08-23 20:01:52.856434
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run  7: 50/50 drifted | contamination=0/5 | agent=004
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:58.611690
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0080: 2026-11-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.613384
+[DRIFT] agent=agent_001, memory=mem_agent_001_0065: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.616795
+[DRIFT] agent=agent_003, memory=mem_agent_003_0014: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.619759
+[DRIFT] agent=agent_001, memory=mem_agent_001_0082: 2026-08-22T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.622403
+[DRIFT] agent=agent_003, memory=mem_agent_003_0080: 2026-08-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.625032
+[DRIFT] agent=agent_000, memory=mem_agent_000_0033: 2026-04-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.627687
+[DRIFT] agent=agent_001, memory=mem_agent_001_0063: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.630138
+[DRIFT] agent=agent_002, memory=mem_agent_002_0041: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.632679
+[DRIFT] agent=agent_000, memory=mem_agent_000_0020: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.635120
+[DRIFT] agent=agent_004, memory=mem_agent_004_0090: 2026-06-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.637652
+[DRIFT] agent=agent_000, memory=mem_agent_000_0056: 2025-09-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.640120
+[DRIFT] agent=agent_002, memory=mem_agent_002_0010: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.642623
+[DRIFT] agent=agent_004, memory=mem_agent_004_0046: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.645636
+[DRIFT] agent=agent_001, memory=mem_agent_001_0096: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.648178
+[DRIFT] agent=agent_003, memory=mem_agent_003_0079: 2026-08-26T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.650686
+[DRIFT] agent=agent_000, memory=mem_agent_000_0079: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.653008
+[DRIFT] agent=agent_002, memory=mem_agent_002_0015: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.655041
+[DRIFT] agent=agent_000, memory=mem_agent_000_0021: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.657030
+[DRIFT] agent=agent_002, memory=mem_agent_002_0032: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.659048
+[DRIFT] agent=agent_000, memory=mem_agent_000_0065: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.661107
+[DRIFT] agent=agent_002, memory=mem_agent_002_0036: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.663105
+[DRIFT] agent=agent_002, memory=mem_agent_002_0031: 2026-12-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.665084
+[DRIFT] agent=agent_003, memory=mem_agent_003_0033: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.667082
+[DRIFT] agent=agent_002, memory=mem_agent_002_0052: 2026-06-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.669034
+[DRIFT] agent=agent_002, memory=mem_agent_002_0083: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.671510
+[DRIFT] agent=agent_003, memory=mem_agent_003_0084: 2026-11-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.674052
+[DRIFT] agent=agent_004, memory=mem_agent_004_0069: 2026-09-02T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.676667
+[DRIFT] agent=agent_001, memory=mem_agent_001_0050: 2026-11-03T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.679392
+[DRIFT] agent=agent_003, memory=mem_agent_003_0046: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.682118
+[DRIFT] agent=agent_003, memory=mem_agent_003_0096: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.684698
+[DRIFT] agent=agent_004, memory=mem_agent_004_0031: 2026-08-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.687764
+[DRIFT] agent=agent_002, memory=mem_agent_002_0087: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.690798
+[DRIFT] agent=agent_002, memory=mem_agent_002_0017: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.694633
+[DRIFT] agent=agent_004, memory=mem_agent_004_0065: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.698206
+[DRIFT] agent=agent_003, memory=mem_agent_003_0023: 2026-05-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.701543
+[DRIFT] agent=agent_002, memory=mem_agent_002_0065: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.704606
+[DRIFT] agent=agent_001, memory=mem_agent_001_0015: 2026-09-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.708003
+[DRIFT] agent=agent_000, memory=mem_agent_000_0014: 2025-07-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.710335
+[DRIFT] agent=agent_001, memory=mem_agent_001_0055: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.712724
+[DRIFT] agent=agent_003, memory=mem_agent_003_0082: 2026-07-19T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.714944
+[DRIFT] agent=agent_002, memory=mem_agent_002_0094: 2026-07-15T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.717072
+[DRIFT] agent=agent_001, memory=mem_agent_001_0016: 2026-09-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.719134
+[DRIFT] agent=agent_004, memory=mem_agent_004_0027: 2026-10-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.721180
+[DRIFT] agent=agent_003, memory=mem_agent_003_0015: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.723362
+[DRIFT] agent=agent_002, memory=mem_agent_002_0029: 2026-05-06T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.725833
+[DRIFT] agent=agent_002, memory=mem_agent_002_0095: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.728063
+[DRIFT] agent=agent_004, memory=mem_agent_004_0030: 2027-03-14T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.730270
+[DRIFT] agent=agent_004, memory=mem_agent_004_0092: 2027-01-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.732471
+[DRIFT] agent=agent_003, memory=mem_agent_003_0057: 2026-04-28T22:08:31.695262000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.734993
+[DRIFT] agent=agent_004, memory=mem_agent_004_0080: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:58.611690000+00:00 at 2026-08-23 20:01:58.737066
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run  8: 50/50 drifted | contamination=0/5 | agent=003
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:01:59.419122
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_000, memory=mem_agent_000_0074: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.420579
+[DRIFT] agent=agent_000, memory=mem_agent_000_0011: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.423131
+[DRIFT] agent=agent_000, memory=mem_agent_000_0069: 2026-05-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.425497
+[DRIFT] agent=agent_001, memory=mem_agent_001_0046: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.427859
+[DRIFT] agent=agent_001, memory=mem_agent_001_0000: 2026-10-23T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.430119
+[DRIFT] agent=agent_000, memory=mem_agent_000_0094: 2026-02-18T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.432846
+[DRIFT] agent=agent_003, memory=mem_agent_003_0040: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.435113
+[DRIFT] agent=agent_000, memory=mem_agent_000_0091: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.437482
+[DRIFT] agent=agent_001, memory=mem_agent_001_0094: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.439867
+[DRIFT] agent=agent_000, memory=mem_agent_000_0006: 2025-12-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.442111
+[DRIFT] agent=agent_002, memory=mem_agent_002_0035: 2026-07-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.444411
+[DRIFT] agent=agent_001, memory=mem_agent_001_0033: 2026-03-17T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.446953
+[DRIFT] agent=agent_002, memory=mem_agent_002_0025: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.449508
+[DRIFT] agent=agent_003, memory=mem_agent_003_0028: 2026-07-09T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.452246
+[DRIFT] agent=agent_001, memory=mem_agent_001_0004: 2026-08-22T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.455129
+[DRIFT] agent=agent_001, memory=mem_agent_001_0035: 2026-03-09T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.458884
+[DRIFT] agent=agent_000, memory=mem_agent_000_0089: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.462395
+[DRIFT] agent=agent_002, memory=mem_agent_002_0018: 2026-06-01T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.466443
+[DRIFT] agent=agent_000, memory=mem_agent_000_0080: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.469987
+[DRIFT] agent=agent_004, memory=mem_agent_004_0075: 2026-03-06T12:40:48.777892000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.473214
+[DRIFT] agent=agent_003, memory=mem_agent_003_0035: 2026-03-06T12:57:20.422399000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.476203
+[DRIFT] agent=agent_004, memory=mem_agent_004_0074: 2026-07-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.478828
+[DRIFT] agent=agent_000, memory=mem_agent_000_0030: 2026-01-07T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.481309
+[DRIFT] agent=agent_001, memory=mem_agent_001_0042: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.483934
+[DRIFT] agent=agent_000, memory=mem_agent_000_0024: 2025-09-10T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.486187
+[DRIFT] agent=agent_004, memory=mem_agent_004_0035: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.488855
+[DRIFT] agent=agent_004, memory=mem_agent_004_0090: 2026-06-24T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.491093
+[DRIFT] agent=agent_002, memory=mem_agent_002_0058: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.493255
+[DRIFT] agent=agent_001, memory=mem_agent_001_0009: 2026-12-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.495715
+[DRIFT] agent=agent_004, memory=mem_agent_004_0080: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.498648
+[DRIFT] agent=agent_001, memory=mem_agent_001_0018: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.501203
+[DRIFT] agent=agent_000, memory=mem_agent_000_0086: 2025-11-13T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.503982
+[DRIFT] agent=agent_001, memory=mem_agent_001_0047: 2026-10-11T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.506253
+[DRIFT] agent=agent_002, memory=mem_agent_002_0005: 2026-04-15T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.508662
+[DRIFT] agent=agent_002, memory=mem_agent_002_0061: 2026-07-05T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.511000
+[DRIFT] agent=agent_000, memory=mem_agent_000_0037: 2026-06-01T06:10:48.980390000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.513253
+[DRIFT] agent=agent_003, memory=mem_agent_003_0058: 2026-07-31T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.515579
+[DRIFT] agent=agent_001, memory=mem_agent_001_0073: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.518136
+[DRIFT] agent=agent_001, memory=mem_agent_001_0054: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.520422
+[DRIFT] agent=agent_004, memory=mem_agent_004_0088: 2027-04-20T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.522919
+[DRIFT] agent=agent_001, memory=mem_agent_001_0098: 2026-10-29T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.525171
+[DRIFT] agent=agent_001, memory=mem_agent_001_0056: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.527916
+[DRIFT] agent=agent_000, memory=mem_agent_000_0076: 2026-06-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.530107
+[DRIFT] agent=agent_004, memory=mem_agent_004_0092: 2027-01-08T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.532847
+[DRIFT] agent=agent_000, memory=mem_agent_000_0012: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.535137
+[DRIFT] agent=agent_003, memory=mem_agent_003_0016: 2026-03-04T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.537746
+[DRIFT] agent=agent_000, memory=mem_agent_000_0044: 2026-03-06T12:57:20.541254000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.540624
+[DRIFT] agent=agent_003, memory=mem_agent_003_0065: 2026-03-16T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.543460
+[DRIFT] agent=agent_004, memory=mem_agent_004_0087: 2026-11-12T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.546091
+[DRIFT] agent=agent_002, memory=mem_agent_002_0073: 2026-11-27T22:08:31.695262000+00:00 → 2026-08-20T08:01:59.419122000+00:00 at 2026-08-23 20:01:59.548705
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run  9: 50/50 drifted | contamination=0/5 | agent=003
+
+[FLOOD] Starting batch injection into 7-day window
+[FLOOD] Target timestamp: 2026-08-20 08:02:00.249766
+[FLOOD] Targets: 50 memories
+[FLOOD] Importance boost enabled: target=0.95
+[DRIFT] agent=agent_002, memory=mem_agent_002_0016: 2026-07-13T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.251479
+[DRIFT] agent=agent_004, memory=mem_agent_004_0096: 2026-08-06T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.254487
+[DRIFT] agent=agent_001, memory=mem_agent_001_0066: 2026-10-21T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.257491
+[DRIFT] agent=agent_001, memory=mem_agent_001_0024: 2026-06-26T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.260174
+[DRIFT] agent=agent_002, memory=mem_agent_002_0056: 2026-12-13T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.262917
+[DRIFT] agent=agent_001, memory=mem_agent_001_0029: 2026-04-10T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.266096
+[DRIFT] agent=agent_002, memory=mem_agent_002_0021: 2026-03-06T12:40:48.732049000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.268948
+[DRIFT] agent=agent_000, memory=mem_agent_000_0023: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.272876
+[DRIFT] agent=agent_002, memory=mem_agent_002_0085: 2026-03-06T12:57:20.475428000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.282786
+[DRIFT] agent=agent_004, memory=mem_agent_004_0069: 2026-09-02T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.285802
+[DRIFT] agent=agent_004, memory=mem_agent_004_0082: 2027-01-17T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.289069
+[DRIFT] agent=agent_002, memory=mem_agent_002_0089: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.291677
+[DRIFT] agent=agent_004, memory=mem_agent_004_0055: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.294055
+[DRIFT] agent=agent_000, memory=mem_agent_000_0010: 2025-12-24T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.296415
+[DRIFT] agent=agent_004, memory=mem_agent_004_0070: 2026-09-09T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.299097
+[DRIFT] agent=agent_004, memory=mem_agent_004_0093: 2027-03-20T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.301979
+[DRIFT] agent=agent_000, memory=mem_agent_000_0006: 2025-12-01T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.304858
+[DRIFT] agent=agent_004, memory=mem_agent_004_0090: 2026-06-24T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.307540
+[DRIFT] agent=agent_004, memory=mem_agent_004_0021: 2027-01-28T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.310335
+[DRIFT] agent=agent_003, memory=mem_agent_003_0087: 2026-02-03T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.313425
+[DRIFT] agent=agent_003, memory=mem_agent_003_0093: 2026-03-06T12:57:20.515067000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.317586
+[DRIFT] agent=agent_002, memory=mem_agent_002_0001: 2027-01-02T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.322156
+[DRIFT] agent=agent_004, memory=mem_agent_004_0051: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.326052
+[DRIFT] agent=agent_000, memory=mem_agent_000_0016: 2026-02-04T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.328922
+[DRIFT] agent=agent_002, memory=mem_agent_002_0033: 2026-11-30T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.331888
+[DRIFT] agent=agent_002, memory=mem_agent_002_0028: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.334835
+[DRIFT] agent=agent_002, memory=mem_agent_002_0036: 2026-06-01T06:27:20.974945000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.337503
+[DRIFT] agent=agent_000, memory=mem_agent_000_0095: 2026-03-27T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.340117
+[DRIFT] agent=agent_003, memory=mem_agent_003_0083: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.342647
+[DRIFT] agent=agent_003, memory=mem_agent_003_0077: 2026-02-13T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.345246
+[DRIFT] agent=agent_001, memory=mem_agent_001_0088: 2026-10-04T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.347864
+[DRIFT] agent=agent_000, memory=mem_agent_000_0052: 2026-03-08T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.350447
+[DRIFT] agent=agent_003, memory=mem_agent_003_0055: 2026-06-01T06:15:23.582565000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.354010
+[DRIFT] agent=agent_002, memory=mem_agent_002_0007: 2027-02-07T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.357024
+[DRIFT] agent=agent_004, memory=mem_agent_004_0050: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.360248
+[DRIFT] agent=agent_000, memory=mem_agent_000_0072: 2025-12-23T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.363127
+[DRIFT] agent=agent_004, memory=mem_agent_004_0004: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.366071
+[DRIFT] agent=agent_004, memory=mem_agent_004_0067: 2026-11-18T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.368894
+[DRIFT] agent=agent_001, memory=mem_agent_001_0081: 2026-06-01T06:17:16.001923000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.371635
+[DRIFT] agent=agent_003, memory=mem_agent_003_0020: 2026-01-05T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.374250
+[DRIFT] agent=agent_002, memory=mem_agent_002_0072: 2026-06-01T06:28:10.413852000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.376868
+[DRIFT] agent=agent_003, memory=mem_agent_003_0021: 2026-11-11T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.379162
+[DRIFT] agent=agent_003, memory=mem_agent_003_0053: 2026-06-02T12:42:44.231181000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.381629
+[DRIFT] agent=agent_002, memory=mem_agent_002_0011: 2026-07-14T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.384078
+[DRIFT] agent=agent_000, memory=mem_agent_000_0094: 2026-02-18T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.386465
+[DRIFT] agent=agent_002, memory=mem_agent_002_0006: 2027-03-13T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.389139
+[DRIFT] agent=agent_001, memory=mem_agent_001_0027: 2026-09-12T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.391960
+[DRIFT] agent=agent_002, memory=mem_agent_002_0054: 2026-08-12T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.394245
+[DRIFT] agent=agent_000, memory=mem_agent_000_0018: 2026-02-09T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.396785
+[DRIFT] agent=agent_003, memory=mem_agent_003_0001: 2026-06-15T22:08:31.695262000+00:00 → 2026-08-20T08:02:00.249766000+00:00 at 2026-08-23 20:02:00.399173
+[FLOOD] Complete: 50 succeeded, 0 failed
+  Run 10: 50/50 drifted | contamination=0/5 | agent=003
+
+[INFO] All timestamps restored after flood evaluation
+
+======================================================================
+FLOOD ATTACK — STATISTICAL SUMMARY
+======================================================================
+   Batch   Runs     Mean   Stddev    Min    Max   Median    p(>0)
+──────────────────────────────────────────────────────────────────────
+       5     10     0.00     0.00      0      0      0.0      0%
+      10     10     0.40     0.97      0      3      0.0     20%
+      20     10     0.80     1.75      0      5      0.0     20%
+      50     10     1.00     2.11      0      5      0.0     20%
+──────────────────────────────────────────────────────────────────────
+  p(>0): probability of at least 1 adversarial memory in top-5
+
+Per-run contamination counts (adversarial memories in top-5):
+  Batch  5: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  Batch 10: [0, 1, 0, 0, 0, 3, 0, 0, 0, 0]
+  Batch 20: [0, 0, 0, 0, 0, 0, 0, 5, 0, 3]
+  Batch 50: [5, 0, 0, 0, 5, 0, 0, 0, 0, 0]
+
+================================================================================
+FINAL EVALUATION SUMMARY
+================================================================================
+
+╔══════════════════════════════════════════════════════════════════════╗
+║           MEMGRAPH ATTACK EVALUATION RESULTS                         ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  EDGE POISONING (n=20)                                         ║
+║    Mutation success : 20/20 (100.0%)                            ║
+║    Retrieval impact : 0/20 (0 expected — reasoning-layer attack)  ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  TEMPORAL DRIFT BURIAL (n=20)                                  ║
+║    Mutation success : 20/20 (100.0%)                            ║
+║    Outside window   : 20/20 (100.0%)                            ║
+║    Disappeared      : 20/20 of in-window targets (100.0%)          ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  FLOOD ATTACK (n=10 runs × 4 batch sizes)                         ║
+║    Batch=5  : mean=0.00±0.00, range=[0,0]/5                    ║
+║    Batch=10 : mean=0.40±0.97, range=[0,3]/5                    ║
+║    Batch=20 : mean=0.80±1.75, range=[0,5]/5                    ║
+║    Batch=50 : mean=1.00±2.11, range=[0,5]/5                    ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  KEY FINDINGS                                                        ║
+║    1. Edge poisoning  : 20/20 mutations verified, reasoning-layer impact  ║
+║    2. Temporal drift  : 20/20 burials verified, 20/20 disappeared from retrieval ║
+║    3. Flood attack    : stochastic contamination, no monotonic trend  ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+================================================================================
+Cleaning up...
+✓ Evaluation complete

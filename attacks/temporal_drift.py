@@ -159,12 +159,6 @@ def verify_drift(driver, agent_id, memory_id, expected_timestamp):
     Raises:
         ValueError: If the CREATED edge does not exist
     """
-    # Convert expected_timestamp to ISO format if needed for comparison
-    if isinstance(expected_timestamp, datetime.datetime):
-        expected_ts_str = expected_timestamp.isoformat()
-    else:
-        expected_ts_str = str(expected_timestamp)
-    
     query = """
     MATCH (a:Agent {id: $agent_id})-[c:CREATED]->(m:Memory {id: $memory_id})
     RETURN c.at as current_timestamp
@@ -180,35 +174,85 @@ def verify_drift(driver, agent_id, memory_id, expected_timestamp):
         
         if not record:
             raise ValueError(
-                f"CREATED edge does not exist between agent '{agent_id}' and memory '{memory_id}' — cannot verify drift"
+                f"CREATED edge does not exist between agent '{agent_id}' "
+                f"and memory '{memory_id}' — cannot verify drift"
             )
         
         current_ts = record['current_timestamp']
         
-        # Convert Neo4j datetime to Python datetime to handle timezone-aware comparisons
+        # Convert Neo4j datetime to Python datetime
         current_ts_normalized = _convert_neo4j_datetime(current_ts) if current_ts else None
         
-        # Normalize expected_timestamp to datetime for consistent comparison
-        if isinstance(expected_timestamp, datetime.datetime):
-            expected_ts_normalized = expected_timestamp
-        else:
-            # If it's a string, parse it
+        # Normalize expected_timestamp to timezone-aware UTC datetime
+        if isinstance(expected_timestamp, str):
             try:
-                expected_ts_normalized = datetime.datetime.fromisoformat(str(expected_timestamp))
-            except (ValueError, AttributeError):
+                expected_ts_normalized = datetime.datetime.fromisoformat(expected_timestamp)
+            except ValueError:
                 expected_ts_normalized = expected_timestamp
+        else:
+            expected_ts_normalized = expected_timestamp
         
-        # Compare normalized datetime objects
-        match = current_ts_normalized == expected_ts_normalized if (current_ts_normalized and expected_ts_normalized) else False
+        # Make expected timezone-aware if it isn't — Neo4j always returns UTC-aware
+        if isinstance(expected_ts_normalized, datetime.datetime):
+            if expected_ts_normalized.tzinfo is None:
+                expected_ts_normalized = expected_ts_normalized.replace(
+                    tzinfo=datetime.timezone.utc
+                )
+        
+        # Compare at second precision to avoid microsecond drift from
+        # Neo4j storage rounding
+        if current_ts_normalized and isinstance(expected_ts_normalized, datetime.datetime):
+            current_truncated = current_ts_normalized.replace(microsecond=0)
+            expected_truncated = expected_ts_normalized.replace(microsecond=0)
+            match = current_truncated == expected_truncated
+        else:
+            match = current_ts_normalized == expected_ts_normalized
         
         # Log verification result
         status = "VERIFIED" if match else "MISMATCH"
-        print(f"[VERIFY] agent={agent_id}, memory={memory_id}: expected={expected_ts_normalized}, actual={current_ts_normalized} {status}")
+        print(
+            f"[VERIFY] agent={agent_id}, memory={memory_id}: "
+            f"expected={expected_ts_normalized}, actual={current_ts_normalized} {status}"
+        )
         
         return match
 
 
-def flood_recency_window(driver, memory_list, target_window_days):
+def _boost_memory_importance(driver, memory_id, target_importance):
+    """
+    Helper: Boost a memory's importance value to target level.
+    
+    This simulates an attacker injecting high-quality-looking memories by
+    artificially inflating their importance scores. In practice, an attacker
+    would:
+    1. Craft fake memories with identical structure to high-importance ones
+    2. Set their importance property to compete in ranking functions
+    
+    Args:
+        driver: Neo4j driver instance
+        memory_id: Memory to boost
+        target_importance: Target importance value (0.0-1.0)
+        
+    Returns:
+        bool: True if boost succeeded, False otherwise
+    """
+    query = """
+    MATCH (m:Memory {id: $memory_id})
+    SET m.importance = $importance
+    RETURN m.importance as new_importance
+    """
+    
+    with driver.session() as session:
+        result = session.run(
+            query,
+            memory_id=memory_id,
+            importance=target_importance
+        )
+        record = result.single()
+        return record is not None
+
+
+def flood_recency_window(driver, memory_list, target_window_days, boost_importance=True, target_importance=0.95):
     """
     Batch attack: Drift multiple memories into a recency window simultaneously.
     
@@ -220,23 +264,33 @@ def flood_recency_window(driver, memory_list, target_window_days):
     - Test recency-filtering behavior at scale
     - Evade per-operation detection
     
+    ENHANCEMENT: Also boost importance of flooded memories to make them competitive
+    in ranking. Real attackers would inject high-quality-looking content.
+    
     Strategy:
     - Calculate a random timestamp within the target window
-    - For each (agent_id, memory_id) pair, drift it to that timestamp
+    - For each (agent_id, memory_id) pair:
+      1. Drift it to that timestamp
+      2. Optionally boost its importance to target_importance
     - Return results of all drifts plus summary
     
     Args:
         driver: Neo4j driver instance
         memory_list: List of tuples: [(agent_id_1, memory_id_1), (agent_id_2, memory_id_2), ...]
         target_window_days: Number of days back to inject into (e.g., 7 for "last 7 days")
+        boost_importance: If True, elevate importance of flooded memories
+        target_importance: What importance to set flooded memories to (0.0-1.0, default 0.95)
         
     Returns:
         Dict containing:
         - 'total_drifted': Number of memories successfully drifted
+        - 'total_importance_boosted': Number of importance values updated
         - 'failed': List of (agent_id, memory_id) pairs that failed
         - 'drifts': List of drift result dicts (from drift_timestamp)
         - 'target_window_days': The window that was targeted
         - 'injection_timestamp': The specific timestamp all memories were drifted to
+        - 'boost_importance': Whether importance was boosted
+        - 'target_importance': The importance value set
     """
     # Calculate target timestamp: random point within the window
     now = datetime.datetime.now()
@@ -247,26 +301,43 @@ def flood_recency_window(driver, memory_list, target_window_days):
     
     drifts = []
     failed = []
+    importance_boosted = 0
     
     print(f"\n[FLOOD] Starting batch injection into {target_window_days}-day window")
     print(f"[FLOOD] Target timestamp: {injection_timestamp}")
     print(f"[FLOOD] Targets: {len(memory_list)} memories")
+    if boost_importance:
+        print(f"[FLOOD] Importance boost enabled: target={target_importance}")
     
     for agent_id, memory_id in memory_list:
         try:
+            # Step 1: Drift timestamp
             result = drift_timestamp(driver, agent_id, memory_id, injection_timestamp)
             drifts.append(result)
+            
+            # Step 2: Optionally boost importance
+            if boost_importance:
+                try:
+                    boost_success = _boost_memory_importance(driver, memory_id, target_importance)
+                    if boost_success:
+                        importance_boosted += 1
+                except Exception as e:
+                    print(f"[FLOOD] Warning: Failed to boost importance for {memory_id}: {e}")
+                    
         except ValueError as e:
             print(f"[FLOOD] FAILED: {agent_id}/{memory_id} — {e}")
             failed.append((agent_id, memory_id))
     
     flood_result = {
         'total_drifted': len(drifts),
+        'total_importance_boosted': importance_boosted if boost_importance else 0,
         'total_failed': len(failed),
         'failed': failed,
         'drifts': drifts,
         'target_window_days': target_window_days,
-        'injection_timestamp': injection_timestamp
+        'injection_timestamp': injection_timestamp,
+        'boost_importance': boost_importance,
+        'target_importance': target_importance
     }
     
     print(f"[FLOOD] Complete: {len(drifts)} succeeded, {len(failed)} failed")

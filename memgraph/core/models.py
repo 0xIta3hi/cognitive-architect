@@ -24,6 +24,7 @@ class MemoryType(str, Enum):
     CONVERSATION = "conversation"  # Conversational context
     DECISION = "decision"          # Decisions made
     OBSERVATION = "observation"    # Observed patterns
+    INTERACTION = "interaction"    # Agent interactions
 
 
 class RelationType(str, Enum):
